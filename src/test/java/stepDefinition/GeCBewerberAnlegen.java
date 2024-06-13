@@ -1,19 +1,13 @@
 package stepDefinition;
 
 import baseClass.BaseClass;
-import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 import pageObjekts.TS2_GL.GeC_Bewerber;
 import propertyReader.PropertyReaders;
-
-import java.util.List;
-import java.util.Map;
 
 public class GeCBewerberAnlegen extends BaseClass {
 
@@ -79,29 +73,19 @@ public class GeCBewerberAnlegen extends BaseClass {
 
 
     @And("Ich fülle den Reiter Person aus")
-    public void ichFülleDenReiterPersonAus(DataTable table) {
+    public void ichFülleDenReiterPersonAus() {
+        bewerber.neueBewerberAnlegen();
+    }
 
-        List<Map<String, String>> maps = table.asMaps(String.class, String.class);
-        List<WebElement> elements = driver.findElements(bewerber.lReiterPersonAlleButtons);
-        click(bewerber.lReiterPersonAnrede);
-        click(bewerber.lReiterPersonAnredeHerr);
-        for (Map<String, String> map : maps) {
-            for (int i = 1; i < 14; i++) {
-                String feld = map.get("Felder");
-                String status = map.get("Status");
+    @Then("Ich sehe die von mir angelegte Bewerber")
+    public void ichSeheDieVonMirAngelegteBewerber() {
+        sleep(2000);
+        takeScreenShot("Bewerber");
+       Assert.assertTrue(driver.getPageSource().contains("Hereser"));
+    }
 
-                if ("true".equals(status)) {
-                    waitForVisibilty(bewerber.lReiterPersonName);
-                    elements.get(i).click();
-                    elements.get(i).clear();
-                    elements.get(i).sendKeys(map.get("Felder"), Keys.TAB);
-                    sleep(300);
-
-                } else if ("false".equals(status)) {
-                    actionsClassTab();
-                    sleep(300);
-                }
-            }
-        }
+    @Then("Ich sehe auf der Bewerberseite die bereits angelegte Bewerberliste")
+    public void ichSeheAufDerBewerberseiteDieBereitsAngelegteBewerberliste() {
+        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(bewerber.lBewerberMaskeAllBewerberListe,0));
     }
 }

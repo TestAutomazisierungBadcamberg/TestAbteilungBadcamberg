@@ -84,8 +84,8 @@ public class BaseClass {
     }
 
     public static void takeScreenShot(String fileName){
-        fileName = "_"+ LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-MM.ss"));
-        String path= "test-output/screenshot/"+fileName+"png";
+        String name = fileName+"_"+ LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-MM.ss"));
+        String path= "test-output/screenshot/"+name+".png";
         File sourch = ((TakesScreenshot)Driver.getDriver()).getScreenshotAs(OutputType.FILE);
         File target = new File(path);
         try {
@@ -100,8 +100,8 @@ public class BaseClass {
     }
 
     public static void takeScreenShotElemet(WebElement element, String fileName){
-        fileName= "_"+ LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-MM.ss"));
-        String path= "test-output/screenshot/"+fileName+"png";
+        String name= fileName+"_"+ LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-MM.ss"));
+        String path= "test-output/screenshot/"+name+".png";
         File sourch = element.getScreenshotAs(OutputType.FILE);
         File target = new File(path);
         try {
