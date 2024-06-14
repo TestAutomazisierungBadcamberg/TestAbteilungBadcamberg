@@ -14,6 +14,7 @@ public class GeC_Bewerber extends BaseClass {
     public By lGeC_Bewerber_Anlegen_Bewerber = By.xpath("//div[text()='0']");
     public By lReiterPersonAnrede = By.xpath("//span[@id='__select4-arrow']");
     public By lReiterPersonAnredeHerr = By.xpath("//li[@id='__item50-__select4-0']");
+    public By lReiterPersonAnredeFrau = By.xpath("//li[@id='__item50-__select4-1']");
     public By lReiterPersonName = By.xpath("//input[@id='__input4-inner']");
     public By lReiterPersonVorname = By.xpath("//input[@id='__input5-inner']");
     public By lReiterPersonGeburtsdatum = By.xpath("//input[@id='MitarbeiterDetailViewId--GeburtsdatumFeld-inner']");
@@ -23,6 +24,9 @@ public class GeC_Bewerber extends BaseClass {
     public By lReiterPersonSpeichern = By.xpath("//span[@id='__button75-inner']");
     public By lNachDemErstellungsOkButton = By.xpath("//bdi[text()='OK']");
     public By lBewerberMaskeAllBewerberListe = By.xpath("//tbody[@class='sapMListItems sapMTableTBody']/tr");
+    public By lBewerberMaskeSuchbuttonTextFeld = By.xpath("//input[@type='search']");
+    public By lBewerberMaskeSuchbuttonOkButton = By.xpath("//span[@id='__button948-content']");
+    public By lÄnderungDerBewerberOkButton = By.xpath("//div[@id='sap-ui-blocklayer-popup']");
 
 
 
@@ -37,7 +41,7 @@ public class GeC_Bewerber extends BaseClass {
         return By.xpath("//ul[@role='group']/li[@title='"+title+"']");
     }
 
-    public By bewerberFußListeButton(String title){
+    public By bewerberFußLeisteButton(String title){
         return By.xpath("//button[@title='"+title+"']/span/span");
     }
     public void neueBewerberAnlegen(){
@@ -52,6 +56,24 @@ public class GeC_Bewerber extends BaseClass {
         sendKeys(lReiterPersonEMail,"engin@gmail.com");
         click(lReiterPersonSpeichern);
         click(lNachDemErstellungsOkButton);
+    }
+
+    public void angelegteBewerberÄndern(){
+        click(lReiterPersonAnrede);
+        click(lReiterPersonAnredeFrau);
+        sendKeys(lReiterPersonName,"Alioglu");
+        sendKeys(lReiterPersonVorname,"Ummuhan");
+        click(lReiterPersonGeburtsdatum);
+        sendKeys(lReiterPersonGeburtsdatum,"01.01.1986");
+        sendKeys(lReiterPersonStraße,"Müllstraße");
+        sendKeys(lReiterPersonHausnummer,"50");
+        sendKeys(lReiterPersonEMail,"ummuhann@gmail.com");
+        click(fußLeisteButtons("Speichern"));
+        click(lÄnderungDerBewerberOkButton);
+    }
+
+    public By fußLeisteButtons(String title){
+        return By.xpath("//bdi[text()='"+title+"']");
     }
 
 

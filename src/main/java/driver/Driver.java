@@ -39,6 +39,7 @@ public class Driver {
                         options.addArguments("--start-maximized");
 
                     drivers.set(new ChromeDriver(options));
+
                     break;
             }
         }

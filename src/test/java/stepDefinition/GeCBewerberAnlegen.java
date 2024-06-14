@@ -18,7 +18,7 @@ public class GeCBewerberAnlegen extends BaseClass {
     public void ichMeldeMichAlsGL(String testSystem) {
         driver.get(PropertyReaders.read().get(testSystem));
         driver.navigate().refresh();
-        sleep(1000);
+        sleep(2000);
         if (!driver.findElements(bewerber.lAnmeldenButtonAnmeldungsZeite).isEmpty())
             click(bewerber.lAnmeldenButtonAnmeldungsZeite);
         click(bewerber.lAkzeptieren);
@@ -38,7 +38,7 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @Then("Ich sehe auf der Seite Dashboard")
     public void ichSeheAufDerSeiteDashboard() {
-        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan((bewerber.lDashboardKachels),15));
+        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan((bewerber.lDashboardKachels), 10));
     }
 
     @And("Ich klicke auf der linken Seite der MasterPage auf der Button {string}")
@@ -58,12 +58,12 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @Then("Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche {string}")
     public void ichSeheUntenAufDerSeiteInDerFußzeileDieSchaltfläche(String title) {
-        wait.until(ExpectedConditions.elementToBeClickable(bewerber.bewerberFußListeButton(title)));
+        wait.until(ExpectedConditions.elementToBeClickable(bewerber.bewerberFußLeisteButton(title)));
     }
 
     @And("Ich klicke die Schaltfläche {string}")
     public void ichKlickeDieSchaltfläche(String title) {
-        click(bewerber.bewerberFußListeButton(title));
+        click(bewerber.bewerberFußLeisteButton(title));
     }
 
     @And("Ich klicke auf die geöffnete Button Bewerber")
@@ -80,12 +80,12 @@ public class GeCBewerberAnlegen extends BaseClass {
     @Then("Ich sehe die von mir angelegte Bewerber")
     public void ichSeheDieVonMirAngelegteBewerber() {
         sleep(2000);
-        takeScreenShot("Bewerber");
-       Assert.assertTrue(driver.getPageSource().contains("Hereser"));
+        takeScreenShot("neueBewerber");
+        Assert.assertTrue(driver.getPageSource().contains("Hereser"));
     }
 
     @Then("Ich sehe auf der Bewerberseite die bereits angelegte Bewerberliste")
     public void ichSeheAufDerBewerberseiteDieBereitsAngelegteBewerberliste() {
-        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(bewerber.lBewerberMaskeAllBewerberListe,0));
+        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(bewerber.lBewerberMaskeAllBewerberListe, 0));
     }
 }

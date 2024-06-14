@@ -1,5 +1,6 @@
 package baseClass;
 
+import driver.Browser;
 import driver.Driver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -20,7 +21,7 @@ public class BaseClass {
 
 
     public BaseClass() {
-        driver = Driver.getDriver();
+        driver = Driver.getDriver(Browser.FIREFOX);
         wait = Driver.getWait();
     }
 
