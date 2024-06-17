@@ -12,12 +12,12 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @And("Ich schreibe in das Suchfeld den gewünschten Bewerber, den ich ändern möchte")
     public void ichSchreibeInDasSuchfeldDenGewünschtenBewerberDenIchÄndernMöchte() {
-        sendKeys(bewerber.lBewerberMaskeSuchbuttonTextFeld,"Hereser");
+        sendKeys(bewerber.lBewerberMaskeSuchbuttonTextFeld,"Müller");
     }
 
     @And("Ich klicke auf der Button OK, nachdem ich in das Feld Suche die gewünschten Bewerber eingegeben habe")
     public void ichKlickeAufDerButtonOKNachdemIchInDasFeldSucheDieGewünschtenBewerberEingegebenHabe() {
-        click(bewerber.lBewerberMaskeSuchbuttonOkButton);
+        click(bewerber.lBewerberMaskeSuchfeldOkButton);
     }
 
     @And("Ich klicke auf den Bewerber")
@@ -30,7 +30,7 @@ public class GeCBewerberÄndern extends BaseClass {
         waitForVisibilty(bewerber.fußLeisteButtons(text));
     }
 
-    @And("Ich klicke auf der Seite unter der Button {string}")
+    @And("Ich klicke auf der Seite der Button {string}")
     public void ichKlickeAufDerSeiteUnterDerButton(String text) {
         click(bewerber.fußLeisteButtons(text));
     }
@@ -38,8 +38,10 @@ public class GeCBewerberÄndern extends BaseClass {
     @Then("Ich sehe die von mir geänderte Bewerber")
     public void ichSeheDieVonMirGeänderteBewerber() {
         sleep(2000);
-        takeScreenShot("geänderteBewerber");
-        Assert.assertTrue(driver.getPageSource().contains("Ummuhan"));
+        click(bewerber.bewerberFußLeisteButton("Suchen"));
+        click(bewerber.lSuchFeldZürecksetzenButton);
+        click(bewerber.lBewerberMaskeSuchfeldOkButton);
+        Assert.assertTrue(driver.getPageSource().contains("Müller"));
     }
 
     @And("Ich ändere die Daten der angelegten Bewerber")

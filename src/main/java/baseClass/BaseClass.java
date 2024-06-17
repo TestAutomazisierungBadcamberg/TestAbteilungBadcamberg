@@ -21,7 +21,7 @@ public class BaseClass {
 
 
     public BaseClass() {
-        driver = Driver.getDriver(Browser.FIREFOX);
+        driver = Driver.getDriver();
         wait = Driver.getWait();
     }
 

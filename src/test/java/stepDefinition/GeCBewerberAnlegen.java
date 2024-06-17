@@ -17,13 +17,14 @@ public class GeCBewerberAnlegen extends BaseClass {
     @Given("Ich melde mich als GL {string}")
     public void ichMeldeMichAlsGL(String testSystem) {
         driver.get(PropertyReaders.read().get(testSystem));
+        sleep(800);
         driver.navigate().refresh();
-        sleep(2000);
-        if (!driver.findElements(bewerber.lAnmeldenButtonAnmeldungsZeite).isEmpty())
-            click(bewerber.lAnmeldenButtonAnmeldungsZeite);
+        sleep(3000);
+        if (!driver.findElements(bewerber.lAnmeldenButtonAnmeldungsSeite).isEmpty())
+            click(bewerber.lAnmeldenButtonAnmeldungsSeite);
         click(bewerber.lAkzeptieren);
-        if (!driver.findElements(bewerber.lAnmeldenButtonAnmeldungsZeite).isEmpty())
-            click(bewerber.lAnmeldenButtonAnmeldungsZeite);
+        if (!driver.findElements(bewerber.lAnmeldenButtonAnmeldungsSeite).isEmpty())
+            click(bewerber.lAnmeldenButtonAnmeldungsSeite);
         wait.until(ExpectedConditions.elementToBeClickable(bewerber.lBenutzername));
         sendKeys(bewerber.lBenutzername, PropertyReaders.read().get("userName_TS2_GL"));
         if (testSystem.equals("url_TS1_GL"))
@@ -68,7 +69,7 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @And("Ich klicke auf die geöffnete Button Bewerber")
     public void ichKlickeAufDieGeöffneteButtonBewerber() {
-        click(bewerber.lGeC_Bewerber_Anlegen_Bewerber);
+        click(bewerber.lNeueBewerberAnlegenFensterBewerber);
     }
 
 
@@ -80,8 +81,7 @@ public class GeCBewerberAnlegen extends BaseClass {
     @Then("Ich sehe die von mir angelegte Bewerber")
     public void ichSeheDieVonMirAngelegteBewerber() {
         sleep(2000);
-        takeScreenShot("neueBewerber");
-        Assert.assertTrue(driver.getPageSource().contains("Hereser"));
+        Assert.assertTrue(driver.getPageSource().contains("Müller"));
     }
 
     @Then("Ich sehe auf der Bewerberseite die bereits angelegte Bewerberliste")

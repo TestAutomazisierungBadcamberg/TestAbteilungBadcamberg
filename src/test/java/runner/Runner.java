@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
         tags = "@klickTest",
         plugin = {
                 "json:test-output/cucumber-reports/cucumber.json",
-                "html:test-output/cucumber-reports/cucumberreport.html",
+                "html:S:\\\\sabris_Dokumentationen\\\\TestautomationRaporter\\\\cucumberreport.html",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class Runner extends AbstractTestNGCucumberTests {

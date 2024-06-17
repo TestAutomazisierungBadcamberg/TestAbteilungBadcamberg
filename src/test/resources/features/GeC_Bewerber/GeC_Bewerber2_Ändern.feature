@@ -2,7 +2,7 @@
 @klickTest
 Feature: Bewerber ändern
 
-  Scenario: Änderung der Daten bereits angelegter Anmelder
+  Scenario: Änderung der Daten bereits angelegten Bewerber
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
     And  Ich klicke auf der linken Seite der MasterPage auf der Button "GeC"
@@ -15,7 +15,7 @@ Feature: Bewerber ändern
     Then Ich sehe die von mir angelegte Bewerber
     And Ich klicke auf den Bewerber
     Then Ich sehe auf der Seite unter der Button "Ändern"
-    And Ich klicke auf der Seite unter der Button "Ändern"
+    And Ich klicke auf der Seite der Button "Ändern"
     And Ich ändere die Daten der angelegten Bewerber
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Bewerber"
     Then Ich sehe auf der Bewerberseite die bereits angelegte Bewerberliste

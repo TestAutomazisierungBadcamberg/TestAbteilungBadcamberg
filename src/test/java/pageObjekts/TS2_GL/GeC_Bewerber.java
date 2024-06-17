@@ -10,8 +10,8 @@ public class GeC_Bewerber extends BaseClass {
     public By lAkzeptieren = By.xpath("//span/bdi[text()='Akzeptieren']");
     public By lLogin = By.xpath("//span/bdi[text()='Login']");
     public By lDashboardKachels = By.xpath("//div[@class='sapMGTContent']");
-    public By lAnmeldenButtonAnmeldungsZeite = By.xpath("//bdi[text()='Anmelden']");
-    public By lGeC_Bewerber_Anlegen_Bewerber = By.xpath("//div[text()='0']");
+    public By lAnmeldenButtonAnmeldungsSeite = By.xpath("//bdi[text()='Anmelden']");
+    public By lNeueBewerberAnlegenFensterBewerber = By.xpath("//div[text()='0']");
     public By lReiterPersonAnrede = By.xpath("//span[@id='__select4-arrow']");
     public By lReiterPersonAnredeHerr = By.xpath("//li[@id='__item50-__select4-0']");
     public By lReiterPersonAnredeFrau = By.xpath("//li[@id='__item50-__select4-1']");
@@ -25,8 +25,13 @@ public class GeC_Bewerber extends BaseClass {
     public By lNachDemErstellungsOkButton = By.xpath("//bdi[text()='OK']");
     public By lBewerberMaskeAllBewerberListe = By.xpath("//tbody[@class='sapMListItems sapMTableTBody']/tr");
     public By lBewerberMaskeSuchbuttonTextFeld = By.xpath("//input[@type='search']");
-    public By lBewerberMaskeSuchbuttonOkButton = By.xpath("//span[@id='__button948-content']");
-    public By lÄnderungDerBewerberOkButton = By.xpath("//div[@id='sap-ui-blocklayer-popup']");
+    public By lBewerberMaskeSuchfeldOkButton = By.xpath("//span[@id='__button948-content']");
+    public By lÄnderungDerBewerberOkButton = By.xpath("//bdi[contains(@id,'__mbox-btn')]");
+    public By lSuchFeldZürecksetzenButton = By.xpath("//div[contains(@title,'Zurücksetzen')]");
+    public By lCheckboxButtonFürBewerberAuswählen = By.xpath(" //div[contains(@id,'item')]/div");
+    public By lMessageFensterNachdemLöschen = By.xpath("//div[text()='Es wurde 1 Bewerber gelöscht.']");
+
+
 
 
 
@@ -47,22 +52,21 @@ public class GeC_Bewerber extends BaseClass {
     public void neueBewerberAnlegen(){
         click(lReiterPersonAnrede);
         click(lReiterPersonAnredeHerr);
-        sendKeys(lReiterPersonName,"Hereser");
-        sendKeys(lReiterPersonVorname,"Engin");
+        sendKeys(lReiterPersonName,"Müller");
+        sendKeys(lReiterPersonVorname,"Maximillian_Automation");
         click(lReiterPersonGeburtsdatum);
         sendKeys(lReiterPersonGeburtsdatum,"17.12.1985");
         sendKeys(lReiterPersonStraße,"Gerhart Hauptmann Str");
         sendKeys(lReiterPersonHausnummer,"21");
         sendKeys(lReiterPersonEMail,"engin@gmail.com");
         click(lReiterPersonSpeichern);
-        click(lNachDemErstellungsOkButton);
+        click(fußLeisteButtons("OK"));
     }
 
     public void angelegteBewerberÄndern(){
         click(lReiterPersonAnrede);
         click(lReiterPersonAnredeFrau);
-        sendKeys(lReiterPersonName,"Alioglu");
-        sendKeys(lReiterPersonVorname,"Ummuhan");
+        sendKeys(lReiterPersonVorname,"Sophia_Automation");
         click(lReiterPersonGeburtsdatum);
         sendKeys(lReiterPersonGeburtsdatum,"01.01.1986");
         sendKeys(lReiterPersonStraße,"Müllstraße");
