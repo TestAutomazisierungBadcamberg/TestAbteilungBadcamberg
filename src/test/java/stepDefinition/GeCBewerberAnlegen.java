@@ -17,9 +17,7 @@ public class GeCBewerberAnlegen extends BaseClass {
     @Given("Ich melde mich als GL {string}")
     public void ichMeldeMichAlsGL(String testSystem) {
         driver.get(PropertyReaders.read().get(testSystem));
-        sleep(800);
-        driver.navigate().refresh();
-        sleep(3000);
+        sleep(2000);
         if (!driver.findElements(bewerber.lAnmeldenButtonAnmeldungsSeite).isEmpty())
             click(bewerber.lAnmeldenButtonAnmeldungsSeite);
         click(bewerber.lAkzeptieren);
