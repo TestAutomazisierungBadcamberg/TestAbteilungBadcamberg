@@ -2,6 +2,7 @@
 Feature: Bewerber Anlegen
 
   Scenario: neue Bewerber anlegen
+
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
     And  Ich klicke auf der linken Seite der MasterPage auf der Button "GeC"
@@ -13,7 +14,7 @@ Feature: Bewerber Anlegen
     And Ich fülle den Reiter Person aus
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Bewerber"
     Then Ich sehe auf der Bewerberseite die bereits angelegte Bewerberliste
-    Then
+
 
 
 
