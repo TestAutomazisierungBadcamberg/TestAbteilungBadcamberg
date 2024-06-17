@@ -13,6 +13,7 @@ Feature: Bewerber Anlegen
     And Ich fülle den Reiter Person aus
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Bewerber"
     Then Ich sehe auf der Bewerberseite die bereits angelegte Bewerberliste
+    Then
 
 
 
