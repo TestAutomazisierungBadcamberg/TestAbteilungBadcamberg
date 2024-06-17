@@ -4,8 +4,12 @@ import baseClass.BaseClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import pageObjekts.TS2_GL.ClickElementSteps;
 import pageObjekts.TS2_GL.GeC_Bewerber;
 import propertyReader.PropertyReaders;
 
@@ -14,10 +18,10 @@ public class GeCBewerberAnlegen extends BaseClass {
     GeC_Bewerber bewerber = new GeC_Bewerber();
 
 
+
     @Given("Ich melde mich als GL {string}")
     public void ichMeldeMichAlsGL(String testSystem) {
         driver.get(PropertyReaders.read().get(testSystem));
-        sleep(2000);
         if (!driver.findElements(bewerber.lAnmeldenButtonAnmeldungsSeite).isEmpty())
             click(bewerber.lAnmeldenButtonAnmeldungsSeite);
         click(bewerber.lAkzeptieren);
@@ -30,7 +34,6 @@ public class GeCBewerberAnlegen extends BaseClass {
         else
             sendKeys(bewerber.lPasswort, PropertyReaders.read().get("passwort_TS2_GL"));
         click(bewerber.lLogin);
-        sleep(1000);
         wait.until(ExpectedConditions.elementToBeClickable(bewerber.lDashboardKachels));
     }
 
@@ -78,12 +81,15 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @Then("Ich sehe die von mir angelegte Bewerber")
     public void ichSeheDieVonMirAngelegteBewerber() {
-        sleep(2000);
         Assert.assertTrue(driver.getPageSource().contains("Müller"));
     }
 
     @Then("Ich sehe auf der Bewerberseite die bereits angelegte Bewerberliste")
     public void ichSeheAufDerBewerberseiteDieBereitsAngelegteBewerberliste() {
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(bewerber.lBewerberMaskeAllBewerberListe, 0));
+    }
+    @When("ich klicke auf das {string}")
+    public void ich_klicke_auf_das(String element) {
+        ClickElementSteps.ClickAllElements(element);
     }
 }

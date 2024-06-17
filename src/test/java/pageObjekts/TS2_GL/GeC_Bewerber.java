@@ -5,6 +5,9 @@ import org.openqa.selenium.By;
 
 public class GeC_Bewerber extends BaseClass {
 
+    /*
+     ** Hier werden den Selektoren definiert
+     */
     public By lBenutzername = By.xpath("//input[@placeholder='Benutzername']");
     public By lPasswort = By.xpath("//input[@placeholder='Passwort']");
     public By lAkzeptieren = By.xpath("//span/bdi[text()='Akzeptieren']");
@@ -30,26 +33,18 @@ public class GeC_Bewerber extends BaseClass {
     public By lSuchFeldZürecksetzenButton = By.xpath("//div[contains(@title,'Zurücksetzen')]");
     public By lCheckboxButtonFürBewerberAuswählen = By.xpath(" //div[contains(@id,'item')]/div");
     public By lMessageFensterNachdemLöschen = By.xpath("//div[text()='Es wurde 1 Bewerber gelöscht.']");
+    public By NeuBewerberOrganisatorisches = By.xpath("//div[@id='MitarbeiterDetailViewId--tabFilterOrganisatorisches-text']");
+    public By navigationMenus(String title){return By.xpath("//div[@title='"+title+"']//span[@role='presentation']");}
+    public By navigationSubMenus(String title){return By.xpath("//ul[@role='group']/li[@title='"+title+"']");}
+    public By bewerberFußLeisteButton(String title){return By.xpath("//button[@title='"+title+"']/span/span");}
+    public By fußLeisteButtons(String title){return By.xpath("//bdi[text()='"+title+"']");}
 
 
-
-
-
-
-
-
-    public By navigationMenus(String title){
-        return By.xpath("//div[@title='"+title+"']//span[@role='presentation']");
-    }
-
-    public By navigationSubMenus(String title){
-        return By.xpath("//ul[@role='group']/li[@title='"+title+"']");
-    }
-
-    public By bewerberFußLeisteButton(String title){
-        return By.xpath("//button[@title='"+title+"']/span/span");
-    }
+      /*
+      ** Dieses Method ermoeglicht ein neue Bewerber Formular auszufuellen bzw. erstellen
+      */
     public void neueBewerberAnlegen(){
+
         click(lReiterPersonAnrede);
         click(lReiterPersonAnredeHerr);
         sendKeys(lReiterPersonName,"Müller");
@@ -63,6 +58,9 @@ public class GeC_Bewerber extends BaseClass {
         click(fußLeisteButtons("OK"));
     }
 
+    /*
+     ** Dieses Method ermoeglicht das Datei eines erstellten Bewerber zu andern
+     */
     public void angelegteBewerberÄndern(){
         click(lReiterPersonAnrede);
         click(lReiterPersonAnredeFrau);
@@ -75,16 +73,5 @@ public class GeC_Bewerber extends BaseClass {
         click(fußLeisteButtons("Speichern"));
         click(lÄnderungDerBewerberOkButton);
     }
-
-    public By fußLeisteButtons(String title){
-        return By.xpath("//bdi[text()='"+title+"']");
-    }
-
-
-
-
-
-
-
 
 }
