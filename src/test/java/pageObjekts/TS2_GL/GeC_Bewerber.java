@@ -80,6 +80,10 @@ public class GeC_Bewerber extends BaseClass {
         return By.xpath("//bdi[text()='"+title+"']");
     }
 
+    public By footerSeiteAlleButton(String buttonName){
+        return By.xpath("//div[@id='__shell0']//span[text()='"+buttonName+"']");
+    }
+
 
 
 
