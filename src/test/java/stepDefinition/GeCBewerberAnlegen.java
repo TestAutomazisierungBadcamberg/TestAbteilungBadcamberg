@@ -82,8 +82,4 @@ public class GeCBewerberAnlegen extends BaseClass {
         Assert.assertTrue(driver.getPageSource().contains("Müller"));
     }
 
-    @Then("Ich sehe auf der Bewerberseite die bereits angelegte Bewerberliste")
-    public void ichSeheAufDerBewerberseiteDieBereitsAngelegteBewerberliste() {
-        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(bewerber.lBewerberMaskeAllBewerberListe, 0));
-    }
 }

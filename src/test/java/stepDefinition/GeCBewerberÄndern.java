@@ -37,15 +37,18 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @Then("Ich sehe die von mir geänderte Bewerber")
     public void ichSeheDieVonMirGeänderteBewerber() {
-        sleep(2000);
+        sleep(1000);
         click(bewerber.bewerberFußLeisteButton("Suchen"));
         click(bewerber.lSuchFeldZürecksetzenButton);
         click(bewerber.lBewerberMaskeSuchfeldOkButton);
         Assert.assertTrue(driver.getPageSource().contains("Müller"));
+        sleep(1000);
     }
 
     @And("Ich ändere die Daten der angelegten Bewerber")
     public void ichÄndereDieDatenDerAngelegtenBewerber() {
         bewerber.angelegteBewerberÄndern();
     }
+
+
 }

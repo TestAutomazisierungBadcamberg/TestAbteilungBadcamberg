@@ -22,7 +22,6 @@ public class GeC_Bewerber extends BaseClass {
     public By lReiterPersonHausnummer = By.xpath("//input[@id='__input9-inner']");
     public By lReiterPersonEMail = By.xpath("//input[@id='__input16-inner']");
     public By lReiterPersonSpeichern = By.xpath("//span[@id='__button75-inner']");
-    public By lNachDemErstellungsOkButton = By.xpath("//bdi[text()='OK']");
     public By lBewerberMaskeAllBewerberListe = By.xpath("//tbody[@class='sapMListItems sapMTableTBody']/tr");
     public By lBewerberMaskeSuchbuttonTextFeld = By.xpath("//input[@type='search']");
     public By lBewerberMaskeSuchfeldOkButton = By.xpath("//span[@id='__button948-content']");
@@ -30,6 +29,8 @@ public class GeC_Bewerber extends BaseClass {
     public By lSuchFeldZürecksetzenButton = By.xpath("//div[contains(@title,'Zurücksetzen')]");
     public By lCheckboxButtonFürBewerberAuswählen = By.xpath(" //div[contains(@id,'item')]/div");
     public By lMessageFensterNachdemLöschen = By.xpath("//div[text()='Es wurde 1 Bewerber gelöscht.']");
+
+
 
 
 
@@ -83,11 +84,6 @@ public class GeC_Bewerber extends BaseClass {
     public By footerSeiteAlleButton(String buttonName){
         return By.xpath("//div[@id='__shell0']//span[text()='"+buttonName+"']");
     }
-
-
-
-
-
 
 
 
