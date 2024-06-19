@@ -1,4 +1,3 @@
-
 @klickTest
 Feature: Bewerber löschen
 
