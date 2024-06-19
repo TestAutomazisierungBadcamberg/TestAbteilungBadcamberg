@@ -1,4 +1,4 @@
-@klickTest
+
 Feature: Filtere nach Liferunde
   Scenario: Filter Option überprüfen, ob nach Lieferrunde gefiltert wird
     Given Ich melde mich als GL "url_TS2_GL"
