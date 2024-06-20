@@ -18,3 +18,4 @@ Feature: Bewerber löschen
     And Ich klicke auf der Seite der Button "OK"
     Then Ich sehe auf der Seite eine Minute die Meldung, dass die Löschung erfolgreich war
 
+

@@ -3,7 +3,9 @@ package stepDefinition;
 import baseClass.BaseClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
 import pageObjekts.TS2_GL.GeC_Bewerber;
+import propertyReader.PropertyReaders;
 
 
 public class GeCBewerberLöschen extends BaseClass {

@@ -47,4 +47,14 @@ public class GeCBewerberFiltern extends BaseClass {
         List<WebElement> nachBewerberliste = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeAllBewerberListe")));
         Assert.assertNotEquals(vorBewerberListe,nachBewerberliste);
     }
+
+    @And("Ich klicke auf das Checkbox LWP Münsterland GmbH")
+    public void ichKlickeAufDasCheckboxLWPMünsterlandGmbH() {
+        List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("FilternCheckBoxAllListe")));
+        waitForVisibilty(elements.get(1));
+        hoverOverByAction(elements.get(24));
+        click(elements.get(24));
+        sleep(1000);
+        click(bewerber.fußLeisteButtons("Ok"));
+    }
 }

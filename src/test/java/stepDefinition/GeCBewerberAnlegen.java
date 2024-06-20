@@ -53,6 +53,7 @@ public class GeCBewerberAnlegen extends BaseClass {
     @And("Ich klicke auf die Drop-Down-Menüs der Schaltfläche {string}")
     public void ichKlickeAufDieDropDownMenüsDerSchaltfläche(String menu) {
         click(bewerber.navigationSubMenus(menu));
+
     }
 
     @Then("Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche {string}")
