@@ -21,7 +21,9 @@ public class GeCBewerberFiltern extends BaseClass {
     @Then("Ich sehe auf der GeC_Bewerber Seite {string}")
     public void ichSeheAufDerSeite(String text) {
         sleep(1000);
-        waitForVisibilty(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeAllBewerberListe")));
+        WebElement liste = driver.findElement(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeAllBewerberListe")));
+        if (liste.isDisplayed())
+            waitForVisibilty(liste);
         vorBewerberListe = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeAllBewerberListe")));
         WebElement element = driver.findElement(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
         waitForVisibilty(element);
