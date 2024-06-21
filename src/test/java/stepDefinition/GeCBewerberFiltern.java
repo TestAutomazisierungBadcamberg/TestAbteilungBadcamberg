@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import pageObjekts.TS2_GL.GeC_Bewerber;
 import propertyReader.PropertyReaders;
@@ -56,5 +57,15 @@ public class GeCBewerberFiltern extends BaseClass {
         click(elements.get(24));
         sleep(1000);
         click(bewerber.fußLeisteButtons("Ok"));
+    }
+
+    @When("Ich fahre auf der Seite drei Reiter")
+    public void ichFahreAufDerSeiteDreiReiter() {
+        List<WebElement> reiters = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeObenDreiReiter")));
+        for (WebElement reiter : reiters) {
+            wait.until(ExpectedConditions.elementToBeClickable(reiter));
+            hoverOverByAction(reiter);
+            click(reiter);
+        }
     }
 }

@@ -4,27 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="19.06.24 14 Uhr">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber5_Sortierung.feature" afterDir="false" />
+    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="20.06.24 10 Uhr">
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberSortierung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber6_ReiterMitMaus.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberAnlegen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberAnlegen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberFiltern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberFiltern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberLöschen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberLöschen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber1_Anlegen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber1_Anlegen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber2_Ändern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber4_PersonÄndern.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber3_FiltereNachLiferunde.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber3_FiltereNachLiferunde.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber_Löschen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber32_Löschen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber1_Anlegen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber1_Anlegen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber2_Ändern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber2_Ändern.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber5_Sortierung.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber5_Sortierung.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataFile/GeC_Bewerber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dataFile/GeC_Bewerber.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber2_Ändern.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber3_FiltereNachLiferunde.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber3_FiltereNachLiferunde.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber_Löschen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber_Löschen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberAnlegen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberAnlegen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber_Löschen.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberFiltern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberFiltern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberLöschen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberLöschen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/screenshots/embedded1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,16 +46,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.de.sabris [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.Runner.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor": "Run",
+    "Maven.de.sabris [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.Runner.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="TestNG.Runner">
+    <configuration name="Feature: GeC_Bewerber1_Anlegen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber1_Anlegen.feature" />
+      <option name="GLUE" value="stepDefinition" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="de.sabris" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber1_Anlegen" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="de.sabris" />
       <extension name="coverage">
@@ -80,6 +96,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Runner" />
+        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber1_Anlegen" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718798819343</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="20.06.24 10 Uhr">
+      <option name="closed" value="true" />
+      <created>1718869621872</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718869621872</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +177,7 @@
     <MESSAGE value="19.06.24 13:36 Uhr" />
     <MESSAGE value="19.06.24 13:37 Uhr" />
     <MESSAGE value="19.06.24 14 Uhr" />
-    <option name="LAST_COMMIT_MESSAGE" value="19.06.24 14 Uhr" />
+    <MESSAGE value="20.06.24 10 Uhr" />
+    <option name="LAST_COMMIT_MESSAGE" value="20.06.24 10 Uhr" />
   </component>
 </project>
