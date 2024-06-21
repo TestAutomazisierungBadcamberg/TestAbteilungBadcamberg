@@ -51,4 +51,17 @@ public class GeCBewerberÄndern extends BaseClass {
     }
 
 
+    @And("Ich klicke auf den Reiter {string}")
+    public void ichKlickeAufDenReiter(String arg0) {
+        sleep(1000);
+        click(bewerber.lReiterOrganisatorisches);
+
+
+    }
+
+    @And("Ich klicke auf den Toolbar {string}")
+    public void ichKlickeAufDenToolbar(String arg0) {
+        sleep(1000);
+        click(bewerber.lToolbarändern);
+    }
 }

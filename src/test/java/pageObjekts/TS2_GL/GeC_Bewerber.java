@@ -29,6 +29,8 @@ public class GeC_Bewerber extends BaseClass {
     public By lSuchFeldZürecksetzenButton = By.xpath("//div[contains(@title,'Zurücksetzen')]");
     public By lCheckboxButtonFürBewerberAuswählen = By.xpath(" //div[contains(@id,'item')]/div");
     public By lMessageFensterNachdemLöschen = By.xpath("//div[text()='Es wurde 1 Bewerber gelöscht.']");
+    public By lReiterOrganisatorisches=By.xpath("//span[text()='Organisatorisches']");
+    public By lToolbarändern =By.xpath("//span/bdi[@id ='MitarbeiterDetailViewId--aendernButton-BDI-content']");
 
 
 
