@@ -3,8 +3,10 @@ package stepDefinition;
 import baseClass.BaseClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import pageObjekts.TS2_GL.GeC_Bewerber;
+import propertyReader.PropertyReaders;
 
 public class GeCBewerberÄndern extends BaseClass {
 
@@ -52,16 +54,9 @@ public class GeCBewerberÄndern extends BaseClass {
 
 
     @And("Ich klicke auf den Reiter {string}")
-    public void ichKlickeAufDenReiter(String arg0) {
+    public void ichKlickeAufDenReiter(String text) {
         sleep(1000);
-        click(bewerber.lReiterOrganisatorisches);
-
-
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
     }
 
-    @And("Ich klicke auf den Toolbar {string}")
-    public void ichKlickeAufDenToolbar(String arg0) {
-        sleep(1000);
-        click(bewerber.lToolbarändern);
-    }
 }

@@ -1,4 +1,4 @@
-@klickTest
+
 Feature: Bewerber Ergebnis Ändern
 
   Scenario: Ändere das Ergebnis an einem Bewerber
@@ -15,6 +15,6 @@ Feature: Bewerber Ergebnis Ändern
     And Ich klicke auf den Bewerber
     Then Ich sehe auf der Seite unter der Button "Ändern"
     And Ich klicke auf der Seite der Button "Ändern"
-    And Ich klicke auf den Reiter "Organisatorisches"
-    And Ich klicke auf den Toolbar "Ändern"
+    And Ich klicke auf den Reiter "ReiterOrganisatorisches"
+
 
