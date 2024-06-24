@@ -2,6 +2,7 @@ package pageObjekts.TS2_GL;
 
 import baseClass.BaseClass;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class GeC_Bewerber extends BaseClass {
 
@@ -29,12 +30,11 @@ public class GeC_Bewerber extends BaseClass {
     public By lSuchFeldZürecksetzenButton = By.xpath("//div[contains(@title,'Zurücksetzen')]");
     public By lCheckboxButtonFürBewerberAuswählen = By.xpath(" //div[contains(@id,'item')]/div");
     public By lMessageFensterNachdemLöschen = By.xpath("//div[text()='Es wurde 1 Bewerber gelöscht.']");
-
-
-
-
-
-
+    public By lErgebnisDropDown = By.xpath("//span[@id='__select19-arrow']");
+    public By lStatusErledigt =By.xpath("//span[@id='__select21-label']");
+    public By lErgebnisZusage=By.xpath("//li[@id='__item120-__select19-5']");
+    public By lStatusInBearbeitung=By.xpath("//div[@id='__select21']");
+    public By lErgebnisWarteliste=By.xpath("//li[@id='__item120-__select19-3']");
 
 
 
@@ -42,6 +42,10 @@ public class GeC_Bewerber extends BaseClass {
 
     public By navigationMenus(String title){
         return By.xpath("//div[@title='"+title+"']//span[@role='presentation']");
+    }
+
+    public By ErgebnisDropDown(String str){
+        return By.xpath("//li[@id='__item120-__select19-"+str+"']");
     }
 
     public By navigationSubMenus(String title){
