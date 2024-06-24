@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="21.06.24 17 Uhr">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber10_KommentarErfasse.feature" afterDir="false" />
+    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="21.06.24 10 Uhr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeC_BewerberKommentar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeC_BewerberKommentar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber9_KommentarLöschen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber9_KommentarLöschen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber2_ErgebnisÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber2_ErgebnisÄndern.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber7_Kommentare.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber7_Kommentare.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataFile/GeC_Bewerber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dataFile/GeC_Bewerber.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjekts/TS2_GL/GeC_Bewerber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObjekts/TS2_GL/GeC_Bewerber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberFiltern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberFiltern.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberÄndern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberÄndern.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" afterDir="false" />
@@ -199,23 +204,7 @@
       <option name="project" value="LOCAL" />
       <updated>1718958625503</updated>
     </task>
-    <task id="LOCAL-00008" summary="21.06.24 11 Uhr">
-      <option name="closed" value="true" />
-      <created>1718962668438</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1718962668438</updated>
-    </task>
-    <task id="LOCAL-00009" summary="21.06.24 17 Uhr">
-      <option name="closed" value="true" />
-      <created>1718980530307</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1718980530307</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,8 +226,6 @@
     <MESSAGE value="19.06.24 14 Uhr" />
     <MESSAGE value="20.06.24 10 Uhr" />
     <MESSAGE value="21.06.24 10 Uhr" />
-    <MESSAGE value="21.06.24 11 Uhr" />
-    <MESSAGE value="21.06.24 17 Uhr" />
-    <option name="LAST_COMMIT_MESSAGE" value="21.06.24 17 Uhr" />
+    <option name="LAST_COMMIT_MESSAGE" value="21.06.24 10 Uhr" />
   </component>
 </project>

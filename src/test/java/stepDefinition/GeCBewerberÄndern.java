@@ -3,7 +3,9 @@ package stepDefinition;
 import baseClass.BaseClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import pageObjekts.TS2_GL.GeC_Bewerber;
 import propertyReader.PropertyReaders;
@@ -53,10 +55,31 @@ public class GeCBewerberÄndern extends BaseClass {
     }
 
 
-    @And("Ich klicke auf den Reiter {string}")
-    public void ichKlickeAufDenReiter(String text) {
-        sleep(1000);
-        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
+
+    @And("Ich klicke  Reiter auf der Button {string}")
+    public void ichKlickeReiterAufDerButton(String text) {
+
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));}
+
+
+    @When("Ich wahle Zusage von Ergebnis Menu")
+    public void ichWahleZusageVonErgebnisMenu(){
+
+        click(bewerber.lErgebnisDropDown);
+        wait.until(ExpectedConditions.elementToBeClickable(bewerber.ErgebnisDropDown("5")));
+        waitForVisibilty(bewerber.lStatusErledigt);
+        click(bewerber.lErgebnisZusage);
+        Assert.assertTrue(driver.getPageSource().contains("Zusage"));
+       sleep(2000);
+
     }
 
+    @When("Ich wahle warteliste von Ergebnis Menu")
+    public void ichWartelisteVonErgebnisMenu()  {
+        click(bewerber.lErgebnisDropDown);
+        wait.until(ExpectedConditions.elementToBeClickable(bewerber.ErgebnisDropDown("3")));
+        waitForVisibilty(bewerber.lStatusInBearbeitung);
+        click(bewerber.lErgebnisWarteliste);
+        Assert.assertTrue(driver.getPageSource().contains("In Bearbeitung"));
+    }
 }
