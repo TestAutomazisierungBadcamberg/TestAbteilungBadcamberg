@@ -1,4 +1,4 @@
-@klickTest
+
 Feature: Kommenter erfassen
 
   Scenario: Erfassung eines Kommentar

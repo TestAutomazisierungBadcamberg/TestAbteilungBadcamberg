@@ -1,3 +1,4 @@
+
 Feature: Bewerber Ergebnis Ändern
 
   Scenario: Ändere das Ergebnis an einem Bewerber
@@ -14,3 +15,7 @@ Feature: Bewerber Ergebnis Ändern
     And Ich klicke auf den Bewerber
     Then Ich sehe auf der Seite unter der Button "Ändern"
     And Ich klicke auf der Seite der Button "Ändern"
+    Then Ich sehe auf der GeC_Bewerber Seite "ReiterOrganisatorisches"
+    And Ich klicke  Reiter auf der Button "ReiterOrganisatorisches"
+    When Ich wahle Zusage von Ergebnis Menu
+     And Ich wahle warteliste von Ergebnis Menu

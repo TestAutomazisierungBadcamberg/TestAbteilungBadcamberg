@@ -16,6 +16,6 @@ Feature: Kommenter löschen
     And Ich klicke auf den Bewerber
     Then Ich sehe auf der GeC_Bewerber Seite "ReiterKommentar"
     When Ich klicke auf den Reiter "ReiterKommentar"
-    Then Ich sehe auf der GeC_Bewerber Seite "ReiterKommentarInDemKommentarSteht"
+    Then Ich sehe auf der GeC_Bewerber Seite "ReiterKommentarInDemStehtKommentare"
     When Ich lösche einen Kommentar
     Then Ich sehe auf der GeC_Bewerber Seite "KommentarAlertMeldung"

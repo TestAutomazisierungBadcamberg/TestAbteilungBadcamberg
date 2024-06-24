@@ -14,7 +14,7 @@ public class GeC_BewerberKommentar extends BaseClass {
     GeC_Bewerber bewerber = new GeC_Bewerber();
     @When("Ich lösche einen Kommentar")
     public void ichLöscheEinenKommentar() {
-        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("ReiterKommentarInDemKommentarSteht")));
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("ReiterKommentarInDemStehtKommentare")));
         click(bewerber.fußLeisteButtons("Löschen"));
         sleep(1000);
         List<WebElement> löschen =driver.findElements(bewerber.fußLeisteButtons("Löschen"));
@@ -25,5 +25,10 @@ public class GeC_BewerberKommentar extends BaseClass {
     public void ichSchreibeEinenKommentar() {
         sendKeys(By.xpath(PropertyReaders.read("GeC_Bewerber").get("KommentarTextArea")),"engin Sabris ag");
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("KommentarAbschickenButton")));
+    }
+
+    @When("Ich klicke auf den Reiter {string}")
+    public void ichKlickeAufDenReiter(String text) {
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
     }
 }
