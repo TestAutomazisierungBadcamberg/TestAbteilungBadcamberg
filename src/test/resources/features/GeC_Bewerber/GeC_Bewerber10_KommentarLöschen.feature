@@ -1,7 +1,8 @@
 
-Feature: Bewerber Ergebnis Ändern
+Feature: Kommenter löschen
 
-  Scenario: Ändere das Ergebnis an einem Bewerber
+  Scenario: Löschen eines Kommentar
+
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
     And  Ich klicke auf der linken Seite der MasterPage auf der Button "GeC"
@@ -13,9 +14,8 @@ Feature: Bewerber Ergebnis Ändern
     And Ich klicke auf der Button OK, nachdem ich in das Feld Suche die gewünschten Bewerber eingegeben habe
     Then Ich sehe die von mir angelegte Bewerber
     And Ich klicke auf den Bewerber
-    Then Ich sehe auf der Seite unter der Button "Ändern"
-    And Ich klicke auf der Seite der Button "Ändern"
-    Then Ich sehe auf der GeC_Bewerber Seite "ReiterOrganisatorisches"
-    And Ich klicke  Reiter auf der Button "ReiterOrganisatorisches"
-    When Ich wahle Zusage von Ergebnis Menu
-     And Ich wahle warteliste von Ergebnis Menu
+    Then Ich sehe auf der GeC_Bewerber Seite "ReiterKommentar"
+    When Ich klicke auf den Reiter "ReiterKommentar"
+    Then Ich sehe auf der GeC_Bewerber Seite "ReiterKommentarInDemStehtKommentare"
+    When Ich lösche einen Kommentar
+    Then Ich sehe auf der GeC_Bewerber Seite "KommentarAlertMeldung"

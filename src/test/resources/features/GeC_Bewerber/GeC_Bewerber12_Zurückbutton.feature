@@ -1,4 +1,4 @@
-@klickTest
+
 Feature: Bewerber Zurückbutton
 
   Scenario: Ändere das Ergebnis an einem Bewerber
@@ -13,4 +13,3 @@ Feature: Bewerber Zurückbutton
     And Ich klicke auf der Button OK, nachdem ich in das Feld Suche die gewünschten Bewerber eingegeben habe
     Then Ich sehe die von mir angelegte Bewerber
     And Ich klicke auf den Bewerber
-    Then Ich sehe  der Seite unter der Button {string}")
