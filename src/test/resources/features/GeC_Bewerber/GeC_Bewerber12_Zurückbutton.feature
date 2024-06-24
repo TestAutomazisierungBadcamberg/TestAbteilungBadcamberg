@@ -1,4 +1,4 @@
-
+@klickTest
 Feature: Bewerber Zurückbutton
 
   Scenario: Ändere das Ergebnis an einem Bewerber
@@ -13,3 +13,19 @@ Feature: Bewerber Zurückbutton
     And Ich klicke auf der Button OK, nachdem ich in das Feld Suche die gewünschten Bewerber eingegeben habe
     Then Ich sehe die von mir angelegte Bewerber
     And Ich klicke auf den Bewerber
+    Then Ich sehe auf der GeC_Bewerber Seite "ReiterPerson"
+    Then Ich sehe auf der Seite unter der Button "Bewerber einstellen"
+    Then Ich klicke  Reiter auf der Button "ZuruckButton"
+    And Ich klicke auf den Bewerber
+    And Ich klicke  Reiter auf der Button "ReiterHR"
+    Then Ich klicke  Reiter auf der Button "ZuruckButton"
+    And Ich klicke auf den Bewerber
+    And Ich klicke  Reiter auf der Button "ReiterOrganisatorisches"
+    Then Ich klicke  Reiter auf der Button "ZuruckButton"
+    Then Ich sehe die von mir angelegte Bewerber
+
+
+
+
+
+

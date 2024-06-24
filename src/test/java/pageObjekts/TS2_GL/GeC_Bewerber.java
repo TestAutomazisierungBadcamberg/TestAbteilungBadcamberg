@@ -35,7 +35,7 @@ public class GeC_Bewerber extends BaseClass {
     public By lErgebnisZusage=By.xpath("//li[@id='__item120-__select19-5']");
     public By lStatusInBearbeitung=By.xpath("//div[@id='__select21']");
     public By lErgebnisWarteliste=By.xpath("//li[@id='__item120-__select19-3']");
-
+    public By lPersonreiter= By.xpath("//span[text()='Person']");
 
 
 

@@ -16,7 +16,7 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @And("Ich schreibe in das Suchfeld den gewünschten Bewerber, den ich ändern möchte")
     public void ichSchreibeInDasSuchfeldDenGewünschtenBewerberDenIchÄndernMöchte() {
-        sendKeys(bewerber.lBewerberMaskeSuchbuttonTextFeld,"Müller");
+        sendKeys(bewerber.lBewerberMaskeSuchbuttonTextFeld, "Müller");
     }
 
     @And("Ich klicke auf der Button OK, nachdem ich in das Feld Suche die gewünschten Bewerber eingegeben habe")
@@ -55,31 +55,32 @@ public class GeCBewerberÄndern extends BaseClass {
     }
 
 
-
     @And("Ich klicke  Reiter auf der Button {string}")
     public void ichKlickeReiterAufDerButton(String text) {
-
-        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));}
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
+    }
 
 
     @When("Ich wahle Zusage von Ergebnis Menu")
-    public void ichWahleZusageVonErgebnisMenu(){
+    public void ichWahleZusageVonErgebnisMenu() {
 
         click(bewerber.lErgebnisDropDown);
         wait.until(ExpectedConditions.elementToBeClickable(bewerber.ErgebnisDropDown("5")));
         waitForVisibilty(bewerber.lStatusErledigt);
         click(bewerber.lErgebnisZusage);
+        sleep(3000);
         Assert.assertTrue(driver.getPageSource().contains("Zusage"));
-       sleep(2000);
-
     }
 
     @When("Ich wahle warteliste von Ergebnis Menu")
-    public void ichWartelisteVonErgebnisMenu()  {
+    public void ichWartelisteVonErgebnisMenu() {
         click(bewerber.lErgebnisDropDown);
         wait.until(ExpectedConditions.elementToBeClickable(bewerber.ErgebnisDropDown("3")));
         waitForVisibilty(bewerber.lStatusInBearbeitung);
         click(bewerber.lErgebnisWarteliste);
+        sleep(2000);
         Assert.assertTrue(driver.getPageSource().contains("In Bearbeitung"));
     }
+
+
 }
