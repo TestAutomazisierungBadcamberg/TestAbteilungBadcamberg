@@ -20,4 +20,10 @@ public class GeC_BewerberKommentar extends BaseClass {
         List<WebElement> löschen =driver.findElements(bewerber.fußLeisteButtons("Löschen"));
         click(löschen.get(1));
     }
+
+    @When("Ich schreibe einen Kommentar")
+    public void ichSchreibeEinenKommentar() {
+        sendKeys(By.xpath(PropertyReaders.read("GeC_Bewerber").get("KommentarTextArea")),"engin Sabris ag");
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("KommentarAbschickenButton")));
+    }
 }
