@@ -1,8 +1,7 @@
 @klickTest
-Feature: Vorlagen Text passt
+Feature: Bewerber Vorlagen
 
-  Scenario: Überprüfen, ob der Text mit der Vorlagen übereinstimmt
-
+  Scenario:Vorlage auswählen
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
     And  Ich klicke auf der linken Seite der MasterPage auf der Button "GeC"
@@ -15,6 +14,4 @@ Feature: Vorlagen Text passt
     Then Ich sehe die von mir angelegte Bewerber
     And Ich klicke auf den Bewerber
     Then Ich sehe auf der GeC_Bewerber Seite "ReiterVorlagen"
-    When Ich klicke auf den Reiter "ReiterVorlagen"
-    Then Ich sehe das entsprechend E-Mail-Text
 

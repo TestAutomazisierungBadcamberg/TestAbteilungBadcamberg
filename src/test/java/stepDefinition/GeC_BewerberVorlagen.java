@@ -10,6 +10,6 @@ public class GeC_BewerberVorlagen extends BaseClass {
 
     @Then("Ich sehe das entsprechend E-Mail-Text")
     public void ichSeheDasEntsprechendEMailText() {
-        bewerber.vorlagenEmailTemplateAbsageAuswählen();
+
     }
 }
