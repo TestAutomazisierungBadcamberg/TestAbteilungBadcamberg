@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="24.06.24 13:36 Uhr">
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeC_BewerberVorlagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber14_VorlageTextAnpassen.feature" afterDir="false" />
+    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Engin 25.06.24 16 Uhr">
+      <change afterPath="$PROJECT_DIR$/test-output/screenshots/embedded1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber12_Zurückbutton.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber12_Zurückbutton.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +27,16 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2i02KOTnauIyGaXsm8I4PPteMkM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor": "Run",
     "Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor": "Run",
     "Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor": "Run",
@@ -212,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719216556929</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Engin 25.06.24 16 Uhr">
+      <option name="closed" value="true" />
+      <created>1719325570136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719325570136</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +230,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="17.06.24 13:28 Uhr" />
     <MESSAGE value="17.06.24 17:10 Uhr" />
     <MESSAGE value="19.06.24 13:36 Uhr" />
@@ -235,6 +239,7 @@
     <MESSAGE value="20.06.24 10 Uhr" />
     <MESSAGE value="21.06.24 10 Uhr" />
     <MESSAGE value="24.06.24 10:08 Uhr" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.06.24 10:08 Uhr" />
+    <MESSAGE value="Engin 25.06.24 16 Uhr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Engin 25.06.24 16 Uhr" />
   </component>
 </project>

@@ -19,3 +19,4 @@ Feature: Bewerber löschen
     Then Ich sehe auf der Seite eine Minute die Meldung, dass die Löschung erfolgreich war
 
 
+

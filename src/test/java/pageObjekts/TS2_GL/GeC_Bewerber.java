@@ -85,6 +85,7 @@ public class GeC_Bewerber extends BaseClass {
         sendKeys(lReiterPersonEMail,"ummuhann@gmail.com");
         click(fußLeisteButtons("Speichern"));
         click(lÄnderungDerBewerberOkButton);
+
     }
 
     public By fußLeisteButtons(String title){
@@ -101,6 +102,7 @@ public class GeC_Bewerber extends BaseClass {
         sleep(1000);
         String pageSource = driver.getPageSource();
         Assert.assertTrue(pageSource.contains("dass wir Ihnen die gewünschte Position nicht anbieten können"));
+
     }
 
 
