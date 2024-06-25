@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Umit 24.06.24 10:10Uhr">
+    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Engin 25.06.24 16 Uhr">
+      <change afterPath="$PROJECT_DIR$/test-output/screenshots/embedded1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberZurückbutton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber12_Zurückbutton.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber12_Zurückbutton.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber9_KommentarÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber9_KommentarÄndern.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,51 +23,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2i02KOTnauIyGaXsm8I4PPteMkM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: GeC_Bewerber12_Zurückbutton.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.de.sabris [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.Runner.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor": "Run",
+    "Maven.de.sabris [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.Runner.executor": "Debug",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.Runner">
-    <configuration name="Feature: GeC_Bewerber12_Zurückbutton" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber12_Zurückbutton.feature" />
-      <option name="GLUE" value="stepDefinition" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="de.sabris" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber12_Zurückbutton" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Feature: GeC_Bewerber1_Anlegen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber1_Anlegen.feature" />
@@ -153,7 +128,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Runner" />
-        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber12_Zurückbutton" />
         <item itemvalue="Cucumber Java.Feature: GeC_Bewerber7_Kommentare" />
         <item itemvalue="Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern" />
         <item itemvalue="Cucumber Java.Feature: GeC_Bewerber1_Anlegen" />
@@ -225,7 +199,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718958625503</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="24.06.24 10:08 Uhr">
+      <option name="closed" value="true" />
+      <created>1719216556929</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719216556929</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Engin 25.06.24 16 Uhr">
+      <option name="closed" value="true" />
+      <created>1719325570136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719325570136</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +230,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="17.06.24 13:28 Uhr" />
     <MESSAGE value="17.06.24 17:10 Uhr" />
     <MESSAGE value="19.06.24 13:36 Uhr" />
@@ -247,6 +238,8 @@
     <MESSAGE value="19.06.24 14 Uhr" />
     <MESSAGE value="20.06.24 10 Uhr" />
     <MESSAGE value="21.06.24 10 Uhr" />
-    <option name="LAST_COMMIT_MESSAGE" value="21.06.24 10 Uhr" />
+    <MESSAGE value="24.06.24 10:08 Uhr" />
+    <MESSAGE value="Engin 25.06.24 16 Uhr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Engin 25.06.24 16 Uhr" />
   </component>
 </project>

@@ -3,6 +3,8 @@ package pageObjekts.TS2_GL;
 import baseClass.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.asserts.Assertion;
 
 public class GeC_Bewerber extends BaseClass {
 
@@ -25,7 +27,7 @@ public class GeC_Bewerber extends BaseClass {
     public By lReiterPersonSpeichern = By.xpath("//span[@id='__button75-inner']");
     public By lBewerberMaskeAllBewerberListe = By.xpath("//tbody[@class='sapMListItems sapMTableTBody']/tr");
     public By lBewerberMaskeSuchbuttonTextFeld = By.xpath("//input[@type='search']");
-    public By lBewerberMaskeSuchfeldOkButton = By.xpath("//span[@id='__button948-content']");
+    public By lBewerberMaskeSuchfeldOkButton = By.xpath("//span[@id='__button951-content']");
     public By lÄnderungDerBewerberOkButton = By.xpath("//bdi[contains(@id,'__mbox-btn')]");
     public By lSuchFeldZürecksetzenButton = By.xpath("//div[contains(@title,'Zurücksetzen')]");
     public By lCheckboxButtonFürBewerberAuswählen = By.xpath(" //div[contains(@id,'item')]/div");
@@ -36,6 +38,9 @@ public class GeC_Bewerber extends BaseClass {
     public By lStatusInBearbeitung=By.xpath("//div[@id='__select21']");
     public By lErgebnisWarteliste=By.xpath("//li[@id='__item120-__select19-3']");
     public By lPersonreiter= By.xpath("//span[text()='Person']");
+    public  By lVorlagenDropDownMenu = By.xpath("//input[@class='sapUiPseudoInvisibleText']");
+    public By lVorlagenDropDownSubMenu = By.xpath("//ul[@id='__list34']/li[@aria-posinset='4']");
+    public  By lVorlagenEmpfaengerFeld = By.xpath("//input[contains(@placeholder,'Empfänger')]");
 
 
 
@@ -80,6 +85,7 @@ public class GeC_Bewerber extends BaseClass {
         sendKeys(lReiterPersonEMail,"ummuhann@gmail.com");
         click(fußLeisteButtons("Speichern"));
         click(lÄnderungDerBewerberOkButton);
+
     }
 
     public By fußLeisteButtons(String title){
@@ -90,6 +96,14 @@ public class GeC_Bewerber extends BaseClass {
         return By.xpath("//div[@id='__shell0']//span[text()='"+buttonName+"']");
     }
 
+    public void vorlagenEmailTemplateAbsageAuswählen(){
+        click(lVorlagenDropDownMenu);
+        click(lVorlagenDropDownSubMenu);
+        sleep(1000);
+        String pageSource = driver.getPageSource();
+        Assert.assertTrue(pageSource.contains("dass wir Ihnen die gewünschte Position nicht anbieten können"));
+
+    }
 
 
 }

@@ -1,8 +1,8 @@
+@klickTest
+Feature: Vorlagen Text passt
 
+  Scenario: Überprüfen, ob der Text mit der Vorlagen übereinstimmt
 
-Feature: Bewerber löschen
-
-  Scenario: Löschen der Daten bereits angelegten Bewerber
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
     And  Ich klicke auf der linken Seite der MasterPage auf der Button "GeC"
@@ -13,10 +13,7 @@ Feature: Bewerber löschen
     And Ich schreibe in das Suchfeld den gewünschten Bewerber, den ich ändern möchte
     And Ich klicke auf der Button OK, nachdem ich in das Feld Suche die gewünschten Bewerber eingegeben habe
     Then Ich sehe die von mir angelegte Bewerber
-    And Ich klicke das Häkchen neben dem Bewerber an, um ihn auszuwählen
-    And Ich klicke die Schaltfläche "löschen"
-    And Ich klicke auf der Seite der Button "OK"
-    Then Ich sehe auf der Seite eine Minute die Meldung, dass die Löschung erfolgreich war
-
-
-
+    And Ich klicke auf den Bewerber
+    Then Ich sehe auf der GeC_Bewerber Seite "ReiterVorlagen"
+    When Ich klicke auf den Reiter "ReiterVorlagen"
+    Then Ich sehe das entsprechend E-Mail-Text

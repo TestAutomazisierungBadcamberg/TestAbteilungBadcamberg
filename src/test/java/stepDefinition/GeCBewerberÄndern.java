@@ -21,7 +21,7 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @And("Ich klicke auf der Button OK, nachdem ich in das Feld Suche die gewünschten Bewerber eingegeben habe")
     public void ichKlickeAufDerButtonOKNachdemIchInDasFeldSucheDieGewünschtenBewerberEingegebenHabe() {
-        click(bewerber.lBewerberMaskeSuchfeldOkButton);
+        click(bewerber.fußLeisteButtons("Ok"));
     }
 
     @And("Ich klicke auf den Bewerber")

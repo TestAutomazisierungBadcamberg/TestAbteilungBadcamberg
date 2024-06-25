@@ -1,4 +1,4 @@
-@klickTest
+
 Feature: Bewerber Zurückbutton
 
   Scenario: Ändere das Ergebnis an einem Bewerber
