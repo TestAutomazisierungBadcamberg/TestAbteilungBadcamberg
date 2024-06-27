@@ -1,4 +1,4 @@
-@klickTest
+
 Feature: Bewerber Vorlagen
 
   Scenario:Vorlage auswählen

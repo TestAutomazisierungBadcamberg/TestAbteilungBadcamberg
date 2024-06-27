@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Engin 25.06.24 16 Uhr">
+    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Engin 25.06.24 17 Uhr">
       <change afterPath="$PROJECT_DIR$/test-output/screenshots/embedded1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseClass/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseClass/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeC_BewerberVorlagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeC_BewerberVorlagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber13Vorlagen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber13Vorlagen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber14_VorlageTextAnpassen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber14_VorlageEmfängerAuswählen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,22 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor": "Run",
-    "Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor": "Run",
-    "Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor": "Run",
-    "Maven.de.sabris [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.Runner.executor": "Debug",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.de.sabris [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.Runner.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.Runner">
     <configuration name="Feature: GeC_Bewerber1_Anlegen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
@@ -215,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719325570136</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Engin 25.06.24 17 Uhr">
+      <option name="closed" value="true" />
+      <created>1719326418145</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719326418145</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +257,7 @@
     <MESSAGE value="21.06.24 10 Uhr" />
     <MESSAGE value="24.06.24 10:08 Uhr" />
     <MESSAGE value="Engin 25.06.24 16 Uhr" />
-    <option name="LAST_COMMIT_MESSAGE" value="Engin 25.06.24 16 Uhr" />
+    <MESSAGE value="Engin 25.06.24 17 Uhr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Engin 25.06.24 17 Uhr" />
   </component>
 </project>

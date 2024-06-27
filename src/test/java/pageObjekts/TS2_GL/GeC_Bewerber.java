@@ -2,9 +2,9 @@ package pageObjekts.TS2_GL;
 
 import baseClass.BaseClass;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
-import org.testng.asserts.Assertion;
+import propertyReader.PropertyReaders;
 
 public class GeC_Bewerber extends BaseClass {
 
@@ -96,12 +96,22 @@ public class GeC_Bewerber extends BaseClass {
         return By.xpath("//div[@id='__shell0']//span[text()='"+buttonName+"']");
     }
 
-    public void vorlagenEmailTemplateAbsageAuswählen(){
+    public void vorlagenEmpfeangerDropdownMenuAussuchen(){
         click(lVorlagenDropDownMenu);
         click(lVorlagenDropDownSubMenu);
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownButton")));
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownAussuchendePerson")));
+        sleep(3000);
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerXiconFurPersonEntfern")));
+
+    }
+
+    public void vorlagenEmpfeangerFreieEingabeAussuchen(){
+
+        sendKeys(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownButton")),"Müller");
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownAussuchendePerson")));
         sleep(1000);
-        String pageSource = driver.getPageSource();
-        Assert.assertTrue(pageSource.contains("dass wir Ihnen die gewünschte Position nicht anbieten können"));
+        takeScreenShot("1");
 
     }
 

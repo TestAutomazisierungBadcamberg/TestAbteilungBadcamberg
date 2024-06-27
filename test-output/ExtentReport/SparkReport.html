@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Juni 25, 2024 04:14:28 PM</span></a>
+<a href="#"><span class="badge badge-primary">Juni 27, 2024 03:39:42 PM</span></a>
 </li>
 </ul>
 </div>
@@ -95,9 +95,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Vorlagen Text passt</p>
+            <p class="name">Vorlagen Empfänger auswählen</p>
             <p class="text-sm">
-              <span>16:14:29</span> / <span>00:03:44:708</span>
+              <span>15:39:43</span> / <span>00:00:52:764</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -105,10 +105,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Vorlagen Text passt</h5>
-<span class='badge badge-success'>06.25.2024 16:14:29</span>
-<span class='badge badge-danger'>06.25.2024 16:18:14</span>
-<span class='badge badge-default'>00:03:44:708</span>
+<h5 class="test-status text-fail">Vorlagen Empfänger auswählen</h5>
+<span class='badge badge-success'>06.27.2024 15:39:43</span>
+<span class='badge badge-danger'>06.27.2024 15:40:36</span>
+<span class='badge badge-default'>00:00:52:764</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -121,7 +121,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Überprüfen, ob der Text mit der Vorlagen übereinstimmt</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Überprüfen, ob der Empfänger auswählbar ist</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -194,24 +194,34 @@
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="stepDefinition.GeC_BewerberVorlagen.ichSeheDasEntsprechendEMailText()">
-                <span>Then Ich sehe das entsprechend E-Mail-Text</span>
+              <div class="step pass-bg" title="stepDefinition.GeC_BewerberVorlagen.ichSucheDenEmpfeangerDurchDropdownmenuAus()">
+                <span>When Ich suche den Empfeanger durch Dropdownmenu aus</span>
       <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at pageObjekts.TS2_GL.GeC_Bewerber.vorlagenEmailTemplateAbsageAuswählen(GeC_Bewerber.java:103)
-	at stepDefinition.GeC_BewerberVorlagen.ichSeheDasEntsprechendEMailText(GeC_BewerberVorlagen.java:13)
-	at ✽.Ich sehe das entsprechend E-Mail-Text(file:///C:/Users/ehereser/IdeaProjects/TestAbteilungBadcamberg/src/test/resources/features/GeC_Bewerber/GeC_Bewerber14_VorlageTextAnpassen.feature:19)
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinition.GeC_BewerberVorlagen.ichSucheDenEmpfeangerDurchFreieEingabeAus()">
+                <span>And Ich suche den Empfeanger durch freie Eingabe aus</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for baseClass.BaseClass$$Lambda/0x000001ece039fb18@491893f8 (tried for 20 second(s) with 100 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\ehereser\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54994}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54994/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ccdec78b71ebeeeb223ec7cea5158d6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at baseClass.BaseClass.sendKeys(BaseClass.java:58)
+	at baseClass.BaseClass.sendKeys(BaseClass.java:84)
+	at pageObjekts.TS2_GL.GeC_Bewerber.vorlagenEmpfeangerFreieEingabeAussuchen(GeC_Bewerber.java:110)
+	at stepDefinition.GeC_BewerberVorlagen.ichSucheDenEmpfeangerDurchFreieEingabeAus(GeC_BewerberVorlagen.java:21)
+	at ✽.Ich suche den Empfeanger durch freie Eingabe aus(file:///C:/Users/ehereser/IdeaProjects/TestAbteilungBadcamberg/src/test/resources/features/GeC_Bewerber/GeC_Bewerber14_VorlageEmfängerAuswählen.feature:20)
 </textarea>
       
       </div>
               </div>
               <div class="step pass-bg" title="AFTER">
                 <span>stepDefinition.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
-      <div>Überprüfen, ob der Text mit der Vorlagen übereinstimmt
+      <div>Überprüfen, ob der Empfänger auswählbar ist
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
     
@@ -248,12 +258,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">org.openqa.selenium.TimeoutException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>org.openqa.selenium.TimeoutException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -267,11 +277,11 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:14:58 PM</td>
+<td>15:40:16 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='17'>Then Ich sehe das entsprechend E-Mail-Text</a>
+<a href="#" class="linked" test-id='1' id='18'>And Ich suche den Empfeanger durch freie Eingabe aus</a>
 <div class="">
-<span class="badge badge-default">Vorlagen Text passt.Überprüfen, ob der Text mit der Vorlagen übereinstimmt.Then Ich sehe das entsprechend E-Mail-Text</span>
+<span class="badge badge-default">Vorlagen Empfänger auswählen.Überprüfen, ob der Empfänger auswählbar ist.And Ich suche den Empfeanger durch freie Eingabe aus</span>
 </div>
 </td>
 </tr>
@@ -319,11 +329,11 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:14:30 PM</td>
+<td>15:39:43 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Überprüfen, ob der Text mit der Vorlagen übereinstimmt</a>
+<a href="#" class="linked" test-id='1' id='2'>Überprüfen, ob der Empfänger auswählbar ist</a>
 <div class="">
-<span class="badge badge-default">Vorlagen Text passt.Überprüfen, ob der Text mit der Vorlagen übereinstimmt</span>
+<span class="badge badge-default">Vorlagen Empfänger auswählen.Überprüfen, ob der Empfänger auswählbar ist</span>
 </div>
 </td>
 </tr>
@@ -344,13 +354,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Juni 25, 2024 04:14:28 PM</h3>
+<h3>Juni 27, 2024 03:39:42 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Juni 25, 2024 04:18:14 PM</h3>
+<h3>Juni 27, 2024 03:40:36 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -421,7 +431,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='93%'><b>14</b> steps passed</small></div>
+<div><small data-tooltip='93%'><b>15</b> steps passed</small></div>
 <div>
 <small data-tooltip='6%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -440,7 +450,7 @@
 </div></div>
 <script>
 var timeline = {
-"Vorlagen Text passt":224.708
+"Vorlagen Empfänger auswählen":52.764
 };
 </script>
 <div class="row">
@@ -477,7 +487,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 14,
+passGrandChild: 15,
 failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,

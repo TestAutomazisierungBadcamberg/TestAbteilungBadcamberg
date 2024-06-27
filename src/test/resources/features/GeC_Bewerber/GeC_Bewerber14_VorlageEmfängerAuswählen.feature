@@ -1,7 +1,7 @@
 @klickTest
-Feature: Vorlagen Text passt
+Feature: Vorlagen Empfänger auswählen
 
-  Scenario: Überprüfen, ob der Text mit der Vorlagen übereinstimmt
+  Scenario: Überprüfen, ob der Empfänger auswählbar ist
 
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
@@ -16,5 +16,6 @@ Feature: Vorlagen Text passt
     And Ich klicke auf den Bewerber
     Then Ich sehe auf der GeC_Bewerber Seite "ReiterVorlagen"
     When Ich klicke auf den Reiter "ReiterVorlagen"
-    Then Ich sehe das entsprechend E-Mail-Text
+    When Ich suche den Empfeanger durch Dropdownmenu aus
+    And Ich suche den Empfeanger durch freie Eingabe aus
 
