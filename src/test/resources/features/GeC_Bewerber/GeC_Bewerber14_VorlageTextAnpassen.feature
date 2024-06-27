@@ -1,4 +1,4 @@
-@klickTest
+
 Feature: Vorlagen Text passt
 
   Scenario: Überprüfen, ob der Text mit der Vorlagen übereinstimmt
