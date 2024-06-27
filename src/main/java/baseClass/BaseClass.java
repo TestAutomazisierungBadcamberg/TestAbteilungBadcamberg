@@ -131,6 +131,15 @@ public class BaseClass {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         hoverOverByAction(element);
     }
+
+    public void hoverOverSendkeys(String text){
+        new Actions(driver)
+                .sendKeys(text)
+                .pause(500)
+                .build()
+                .perform();
+    }
+
     public void scrollElement(WebElement element){
         ((JavascriptExecutor)driver).executeAsyncScript("arguments[0].scrollIntoView()",element);
     }

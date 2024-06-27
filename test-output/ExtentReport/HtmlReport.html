@@ -40,6 +40,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -49,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Juni 27, 2024 04:08:28 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Juni 25, 2024 04:14:28 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -64,7 +65,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -118,12 +119,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>2</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
+                    <span class='strong'>0</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -136,12 +137,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>2</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
+                    <span class='strong'>0</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -156,12 +157,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>21</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='93%'>
+                    <span class='strong'>14</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='6%'>
+                    1</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -184,11 +185,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Vorlagen Text passt</span>
-						<span class='test-time'>Juni 27, 2024 04:08:28 PM</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-time'>Juni 25, 2024 04:14:29 PM</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -198,11 +199,11 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 26.512</span>
+	<span class='duration right label'>00 03 44.702</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Überprüfen, ob der Text mit der Vorlagen übereinstimmt</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Überprüfen, ob der Text mit der Vorlagen übereinstimmt</div>
 	</div>
 	
 	
@@ -276,76 +277,28 @@
 
 
 		</li>
-		<li test-id='17' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinition.GeC_BewerberVorlagen.ichSeheDasEntsprechendEMailText())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Ich sehe das entsprechend E-Mail-Text</div>
+		<li test-id='17' class='node then Fail' status='Fail'>
+			<div class="step-name" title="(stepDefinition.GeC_BewerberVorlagen.ichSeheDasEntsprechendEMailText())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Ich sehe das entsprechend E-Mail-Text</div>
 
 
+					<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pageObjekts.TS2_GL.GeC_Bewerber.vorlagenEmailTemplateAbsageAuswählen(GeC_Bewerber.java:103)
+	at stepDefinition.GeC_BewerberVorlagen.ichSeheDasEntsprechendEMailText(GeC_BewerberVorlagen.java:13)
+	at ✽.Ich sehe das entsprechend E-Mail-Text(file:///C:/Users/ehereser/IdeaProjects/TestAbteilungBadcamberg/src/test/resources/features/GeC_Bewerber/GeC_Bewerber14_VorlageTextAnpassen.feature:19)
+</textarea>
 		</li>
-	</ul>
-</div>
+		<li test-id='18' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>stepDefinition.Hooks.afterScenario(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">Überprüfen, ob der Text mit der Vorlagen übereinstimmt</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded1.png' src='../screenshots/embedded1.png'>
 					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='20'>
-					<div class='test-heading'>
-						<span class='test-name'>Bewerber Statistik öffnen</span>
-						<span class='test-time'>Juni 27, 2024 04:08:55 PM</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='21' status='pass'>
-
-	<span class='duration right label'>00 00 20.766</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Statistik öffnen</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@klickTest</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='23' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinition.GeCBewerberAnlegen.ichMeldeMichAlsGL(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Ich melde mich als GL "url_TS2_GL"</div>
-
-
-		</li>
-		<li test-id='24' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinition.GeCBewerberAnlegen.ichSeheAufDerSeiteDashboard())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Ich sehe auf der Seite Dashboard</div>
-
-
-		</li>
-		<li test-id='25' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinition.GeCBewerberAnlegen.ichKlickeAufDerLinkenSeiteDerMasterPageAufDerButton(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Ich klicke auf der linken Seite der MasterPage auf der Button "GeC"</div>
-
-
-		</li>
-		<li test-id='26' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinition.GeCBewerberAnlegen.ichSeheAufDerLinkenSeiteDieDropdownMenüsUnterDerMaskeGeC())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske GeC</div>
-
-
-		</li>
-		<li test-id='27' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinition.GeCBewerberAnlegen.ichKlickeAufDieDropDownMenüsDerSchaltfläche(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Bewerber"</div>
-
-
-		</li>
-		<li test-id='28' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinition.GeCBewerberAnlegen.ichSeheUntenAufDerSeiteInDerFußzeileDieSchaltfläche(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche "Statistik"</div>
-
-
-		</li>
-		<li test-id='29' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(stepDefinition.GeCBewerberAnlegen.ichKlickeDieSchaltfläche(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Ich klicke die Schaltfläche "Statistik"</div>
-
-
 		</li>
 	</ul>
 </div>
@@ -395,13 +348,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@klickTest</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -415,14 +368,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Juni 27, 2024 04:08:28 PM</td>
+										<td>Juni 25, 2024 04:14:30 PM</td>
 										<td class='linked' test-id='2'>Überprüfen, ob der Text mit der Vorlagen übereinstimmt</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Juni 27, 2024 04:08:55 PM</td>
-										<td class='linked' test-id='21'>Statistik öffnen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -438,7 +386,70 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Juni 25, 2024 04:14:58 PM</td>
+										<td class='linked' test-id='17'>Then Ich sehe das entsprechend E-Mail-Text</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pageObjekts.TS2_GL.GeC_Bewerber.vorlagenEmailTemplateAbsageAuswählen(GeC_Bewerber.java:103)
+	at stepDefinition.GeC_BewerberVorlagen.ichSeheDasEntsprechendEMailText(GeC_BewerberVorlagen.java:13)
+	at ✽.Ich sehe das entsprechend E-Mail-Text(file:///C:/Users/ehereser/IdeaProjects/TestAbteilungBadcamberg/src/test/resources/features/GeC_Bewerber/GeC_Bewerber14_VorlageTextAnpassen.feature:19)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -446,37 +457,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>21</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Juni 27, 2024 04:08:28 PM</div>
+					<div class='panel-lead'>Juni 25, 2024 04:14:28 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Juni 27, 2024 04:09:16 PM</div>
+			 		<div class='panel-lead'>Juni 25, 2024 04:18:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 48.050</div>
+					<div class='panel-lead'>00 03 46.257</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -493,11 +504,11 @@
 						</tr>
 						<tr>
 							<td>@klickTest</td>
-							<td>2</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -511,24 +522,24 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 2,
-				passParent: 2,
-				failParent: 0,
+                parentCount: 1,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 2,
-				passChild: 2,
-				failChild: 0,
+				childCount: 1,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 21,
-				passGrandChild: 21,
-				failGrandChild: 0,
+				grandChildCount: 15,
+				passGrandChild: 14,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -539,7 +550,7 @@
 		
 		<script>
 			var timeline = {
-			        "Vorlagen Text passt":26.512,"Bewerber Statistik öffnen":20.766
+			        "Vorlagen Text passt":224.708
 			};
 		</script>
 		
