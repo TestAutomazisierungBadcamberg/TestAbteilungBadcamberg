@@ -88,4 +88,13 @@ public class GeCBewerberAnlegen extends BaseClass {
         Assert.assertTrue(driver.getPageSource().contains("Bewerber"));
     }
 
+    @And("Ich klicke auf die geöffnete Button Mitarbeiter")
+    public void ichKlickeAufDieGeöffneteButtonMitarbeiter() {
+        click(bewerber.lNeueBewerberAnlegenFensterMitarbeiter);
+    }
+
+    @And("Ich fülle den Reiter Person für Mitarbeiter aus")
+    public void ichFülleDenReiterPersonFürMitarbeiterAus() {
+        bewerber.neueMitarbeiterAnlegen();
+    }
 }

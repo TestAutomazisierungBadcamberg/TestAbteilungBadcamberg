@@ -15,6 +15,7 @@ public class GeC_Bewerber extends BaseClass {
     public By lDashboardKachels = By.xpath("//div[@class='sapMGTContent']");
     public By lAnmeldenButtonAnmeldungsSeite = By.xpath("//bdi[text()='Anmelden']");
     public By lNeueBewerberAnlegenFensterBewerber = By.xpath("//div[text()='0']");
+    public By lNeueBewerberAnlegenFensterMitarbeiter = By.xpath("//div[text()='1']");
     public By lReiterPersonAnrede = By.xpath("//span[@id='__select4-arrow']");
     public By lReiterPersonAnredeHerr = By.xpath("//li[@id='__item50-__select4-0']");
     public By lReiterPersonAnredeFrau = By.xpath("//li[@id='__item50-__select4-1']");
@@ -33,73 +34,100 @@ public class GeC_Bewerber extends BaseClass {
     public By lCheckboxButtonFürBewerberAuswählen = By.xpath(" //div[contains(@id,'item')]/div");
     public By lMessageFensterNachdemLöschen = By.xpath("//div[text()='Es wurde 1 Bewerber gelöscht.']");
     public By lErgebnisDropDown = By.xpath("//span[@id='__select19-arrow']");
-    public By lStatusErledigt =By.xpath("//span[@id='__select21-label']");
-    public By lErgebnisZusage=By.xpath("//li[@id='__item120-__select19-5']");
-    public By lStatusInBearbeitung=By.xpath("//div[@id='__select21']");
-    public By lErgebnisWarteliste=By.xpath("//li[@id='__item120-__select19-3']");
-    public By lPersonreiter= By.xpath("//span[text()='Person']");
-    public  By lVorlagenDropDownMenu = By.xpath("//input[@class='sapUiPseudoInvisibleText']");
+    public By lStatusErledigt = By.xpath("//span[@id='__select21-label']");
+    public By lErgebnisZusage = By.xpath("//li[@id='__item120-__select19-5']");
+    public By lStatusInBearbeitung = By.xpath("//div[@id='__select21']");
+    public By lErgebnisWarteliste = By.xpath("//li[@id='__item120-__select19-3']");
+    public By lPersonreiter = By.xpath("//span[text()='Person']");
+    public By lVorlagenDropDownMenu = By.xpath("//input[@class='sapUiPseudoInvisibleText']");
     public By lVorlagenDropDownSubMenu = By.xpath("//ul[@id='__list34']/li[@aria-posinset='4']");
-    public  By lVorlagenEmpfaengerFeld = By.xpath("//input[contains(@placeholder,'Empfänger')]");
+    public By lVorlagenEmpfaengerFeld = By.xpath("//input[contains(@placeholder,'Empfänger')]");
     public By lZurücknavigieren=By.xpath("//span[@id='__button80-img']");
     public By lDoughnutsdropdown=By.xpath("//span[@id='menuButtonDoughnuts-internalBtn-inner']");
     public By lDoughnutsHerkunft= By.xpath("//li[@id='menuDoughnuts_1-unifiedmenu']");
     public By lDoughnutsWarteliste= By.xpath("//div[@id='menuDoughnuts_3-unifiedmenu-txt']");
 
-
-
-    public By navigationMenus(String title){
-        return By.xpath("//div[@title='"+title+"']//span[@role='presentation']");
+    public By navigationMenus(String title) {
+        return By.xpath("//div[@title='" + title + "']//span[@role='presentation']");
     }
 
-    public By ErgebnisDropDown(String str){
-        return By.xpath("//li[@id='__item120-__select19-"+str+"']");
+    public By ErgebnisDropDown(String str) {
+        return By.xpath("//li[@id='__item120-__select19-" + str + "']");
     }
 
-    public By navigationSubMenus(String title){
-        return By.xpath("//ul[@role='group']/li[@title='"+title+"']");
+    public By navigationSubMenus(String title) {
+        return By.xpath("//ul[@role='group']/li[@title='" + title + "']");
     }
 
-    public By bewerberFußLeisteButton(String title){
-        return By.xpath("//button[@title='"+title+"']/span/span");
+    public By bewerberFußLeisteButton(String title) {
+        return By.xpath("//button[@title='" + title + "']/span/span");
     }
-    public void neueBewerberAnlegen(){
+
+    public void neueBewerberAnlegen() {
         click(lReiterPersonAnrede);
         click(lReiterPersonAnredeHerr);
-        sendKeys(lReiterPersonName,"Müller");
-        sendKeys(lReiterPersonVorname,"Maximillian_Automation");
+        sendKeys(lReiterPersonName, "Müller");
+        sendKeys(lReiterPersonVorname, "Maximillian_Automation");
         click(lReiterPersonGeburtsdatum);
-        sendKeys(lReiterPersonGeburtsdatum,"17.12.1985");
-        sendKeys(lReiterPersonStraße,"Gerhart Hauptmann Str");
-        sendKeys(lReiterPersonHausnummer,"21");
-        sendKeys(lReiterPersonEMail,"engin@gmail.com");
+        sendKeys(lReiterPersonGeburtsdatum, "17.12.1985");
+        sendKeys(lReiterPersonStraße, "Gerhart Hauptmann Str");
+        sendKeys(lReiterPersonHausnummer, "21");
+        sendKeys(lReiterPersonEMail, "engin@gmail.com");
         click(lReiterPersonSpeichern);
         click(fußLeisteButtons("OK"));
     }
 
-    public void angelegteBewerberÄndern(){
+    public void neueMitarbeiterAnlegen() {
+        click(lReiterPersonAnrede);
+        click(lReiterPersonAnredeHerr);
+        sendKeys(lReiterPersonName, "Müller");
+        sendKeys(lReiterPersonVorname, "Ralf_Badcamber");
+        click(lReiterPersonGeburtsdatum);
+        sendKeys(lReiterPersonGeburtsdatum, "17.12.1985");
+        sendKeys(lReiterPersonStraße, "Bahnhof Str");
+        sendKeys(lReiterPersonHausnummer, "20");
+        click(lReiterPersonSpeichern);
+        click(fußLeisteButtons("OK"));
+    }
+
+
+    public void angelegteBewerberÄndern() {
         click(lReiterPersonAnrede);
         click(lReiterPersonAnredeFrau);
-        sendKeys(lReiterPersonVorname,"Sophia_Automation");
+        sendKeys(lReiterPersonVorname, "Sophia_Automation");
         click(lReiterPersonGeburtsdatum);
-        sendKeys(lReiterPersonGeburtsdatum,"01.01.1986");
-        sendKeys(lReiterPersonStraße,"Müllstraße");
-        sendKeys(lReiterPersonHausnummer,"50");
-        sendKeys(lReiterPersonEMail,"ummuhann@gmail.com");
+        sendKeys(lReiterPersonGeburtsdatum, "01.01.1986");
+        sendKeys(lReiterPersonStraße, "Müllstraße");
+        sendKeys(lReiterPersonHausnummer, "50");
+        sendKeys(lReiterPersonEMail, "sophia@gmail.com");
         click(fußLeisteButtons("Speichern"));
         click(lÄnderungDerBewerberOkButton);
 
     }
 
-    public By fußLeisteButtons(String title){
-        return By.xpath("//bdi[text()='"+title+"']");
+    public void angelegteMitarbeiterÄndern() {
+        click(lReiterPersonAnrede);
+        click(lReiterPersonAnredeFrau);
+        sendKeys(lReiterPersonVorname, "Maria_Automation");
+        click(lReiterPersonGeburtsdatum);
+        sendKeys(lReiterPersonGeburtsdatum, "01.01.1987");
+        sendKeys(lReiterPersonStraße, "Müllstraße");
+        sendKeys(lReiterPersonHausnummer, "50");
+        sendKeys(lReiterPersonEMail, "maria@gmail.com");
+        click(fußLeisteButtons("Speichern"));
+        click(lÄnderungDerBewerberOkButton);
+
     }
 
-    public By footerSeiteAlleButton(String buttonName){
-        return By.xpath("//div[@id='__shell0']//span[text()='"+buttonName+"']");
+    public By fußLeisteButtons(String title) {
+        return By.xpath("//bdi[text()='" + title + "']");
     }
 
-    public void vorlagenEmpfeangerDropdownMenuAussuchen(){
+    public By footerSeiteAlleButton(String buttonName) {
+        return By.xpath("//div[@id='__shell0']//span[text()='" + buttonName + "']");
+    }
+
+    public void vorlagenEmpfeangerDropdownMenuAussuchen() {
         click(lVorlagenDropDownMenu);
         click(lVorlagenDropDownSubMenu);
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownButton")));
@@ -109,12 +137,10 @@ public class GeC_Bewerber extends BaseClass {
 
     }
 
-    public void vorlagenEmpfeangerFreieEingabeAussuchen(){
-
-        sendKeys(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownButton")),"Müller");
+    public void vorlagenEmpfeangerFreieEingabeAussuchen() {
+        hoverOverSendkeys("Müller");
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownAussuchendePerson")));
         sleep(1000);
-        takeScreenShot("1");
 
     }
 

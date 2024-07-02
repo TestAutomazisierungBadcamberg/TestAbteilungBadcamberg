@@ -28,7 +28,7 @@ public class GeCBewerberFiltern extends BaseClass {
         List<WebElement> kommentar = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("ReiterKommentarInDemStehtKommentare")));
         if (!kommentar.isEmpty())
             waitForVisibilty(kommentar.get(0));
-
+        sleep(1000);
         vorBewerberListe = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeAllBewerberListe")));
         WebElement element = driver.findElement(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
         waitForVisibilty(element);
