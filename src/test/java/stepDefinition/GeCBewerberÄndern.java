@@ -83,4 +83,22 @@ public class GeCBewerberÄndern extends BaseClass {
     }
 
 
+    @And("Ich klicke auf der Zurück-navigieren Button")
+    public void ichKlickeAufDerZurückNavigierenButton() {
+        click(bewerber.lZurücknavigieren);
+    }
+
+    @And("Ich klicke auf der Button Doughnuts dropdown Button")
+    public void ichKlickeAufDerButtonDoughnutsDropdownButton() {
+        click(bewerber.fußLeisteButtons("Doughnuts"));
+        click(bewerber.lDoughnutsWarteliste);
+        sleep(1000);
+        click(bewerber.fußLeisteButtons("Doughnuts"));
+        click(bewerber.lDoughnutsHerkunft);
+        sleep(1000);
+        Assert.assertTrue(driver.getPageSource().contains("Bewerber Statistik"));
+
+
+
+    }
 }

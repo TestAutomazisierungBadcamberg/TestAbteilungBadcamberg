@@ -1,7 +1,7 @@
+@klickTest
+Feature: StatistikDoughnutsmenu
 
-Feature:Bewerber Statistik öffnen
-
-  Scenario:Statistik öffnen
+  Scenario: Statistiken Doughnutsmenu wählen
 
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
@@ -11,3 +11,4 @@ Feature:Bewerber Statistik öffnen
     Then Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche "Statistik"
     And Ich klicke die Schaltfläche "Statistik"
     Then Ich sehe die von mir angelegte Bewerber
+    And Ich klicke auf der Button Doughnuts dropdown Button

@@ -41,7 +41,10 @@ public class GeC_Bewerber extends BaseClass {
     public  By lVorlagenDropDownMenu = By.xpath("//input[@class='sapUiPseudoInvisibleText']");
     public By lVorlagenDropDownSubMenu = By.xpath("//ul[@id='__list34']/li[@aria-posinset='4']");
     public  By lVorlagenEmpfaengerFeld = By.xpath("//input[contains(@placeholder,'Empfänger')]");
-
+    public By lZurücknavigieren=By.xpath("//span[@id='__button80-img']");
+    public By lDoughnutsdropdown=By.xpath("//span[@id='menuButtonDoughnuts-internalBtn-inner']");
+    public By lDoughnutsHerkunft= By.xpath("//li[@id='menuDoughnuts_1-unifiedmenu']");
+    public By lDoughnutsWarteliste= By.xpath("//div[@id='menuDoughnuts_3-unifiedmenu-txt']");
 
 
 

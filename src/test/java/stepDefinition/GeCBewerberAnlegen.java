@@ -4,6 +4,7 @@ import baseClass.BaseClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import pageObjekts.TS2_GL.GeC_Bewerber;
@@ -64,6 +65,8 @@ public class GeCBewerberAnlegen extends BaseClass {
     @And("Ich klicke die Schaltfläche {string}")
     public void ichKlickeDieSchaltfläche(String title) {
         click(bewerber.bewerberFußLeisteButton(title));
+
+
     }
 
     @And("Ich klicke auf die geöffnete Button Bewerber")
@@ -81,6 +84,8 @@ public class GeCBewerberAnlegen extends BaseClass {
     public void ichSeheDieVonMirAngelegteBewerber() {
         sleep(2000);
         Assert.assertTrue(driver.getPageSource().contains("Müller"));
+        Assert.assertTrue(driver.getPageSource().contains("Bewerber Statistik"));
+        Assert.assertTrue(driver.getPageSource().contains("Bewerber"));
     }
 
 }
