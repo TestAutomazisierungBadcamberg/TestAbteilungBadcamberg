@@ -28,4 +28,3 @@ Feature: Mitarbeiter Anlegen
     When Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Mitarbeiter"
     And Ich klicke auf den Reiter "MitarbeiterReiterInBearbeitung"
     Then Ich sehe die von mir angelegte Bewerber
-    When
