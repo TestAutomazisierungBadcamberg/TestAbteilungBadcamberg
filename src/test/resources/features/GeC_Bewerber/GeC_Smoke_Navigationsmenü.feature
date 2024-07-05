@@ -10,3 +10,4 @@ Feature: Navigation-Menü überprüfen
     Then Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske GeC
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Besetzungskarte"
     When Ich sehe auf der GeC_Besetzungskarte Seite Einstellungen
+
