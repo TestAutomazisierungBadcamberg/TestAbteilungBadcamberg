@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Engin 25.06.24 16 Uhr">
-      <change afterPath="$PROJECT_DIR$/test-output/screenshots/embedded1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Umit 05.07.24 12:12 Uhr" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,31 +31,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor": "Run",
-    "Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor": "Run",
-    "Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor": "Run",
-    "Maven.de.sabris [clean].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.Runner.executor": "Debug",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber04_PersonÄndern.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber19_StatistikenDoughnutsmenu.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber21_StatistikDropdownDoughnut.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber24_StatistikZurückNavigieren.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber35_Bearbeiten.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber9_KommentarÄndern.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Smoke_Navigationsmenü.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Statistik öffnen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Statistiken Zurück-Button Uberprufen (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Statistiken Zurück-Button Uberprufen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Statistiken Zurück-Button überprüfen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Ändere das Ergebnis an einem Bewerber.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Änderung der Daten bereits angelegten Bewerber.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Änderungen am Bewerber.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.de.sabris [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.Runner.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.Runner">
-    <configuration name="Feature: GeC_Bewerber1_Anlegen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: GeC_Bewerber35_Bearbeiten" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber1_Anlegen.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber35_Bearbeiten.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber1_Anlegen" />
+      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber35_Bearbeiten" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -70,14 +82,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: GeC_Bewerber2_ErgebnisÄndern" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: GeC_Smoke_Navigationsmenü" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber2_ErgebnisÄndern.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Smoke_Navigationsmenü.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber2_ErgebnisÄndern" />
+      <option name="SUGGESTED_NAME" value="Feature: GeC_Smoke_Navigationsmenü" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -89,14 +101,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: GeC_Bewerber7_Kommentare" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber7_Kommentare.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Smoke_Navigationsmenü.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber7_Kommentare" />
+      <option name="NAME_FILTER" value="^Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Änderungen am Bewerber" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber35_Bearbeiten.feature" />
+      <option name="GLUE" value="stepDefinition" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="de.sabris" />
+      <option name="NAME_FILTER" value="^Änderungen am Bewerber$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Änderungen am Bewerber$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Änderungen am Bewerber" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -128,9 +161,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Runner" />
-        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber7_Kommentare" />
-        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern" />
-        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber1_Anlegen" />
+        <item itemvalue="Cucumber Java.Feature: GeC_Smoke_Navigationsmenü" />
+        <item itemvalue="Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen" />
+        <item itemvalue="Cucumber Java.Scenario: Änderungen am Bewerber" />
+        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber35_Bearbeiten" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +249,31 @@
       <option name="project" value="LOCAL" />
       <updated>1719325570136</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Umit 05.07.24 12:11 Uhr">
+      <option name="closed" value="true" />
+      <created>1720176164414</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720176164414</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Umit 05.07.24 12:11 Uhr">
+      <option name="closed" value="true" />
+      <created>1720176207559</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720176207559</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Umit 05.07.24 12:12 Uhr">
+      <option name="closed" value="true" />
+      <created>1720176229644</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720176229644</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +298,8 @@
     <MESSAGE value="21.06.24 10 Uhr" />
     <MESSAGE value="24.06.24 10:08 Uhr" />
     <MESSAGE value="Engin 25.06.24 16 Uhr" />
-    <option name="LAST_COMMIT_MESSAGE" value="Engin 25.06.24 16 Uhr" />
+    <MESSAGE value="Umit 05.07.24 12:11 Uhr" />
+    <MESSAGE value="Umit 05.07.24 12:12 Uhr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Umit 05.07.24 12:12 Uhr" />
   </component>
 </project>

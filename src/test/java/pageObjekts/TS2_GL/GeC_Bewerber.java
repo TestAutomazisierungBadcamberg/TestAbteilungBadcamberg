@@ -46,6 +46,12 @@ public class GeC_Bewerber extends BaseClass {
     public By lDoughnutsdropdown=By.xpath("//span[@id='menuButtonDoughnuts-internalBtn-inner']");
     public By lDoughnutsHerkunft= By.xpath("//li[@id='menuDoughnuts_1-unifiedmenu']");
     public By lDoughnutsWarteliste= By.xpath("//div[@id='menuDoughnuts_3-unifiedmenu-txt']");
+    public By lEinstellungen=By.xpath("//span[text()='Einstellungen']");
+
+
+
+
+
 
     public By navigationMenus(String title) {
         return By.xpath("//div[@title='" + title + "']//span[@role='presentation']");

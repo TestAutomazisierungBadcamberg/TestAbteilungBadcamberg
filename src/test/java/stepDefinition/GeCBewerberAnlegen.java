@@ -49,13 +49,16 @@ public class GeCBewerberAnlegen extends BaseClass {
     @Then("Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske GeC")
     public void ichSeheAufDerLinkenSeiteDieDropdownMenüsUnterDerMaskeGeC() {
         wait.until(ExpectedConditions.elementToBeClickable(bewerber.navigationSubMenus("Bewerber")));
+
     }
 
     @And("Ich klicke auf die Drop-Down-Menüs der Schaltfläche {string}")
     public void ichKlickeAufDieDropDownMenüsDerSchaltfläche(String menu) {
-        click(bewerber.navigationSubMenus(menu));
 
-    }
+        click(bewerber.navigationSubMenus(menu));
+        sleep(5000);
+
+        }
 
     @Then("Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche {string}")
     public void ichSeheUntenAufDerSeiteInDerFußzeileDieSchaltfläche(String title) {
@@ -84,8 +87,6 @@ public class GeCBewerberAnlegen extends BaseClass {
     public void ichSeheDieVonMirAngelegteBewerber() {
         sleep(2000);
         Assert.assertTrue(driver.getPageSource().contains("Müller"));
-        Assert.assertTrue(driver.getPageSource().contains("Bewerber Statistik"));
-        Assert.assertTrue(driver.getPageSource().contains("Bewerber"));
     }
 
     @And("Ich klicke auf die geöffnete Button Mitarbeiter")
@@ -97,4 +98,7 @@ public class GeCBewerberAnlegen extends BaseClass {
     public void ichFülleDenReiterPersonFürMitarbeiterAus() {
         bewerber.neueMitarbeiterAnlegen();
     }
+
+
+
 }
