@@ -1,4 +1,4 @@
-@klickTest
+
 Feature: Navigation-Menü überprüfen
 
   Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen
