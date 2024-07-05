@@ -19,3 +19,4 @@ Feature: Bewerber Ergebnis Ändern
     And Ich klicke  Reiter auf der Button "ReiterOrganisatorisches"
     When Ich wahle Zusage von Ergebnis Menu
      And Ich wahle warteliste von Ergebnis Menu
+

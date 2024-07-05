@@ -10,12 +10,12 @@ Feature: StatistikZurückNavigieren
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Bewerber"
     Then Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche "Statistik"
     And Ich klicke die Schaltfläche "Statistik"
-    Then Ich sehe die von mir angelegte Bewerber
+    Then Ich sehe auf der Seite unter der Button "Bewerber Statistik"
     And Ich klicke auf der Zurück-navigieren Button
-    Then Ich sehe die von mir angelegte Bewerber
+    Then Ich sehe auf der Seite unter der Button "Bewerber Statistik"
     And Ich klicke die Schaltfläche "Statistik"
     And Ich klicke auf der Zurück-navigieren Button
-    Then Ich sehe die von mir angelegte Bewerber
+    Then Ich sehe auf der Seite unter der Button "Bewerber Statistik"
     And Ich klicke die Schaltfläche "Statistik"
 
 
