@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -30,11 +31,14 @@ public class Driver {
                     drivers.set(new EdgeDriver());
                     break;
                 case FIREFOX:
-                    drivers.set(new FirefoxDriver());
+                    FirefoxOptions optionFirefox = new FirefoxOptions();
+                    optionFirefox.addPreference("dom.webnotifications.enabled", false);
+                    drivers.set(new FirefoxDriver(optionFirefox));
                     break;
                 default:
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--remote-allow-origins=*");
+                    options.addArguments("--disable-notifications");
                     if (DriverConfig.startMaximized)
                         options.addArguments("--start-maximized");
                     if (DriverConfig.headles)
