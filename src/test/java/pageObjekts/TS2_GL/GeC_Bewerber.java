@@ -3,8 +3,15 @@ package pageObjekts.TS2_GL;
 import baseClass.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import propertyReader.PropertyReaders;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+import java.util.Properties;
 
 public class GeC_Bewerber extends BaseClass {
 
@@ -32,7 +39,7 @@ public class GeC_Bewerber extends BaseClass {
     public By lÄnderungDerBewerberOkButton = By.xpath("//bdi[contains(@id,'__mbox-btn')]");
     public By lSuchFeldZürecksetzenButton = By.xpath("//div[contains(@title,'Zurücksetzen')]");
     public By lCheckboxButtonFürBewerberAuswählen = By.xpath(" //div[contains(@id,'item')]/div");
-    public By lMessageFensterNachdemLöschen = By.xpath("//div[text()='Es wurde 1 Bewerber gelöscht.']");
+    public By lMessageFensterNachdemLöschen = By.xpath("//div[contains(text(),'gelöscht')]");
     public By lErgebnisDropDown = By.xpath("//span[@id='__select19-arrow']");
     public By lStatusErledigt = By.xpath("//span[@id='__select21-label']");
     public By lErgebnisZusage = By.xpath("//li[@id='__item120-__select19-5']");
@@ -50,7 +57,7 @@ public class GeC_Bewerber extends BaseClass {
 
 
 
-
+    Properties properties = new Properties();
 
 
     public By navigationMenus(String title) {
@@ -67,6 +74,9 @@ public class GeC_Bewerber extends BaseClass {
 
     public By bewerberFußLeisteButton(String title) {
         return By.xpath("//button[@title='" + title + "']/span/span");
+    }
+    public By navigationGeCSubmenuReiter (String title){
+       return By.xpath("//span[contains(.,'" + title + "')]");
     }
 
     public void neueBewerberAnlegen() {
@@ -148,6 +158,7 @@ public class GeC_Bewerber extends BaseClass {
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownAussuchendePerson")));
         sleep(1000);
 
+       // properties.setProperty("GeC","Müller-"+ LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss")));
     }
 
 

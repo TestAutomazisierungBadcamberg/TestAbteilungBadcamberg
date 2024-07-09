@@ -28,3 +28,7 @@ Feature: Mitarbeiter Anlegen
     When Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Mitarbeiter"
     And Ich klicke auf den Reiter "MitarbeiterReiterInBearbeitung"
     Then Ich sehe die von mir angelegte Bewerber
+    When Ich lösche die von mir angelegte Mitarbeiter
+    And Ich klicke die Schaltfläche "löschen"
+    And Ich klicke auf der Seite der Button "OK"
+    Then Ich sehe auf der Seite eine Minute die Meldung, dass die Löschung erfolgreich war

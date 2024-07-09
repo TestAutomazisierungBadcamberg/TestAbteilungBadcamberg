@@ -1,14 +1,19 @@
 package stepDefinition;
 
 import baseClass.BaseClass;
+import driver.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import pageObjekts.TS2_GL.GeC_Bewerber;
 import propertyReader.PropertyReaders;
+
+import java.util.List;
 
 public class GeCBewerberÄndern extends BaseClass {
 
@@ -31,7 +36,6 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @Then("Ich sehe auf der Seite unter der Button {string}")
     public void ichSeheAufDerSeiteUnterDerButton(String text) {
-
         waitForVisibilty(bewerber.fußLeisteButtons(text));
 
     }
@@ -39,6 +43,12 @@ public class GeCBewerberÄndern extends BaseClass {
     @And("Ich klicke auf der Seite der Button {string}")
     public void ichKlickeAufDerSeiteUnterDerButton(String text) {
         click(bewerber.fußLeisteButtons(text));
+       /* WebElement element = driver.findElement(By.xpath(""));
+        int a = driver.findElement(By.xpath("")).getRect().height;
+        int b = driver.findElement(By.xpath("")).getRect().width;
+        new Actions(driver)
+                .moveToElement(element,)
+                .click().perform();*/
     }
 
     @Then("Ich sehe die von mir geänderte Bewerber")
@@ -100,16 +110,29 @@ public class GeCBewerberÄndern extends BaseClass {
         sleep(1000);
         Assert.assertTrue(driver.getPageSource().contains("Bewerber Statistik"));
 
-
-
     }
 
-
-
-
-
-        
+    @Then("Ich sehe auf der Bewerbermaske den Reiter {string}")
+    public void ichSeheAufDerBewerbermaskeDenReiter(String text) {
+        waitForVisibilty(bewerber.navigationGeCSubmenuReiter(text));
     }
+
+    @When("Ich klicke auf der Bewerbermaske den Reiter {string}")
+    public void ichKlickeAufDerBewerbermaskeDenReiter(String text) {
+        click(bewerber.navigationGeCSubmenuReiter(text));
+    }
+
+    @And("Ich wahle auf der Liste Tageszeitung")
+    public void ichWahleAufDerListeTageszeitung() {
+        List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VerfugbarFurLieferundeAllList")));
+        click(elements.get(0));
+    }
+
+    @When("Ich wahle ein Projekt aus")
+    public void ichWahleEinProjektAus() {
+        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BezirkszuweisungProjekt")));
+    }
+}
 
 
 
