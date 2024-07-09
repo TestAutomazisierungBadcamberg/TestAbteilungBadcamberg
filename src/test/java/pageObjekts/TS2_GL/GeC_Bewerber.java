@@ -50,12 +50,17 @@ public class GeC_Bewerber extends BaseClass {
     public By lVorlagenDropDownSubMenu = By.xpath("//ul[@id='__list34']/li[@aria-posinset='4']");
     public By lVorlagenEmpfaengerFeld = By.xpath("//input[contains(@placeholder,'Empfänger')]");
     public By lZurücknavigieren=By.xpath("//span[@id='__button80-img']");
+    public By lZurücknavigierenBezirk=By.xpath("//span[@id='__button82-inner']");
     public By lDoughnutsdropdown=By.xpath("//span[@id='menuButtonDoughnuts-internalBtn-inner']");
     public By lDoughnutsHerkunft= By.xpath("//li[@id='menuDoughnuts_1-unifiedmenu']");
     public By lDoughnutsWarteliste= By.xpath("//div[@id='menuDoughnuts_3-unifiedmenu-txt']");
     public By lEinstellungen=By.xpath("//span[text()='Einstellungen']");
-
-
+    public By lTextSchließen= By.xpath("//bdi[text()='Schließen']");
+    public By lBezirkbesetzung=By.xpath("//div[@id='GeC_master_Bezirksbesetzung_PageId-title']");
+    public By lBezirkbesetzungzuruckbutton= By.xpath("//span[@id ='__button82-inner']");
+    public By lDokumentezuruckbuton=By.xpath("//button[@id ='__button94']");
+    public By lZurückbezirkbesetzung=By.xpath("//button[@id='GeC_master_Bezirksbesetzung_PageId-navButton']");
+    public By lZiPBezirkezuruckbutton=By.xpath("//button[@id='GeC_master_ZiP_Bezirke_PageId-navButton']");
 
     Properties properties = new Properties();
 

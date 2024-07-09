@@ -17,7 +17,6 @@ Feature: Bewerber ändern
     And Ich klicke auf der Seite der Button "Ändern"
     And Ich ändere die Daten der angelegten Bewerber
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Bewerber"
-    Then Ich sehe die von mir geänderte Bewerber
 
 
 

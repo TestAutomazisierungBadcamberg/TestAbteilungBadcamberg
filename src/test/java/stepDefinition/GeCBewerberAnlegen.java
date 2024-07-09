@@ -59,7 +59,7 @@ public class GeCBewerberAnlegen extends BaseClass {
     public void ichKlickeAufDieDropDownMenüsDerSchaltfläche(String menu) {
 
         click(bewerber.navigationSubMenus(menu));
-        sleep(5000);
+        takeScreenShot("1");
 
         }
 

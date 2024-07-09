@@ -84,6 +84,7 @@ public class BaseClass {
         sendKeys(element,text);
     }
 
+
     public static void takeScreenShot(String fileName){
         String name = fileName+"_"+ LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-MM.ss"));
         String path= "test-output/screenshot/"+name+".png";
