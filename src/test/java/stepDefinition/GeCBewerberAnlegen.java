@@ -49,15 +49,12 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @And("Ich klicke auf der linken Seite der MasterPage auf der Button {string}")
     public void ichKlickeAufDerLinkenSeiteDerMasterPageAufDerButton(String maskeName) {
-        sleep(3000);
         click(bewerber.navigationMenus(maskeName));
-
     }
 
     @Then("Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske GeC")
     public void ichSeheAufDerLinkenSeiteDieDropdownMenüsUnterDerMaskeGeC() {
         wait.until(ExpectedConditions.elementToBeClickable(bewerber.navigationSubMenus("Bewerber")));
-        sleep(2000);
 
     }
 
@@ -65,8 +62,7 @@ public class GeCBewerberAnlegen extends BaseClass {
     public void ichKlickeAufDieDropDownMenüsDerSchaltfläche(String menu) {
         sleep(4000);
         click(bewerber.navigationSubMenus(menu));
-
-    }
+        }
 
     @Then("Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche {string}")
     public void ichSeheUntenAufDerSeiteInDerFußzeileDieSchaltfläche(String title) {
@@ -77,6 +73,8 @@ public class GeCBewerberAnlegen extends BaseClass {
     @And("Ich klicke die Schaltfläche {string}")
     public void ichKlickeDieSchaltfläche(String title) {
         click(bewerber.bewerberFußLeisteButton(title));
+
+
     }
 
     @And("Ich klicke auf die geöffnete Button Bewerber")

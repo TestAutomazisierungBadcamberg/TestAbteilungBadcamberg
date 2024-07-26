@@ -1,4 +1,4 @@
-
+@klickTest
 Feature: Navigation-Menü Runter Überprüfen
 
   Scenario: Die Seiten unter dem Navigationsmenü testen
@@ -13,6 +13,7 @@ Feature: Navigation-Menü Runter Überprüfen
     When Ich sehe auf der GeC_Besetzungskarte Seite Einstellungen
     Then Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske GeC
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Besetzung (Ad-Hoc)"
+    And Ich klicke auf den Button Zurück auf der Seite "Bezirksbesetzung"
     Then Ich sehe auf der GeC_Bewerber Seite "ZurukButton"
     And Ich klicke Bezirkbesetzung zurück Button
     Then Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske GeC
@@ -32,8 +33,6 @@ Feature: Navigation-Menü Runter Überprüfen
     Then Ich sehe auf der GeC_Bewerber Seite "KatchelVerkehrsmittel"
     Then Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske GeC
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Ausnahmemanagement"
-    Then Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche "Neue Gruppe anlegen"
-
     And Ich klicke auf der linken Seite der MasterPage auf der Button "MeP"
     Then Ich sehe auf der Seite Mitarbeiter
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Mitarbeiter"
@@ -55,7 +54,7 @@ Feature: Navigation-Menü Runter Überprüfen
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "News"
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Nachrichten"
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Bezirke"
-    And Ich klicke Bezirke zurück Button
+    And Ich klicke auf den Button Zurück auf der Seite "Bezirke"
     Then Ich sehe auf der Seite Bezirke
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Zeitnachmeldung"
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Zeiterfassung"

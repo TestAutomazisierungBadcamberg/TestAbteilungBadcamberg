@@ -42,18 +42,18 @@ public class GeC_Bewerber extends BaseClass {
     public By lVorlagenDropDownMenu = By.xpath("//input[@class='sapUiPseudoInvisibleText']");
     public By lVorlagenDropDownSubMenu = By.xpath("//ul[@id='__list34']/li[@aria-posinset='4']");
     public By lVorlagenEmpfaengerFeld = By.xpath("//input[contains(@placeholder,'Empfänger')]");
-    public By lZurücknavigieren=By.xpath("//span[@id='__button80-img']");
-    public By lZurücknavigierenBezirk=By.xpath("//span[@id='__button82-inner']");
-    public By lDoughnutsdropdown=By.xpath("//span[@id='menuButtonDoughnuts-internalBtn-inner']");
-    public By lDoughnutsHerkunft= By.xpath("//li[@id='menuDoughnuts_1-unifiedmenu']");
-    public By lDoughnutsWarteliste= By.xpath("//div[@id='menuDoughnuts_3-unifiedmenu-txt']");
-    public By lEinstellungen=By.xpath("//span[text()='Einstellungen']");
-    public By lTextSchließen= By.xpath("//bdi[text()='Schließen']");
-    public By lBezirkbesetzung=By.xpath("//div[@id='GeC_master_Bezirksbesetzung_PageId-title']");
-    public By lBezirkbesetzungzuruckbutton= By.xpath("//span[@id ='__button82-inner']");
-    public By lDokumentezuruckbuton=By.xpath("//button[@id ='__button94']");
-    public By lZurückbezirkbesetzung=By.xpath("//button[@id='GeC_master_Bezirksbesetzung_PageId-navButton']");
-    public By lZiPBezirkezuruckbutton=By.xpath("//button[@id='GeC_master_ZiP_Bezirke_PageId-navButton']");
+    public By lZurücknavigieren = By.xpath("//span[@id='__button80-img']");
+    public By lZurücknavigierenBezirk = By.xpath("//span[@id='__button82-inner']");
+    public By lDoughnutsdropdown = By.xpath("//span[@id='menuButtonDoughnuts-internalBtn-inner']");
+    public By lDoughnutsHerkunft = By.xpath("//li[@id='menuDoughnuts_1-unifiedmenu']");
+    public By lDoughnutsWarteliste = By.xpath("//div[@id='menuDoughnuts_3-unifiedmenu-txt']");
+    public By lEinstellungen = By.xpath("//span[text()='Einstellungen']");
+    public By lTextSchließen = By.xpath("//bdi[text()='Schließen']");
+    public By lBezirkbesetzung = By.xpath("//div[@id='GeC_master_Bezirksbesetzung_PageId-title']");
+    public By lBezirkbesetzungzuruckbutton = By.xpath("//span[@id ='__button82-inner']");
+    public By lDokumentezuruckbuton = By.xpath("//button[@id ='__button94']");
+    public By lZurückbezirkbesetzung = By.xpath("//button[@id='GeC_master_Bezirksbesetzung_PageId-navButton']");
+    public By lZiPBezirkezuruckbutton = By.xpath("//button[@id='GeC_master_ZiP_Bezirke_PageId-navButton']");
     public By lLandDropdownbutton=By.xpath("//span[@id='__select7-arrow']");
     public By lLandwählenDropdownbutton= By.xpath("(//li[text()='Belgien']) [1]");
     public By lProjektDropdownbutton=By.xpath("//span[@id='MitarbeiterBezirkzuweisungViewId--projektselect-arrow']");
@@ -88,8 +88,9 @@ public class GeC_Bewerber extends BaseClass {
     public By bewerberFußLeisteButton(String title) {
         return By.xpath("//button[@title='" + title + "']/span/span");
     }
-    public By navigationGeCSubmenuReiter (String title){
-       return By.xpath("//span[contains(.,'" + title + "')]");
+
+    public By navigationGeCSubmenuReiter(String title) {
+        return By.xpath("//span[contains(.,'" + title + "')]");
     }
 
     public void neueBewerberAnlegen() {
@@ -171,7 +172,11 @@ public class GeC_Bewerber extends BaseClass {
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownAussuchendePerson")));
         sleep(1000);
 
-       // properties.setProperty("GeC","Müller-"+ LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss")));
+        // properties.setProperty("GeC","Müller-"+ LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss")));
+    }
+
+    public By buttonZurück(String text) {
+        return By.xpath("//button[@title='Zurück' and contains(@id,'" + text + "')]");
     }
 
 

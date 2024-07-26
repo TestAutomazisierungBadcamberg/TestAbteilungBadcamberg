@@ -39,11 +39,7 @@ public class SmokeNavigasyonMenu  extends BaseClass {
         click(bewerber.lDokumentezuruckbuton);
     }
 
-    @And("Ich klicke Bezirkbesetzung zurück Button")
-    public void ichKlickeBezirkbesetzungZurückButton() {
-        sleep(2000);
-        click(bewerber.lZurückbezirkbesetzung);
-    }
+
 
     @Then("Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske MeP")
     public void ichSeheAufDerLinkenSeiteDieDropdownMenüsUnterDerMaskeMeP() {
@@ -82,6 +78,8 @@ public class SmokeNavigasyonMenu  extends BaseClass {
        sleep(3000);
         click(bewerber.fußLeisteButtons("Bestätigen"));
 
+
+
     }
 
 
@@ -89,5 +87,10 @@ public class SmokeNavigasyonMenu  extends BaseClass {
     public void ichSeheAufDerSeiteSystem() {
         sleep(3000);
         Assert.assertTrue(driver.getPageSource().contains("System"));
+    }
+
+    @And("Ich klicke auf den Button Zurück auf der Seite {string}")
+    public void ichKlickeAufDenButtonZurückAufDerSeite(String text) {
+        click(bewerber.buttonZurück(text));
     }
 }
