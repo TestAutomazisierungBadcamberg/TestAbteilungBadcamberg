@@ -4,289 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Umit 05.07.24 12:12 Uhr">
+    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Umit 09.07.24 12:12 Uhr">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber30_Bezirkzuweisungöffnen.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestNavigasyonMenu.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber01_Anlegen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber01_Anlegen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber02_ErgebnisÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber02_ErgebnisÄndern.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber03_FiltereNachLiferunde.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber03_FiltereNachLiferunde.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber04_PersonÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber04_PersonÄndern.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber05_Sortierung.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber05_Sortierung.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber06_ReiterMitMaus.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber06_ReiterMitMaus.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber07_KommentarErfasse.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber07_KommentarErfasse.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber08_Kommentare.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber08_Kommentare.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber09_KommentarÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber09_KommentarÄndern.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber10_KommentarLöschen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber10_KommentarLöschen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber12_Zurückbutton.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber12_Zurückbutton.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber13Vorlagen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber13Vorlagen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber14_VorlageEmfängerAuswählen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber14_VorlageEmfängerAuswählen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber18_StatistikÖffnen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber18_StatistikÖffnen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber19_StatistikenDoughnutsmenu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber19_StatistikenDoughnutsmenu.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber20_StatistikDropdownLines.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber20_StatistikDropdownLines.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber21_StatistikDropdownDoughnut.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber21_StatistikDropdownDoughnut.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber24_StatistikZurückNavigieren.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber24_StatistikZurückNavigieren.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber27_MitarbeiterAnlegen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber27_MitarbeiterAnlegen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber32_Löschen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber32_Löschen.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber35_Bearbeiten.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber35_Bearbeiten.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Smoke_Navigationsmenü.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/GeC_Smoke_Navigationsmenü.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/baseClass/BaseClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driver/Browser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driver/Driver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driver/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driver/DriverConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/propertyReader/PropertyReaders.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dataFile/GeC_Bewerber.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dataFile/Smoke.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dataFile/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber01_Anlegen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber02_ErgebnisÄndern.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber03_FiltereNachLiferunde.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber04_PersonÄndern.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber05_Sortierung.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber06_ReiterMitMaus.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber07_KommentarErfasse.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber08_Kommentare.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber09_KommentarÄndern.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber10_KommentarLöschen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber12_Zurückbutton.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber13Vorlagen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber14_VorlageEmfängerAuswählen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber18_StatistikÖffnen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber19_StatistikenDoughnutsmenu.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber20_StatistikDropdownLines.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber21_StatistikDropdownDoughnut.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber24_StatistikZurückNavigieren.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber27_MitarbeiterAnlegen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber32_Löschen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber35_Bearbeiten.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Smoke_Navigationsmenü.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjekts/TS2_GL/GeC_Bewerber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberAnlegen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberFiltern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberLöschen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberSortierung.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberÄndern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeC_BewerberKommentar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeC_BewerberVorlagen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/Hooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/SmokeNavigasyonMenu.class" beforeDir="false" />
-    </list>
-    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Umit 05.07.24 13:20 Uhr">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestRunerNavigationMenu.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.29.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.37.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.38.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.39.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.51.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.52.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.53.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.54.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.55.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.58.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-05-07.59.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.29.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.39.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.41.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.49.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.51.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.52.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.53.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.54.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.55.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-07-07.59.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.29.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.30.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.34.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.35.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.37.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.38.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.39.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.41.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.42.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.43.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.44.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.46.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.47.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.49.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.51.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.52.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.53.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.54.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.55.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.58.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-08-07.59.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.27.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.28.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.29.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.31.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.33.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.37.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.38.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.39.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.40.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.41.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.42.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.43.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.44.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.45.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.46.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.47.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.49.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.51.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.53.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.54.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.55.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/1_2024-07-09-07.57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/screenshot/abc_2024-07-08-07.12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baseClass/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseClass/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/driver/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberAnlegen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberAnlegen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeC_BewerberVorlagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeC_BewerberVorlagen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/SmokeNavigasyonMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/SmokeNavigasyonMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dataFile/GeC_Bewerber.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber02_ErgebnisÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber02_ErgebnisÄndern.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber04_PersonÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber04_PersonÄndern.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/GeC_Smoke_Navigationsmenü.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/GeC_Smoke_Navigationsmenü.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/baseClass/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/baseClass/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber29_Bezirkszuweisung.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber29_Bezirkszuweisung.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber35_Bearbeiten.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber35_Bearbeiten.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestRunerNavigationMenu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestRunerNavigationMenu.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/driver/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driver/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dataFile/GeC_Bewerber.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dataFile/Smoke.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dataFile/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber01_Anlegen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber02_ErgebnisÄndern.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber03_FiltereNachLiferunde.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber04_PersonÄndern.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber05_Sortierung.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber06_ReiterMitMaus.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber07_KommentarErfasse.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber08_Kommentare.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber09_KommentarÄndern.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber10_KommentarLöschen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber12_Zurückbutton.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber13Vorlagen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber14_VorlageEmfängerAuswählen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber18_StatistikÖffnen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber19_StatistikenDoughnutsmenu.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber20_StatistikDropdownLines.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber21_StatistikDropdownDoughnut.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber24_StatistikZurückNavigieren.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber27_MitarbeiterAnlegen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber32_Löschen.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Bewerber35_Bearbeiten.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/GeC_Bewerber/GeC_Smoke_Navigationsmenü.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pageObjekts/TS2_GL/GeC_Bewerber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObjekts/TS2_GL/GeC_Bewerber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/Runner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberAnlegen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberAnlegen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberÄndern.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/GeCBewerberÄndern.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinition/SmokeNavigasyonMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinition/SmokeNavigasyonMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/HtmlReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport/SparkReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/cucumber-reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/screenshots/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/screenshots/embedded1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/screenshots/embedded1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,46 +55,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber04_PersonÄndern.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber19_StatistikenDoughnutsmenu.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber21_StatistikDropdownDoughnut.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber24_StatistikZurückNavigieren.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber35_Bearbeiten.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Bewerber9_KommentarÄndern.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: GeC_Smoke_Navigationsmenü.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Statistik öffnen.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Statistiken Zurück-Button Uberprufen (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Statistiken Zurück-Button Uberprufen.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Statistiken Zurück-Button überprüfen.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Ändere das Ergebnis an einem Bewerber.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Änderung der Daten bereits angelegten Bewerber.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Änderungen am Bewerber.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.de.sabris [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.Runner.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Cucumber Java.Feature: GeC_Bewerber02_ErgebnisÄndern.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber04_PersonÄndern.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber19_StatistikenDoughnutsmenu.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber21_StatistikDropdownDoughnut.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber24_StatistikZurückNavigieren.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber29_Bezirkszuweisung.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber30_Bezirkzuweisungöffnen.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber35_Bearbeiten (1).executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber35_Bearbeiten.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor": "Run",
+    "Cucumber Java.Feature: GeC_Bewerber9_KommentarÄndern.executor": "Run",
+    "Cucumber Java.Feature: GeC_Smoke_Navigationsmenü.executor": "Run",
+    "Cucumber Java.Feature: SmokeTestNavigasyonMenu.executor": "Run",
+    "Cucumber Java.Feature: SmokeTestRunerNavigationMenu.executor": "Run",
+    "Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen.executor": "Run",
+    "Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü testen (1).executor": "Run",
+    "Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü testen.executor": "Run",
+    "Cucumber Java.Scenario: Statistik öffnen.executor": "Run",
+    "Cucumber Java.Scenario: Statistiken Zurück-Button Uberprufen (1).executor": "Run",
+    "Cucumber Java.Scenario: Statistiken Zurück-Button Uberprufen.executor": "Run",
+    "Cucumber Java.Scenario: Statistiken Zurück-Button überprüfen.executor": "Run",
+    "Cucumber Java.Scenario: Ändere das Ergebnis an einem Bewerber.executor": "Run",
+    "Cucumber Java.Scenario: Änderung der Daten bereits angelegten Bewerber.executor": "Run",
+    "Cucumber Java.Scenario: Änderungen am Bewerber (1).executor": "Run",
+    "Cucumber Java.Scenario: Änderungen am Bewerber.executor": "Run",
+    "Cucumber Java.Scenario: Öffne die Karte auf der Bezirkzuweisungsseite.executor": "Run",
+    "Maven.de.sabris [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.Runner.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.Runner">
-    <configuration name="Feature: GeC_Bewerber35_Bearbeiten" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: SmokeTestNavigasyonMenu" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber35_Bearbeiten.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestNavigasyonMenu.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber35_Bearbeiten" />
+      <option name="SUGGESTED_NAME" value="Feature: SmokeTestNavigasyonMenu" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -365,14 +116,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: GeC_Smoke_Navigationsmenü" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: SmokeTestRunerNavigationMenu" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Smoke_Navigationsmenü.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestRunerNavigationMenu.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: GeC_Smoke_Navigationsmenü" />
+      <option name="SUGGESTED_NAME" value="Feature: SmokeTestRunerNavigationMenu" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -384,15 +135,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Die Seiten unter dem Navigationsmenü testen (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Smoke_Navigationsmenü.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestNavigasyonMenu.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
-      <option name="NAME_FILTER" value="^Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen" />
+      <option name="NAME_FILTER" value="^Die Seiten unter dem Navigationsmenü testen$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Die Seiten unter dem Navigationsmenü testen$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Die Seiten unter dem Navigationsmenü testen" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -404,15 +155,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Änderungen am Bewerber" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Die Seiten unter dem Navigationsmenü testen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Bewerber35_Bearbeiten.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestRunerNavigationMenu.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
-      <option name="NAME_FILTER" value="^Änderungen am Bewerber$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Änderungen am Bewerber$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Änderungen am Bewerber" />
+      <option name="NAME_FILTER" value="^Die Seiten unter dem Navigationsmenü testen$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Die Seiten unter dem Navigationsmenü testen$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Die Seiten unter dem Navigationsmenü testen" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -444,10 +195,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Runner" />
-        <item itemvalue="Cucumber Java.Feature: GeC_Smoke_Navigationsmenü" />
-        <item itemvalue="Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen" />
-        <item itemvalue="Cucumber Java.Scenario: Änderungen am Bewerber" />
-        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber35_Bearbeiten" />
+        <item itemvalue="Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü testen (1)" />
+        <item itemvalue="Cucumber Java.Feature: SmokeTestNavigasyonMenu" />
+        <item itemvalue="Cucumber Java.Feature: SmokeTestRunerNavigationMenu" />
+        <item itemvalue="Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü testen" />
       </list>
     </recent_temporary>
   </component>
@@ -556,7 +307,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720176229644</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Umit 09.07.24 12:12 Uhr">
+      <option name="closed" value="true" />
+      <created>1720525919620</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720525919620</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -583,6 +342,7 @@
     <MESSAGE value="Engin 25.06.24 16 Uhr" />
     <MESSAGE value="Umit 05.07.24 12:11 Uhr" />
     <MESSAGE value="Umit 05.07.24 12:12 Uhr" />
-    <option name="LAST_COMMIT_MESSAGE" value="Umit 05.07.24 12:12 Uhr" />
+    <MESSAGE value="Umit 09.07.24 12:12 Uhr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Umit 09.07.24 12:12 Uhr" />
   </component>
 </project>

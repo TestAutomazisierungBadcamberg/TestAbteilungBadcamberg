@@ -16,6 +16,15 @@ Scenario: Änderungen am Bewerber
   And Ich klicke auf den Bewerber
   Then Ich sehe auf der Seite unter der Button "Ändern"
   And Ich klicke auf der Seite der Button "Ändern"
+  And Ich klicke auf den Dropdown-Button für das Land
+  When Ich wähle ein Land aus der Dropdown-Liste aus
+  And Ich klicke auf der Seite der Button "Speichern"
+
+
+
+
+
+
 
 
 

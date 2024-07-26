@@ -20,4 +20,6 @@ public class GeC_BewerberVorlagen extends BaseClass {
     public void ichSucheDenEmpfeangerDurchFreieEingabeAus() {
         bewerber.vorlagenEmpfeangerFreieEingabeAussuchen();
     }
+
+
 }

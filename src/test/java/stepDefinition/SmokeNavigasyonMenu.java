@@ -22,6 +22,7 @@ public class SmokeNavigasyonMenu  extends BaseClass {
     public void ichSeheAufDerGeC_BesetzungskarteSeiteEinstellungen() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(bewerber.lEinstellungen));
         click(bewerber.fußLeisteButtons("Schließen"));
+        sleep(2000);
 
     }
 
@@ -58,37 +59,35 @@ public class SmokeNavigasyonMenu  extends BaseClass {
 
     @Then("Ich sehe auf der Seite News")
     public void ichSeheAufDerSeiteNews() {
-        sleep(1000);
+        sleep(2000);
         Assert.assertTrue(driver.getPageSource().contains("News"));
     }
 
     @And("Ich klicke Bezirke zurück Button")
     public void ichKlickeBezirkeZurückButton() {
-     sleep(1000);
+     sleep(2000);
      click(bewerber.lZiPBezirkezuruckbutton);
 
     }
 
     @Then("Ich sehe auf der Seite Bezirke")
     public void ichSeheAufDerSeiteBezirke() {
-        sleep(1000);
+        sleep(2000);
         Assert.assertTrue(driver.getPageSource().contains("Bezirke"));
 
     }
 
     @When("Ich sehe auf der ZiP_Interakive Karte Seite Bestätigen")
     public void ichSeheAufDerZiP_InterakiveKarteSeiteBestätigen() {
-       sleep(1000);
+       sleep(3000);
         click(bewerber.fußLeisteButtons("Bestätigen"));
-
-
 
     }
 
 
     @Then("Ich sehe auf der Seite System")
     public void ichSeheAufDerSeiteSystem() {
-        sleep(1000);
+        sleep(3000);
         Assert.assertTrue(driver.getPageSource().contains("System"));
     }
 }

@@ -2,15 +2,8 @@ package pageObjekts.TS2_GL;
 
 import baseClass.BaseClass;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
 import propertyReader.PropertyReaders;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
 import java.util.Properties;
 
 public class GeC_Bewerber extends BaseClass {
@@ -61,6 +54,18 @@ public class GeC_Bewerber extends BaseClass {
     public By lDokumentezuruckbuton=By.xpath("//button[@id ='__button94']");
     public By lZurückbezirkbesetzung=By.xpath("//button[@id='GeC_master_Bezirksbesetzung_PageId-navButton']");
     public By lZiPBezirkezuruckbutton=By.xpath("//button[@id='GeC_master_ZiP_Bezirke_PageId-navButton']");
+    public By lLandDropdownbutton=By.xpath("//span[@id='__select7-arrow']");
+    public By lLandwählenDropdownbutton= By.xpath("(//li[text()='Belgien']) [1]");
+    public By lProjektDropdownbutton=By.xpath("//span[@id='MitarbeiterBezirkzuweisungViewId--projektselect-arrow']");
+    public By lProjektauswahlen1 =By.xpath("//li[@id='__item134-MitarbeiterBezirkzuweisungViewId--projektselect-0']");
+    public By lGesellschaftDropdown=By.xpath("//span[@id='__box26-arrow']");
+    public By lGesellschaftExternwahlen =By.xpath("//div[@id='__item480-selectMulti']");
+   public  By lBezirkeauswählen= By.xpath("//span[@id='MitarbeiterBezirkzuweisungViewId--bzcombobox-vhi']");
+   public  By lBezirkeauswählen1=By.xpath("//button[@id='__button89-internalBtn']");
+    public By lBezirkealleswählen=By.xpath("//div[@id='__dialog9-scrollCont']");
+
+
+
 
     Properties properties = new Properties();
 
@@ -71,7 +76,10 @@ public class GeC_Bewerber extends BaseClass {
 
     public By ErgebnisDropDown(String str) {
         return By.xpath("//li[@id='__item120-__select19-" + str + "']");
+
     }
+
+
 
     public By navigationSubMenus(String title) {
         return By.xpath("//ul[@role='group']/li[@title='" + title + "']");
