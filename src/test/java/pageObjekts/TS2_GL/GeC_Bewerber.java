@@ -153,16 +153,13 @@ public class GeC_Bewerber extends BaseClass {
         return By.xpath("//bdi[text()='" + title + "']");
     }
 
-    public By footerSeiteAlleButton(String buttonName) {
-        return By.xpath("//div[@id='__shell0']//span[text()='" + buttonName + "']");
-    }
 
     public void vorlagenEmpfeangerDropdownMenuAussuchen() {
         click(lVorlagenDropDownMenu);
         click(lVorlagenDropDownSubMenu);
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownButton")));
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownAussuchendePerson")));
-        sleep(3000);
+        sleep(2000);
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerXiconFurPersonEntfern")));
 
     }

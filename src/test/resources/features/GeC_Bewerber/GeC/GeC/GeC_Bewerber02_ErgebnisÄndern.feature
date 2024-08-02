@@ -1,4 +1,4 @@
-
+@klickTest2
 Feature: Bewerber Ergebnis Ändern
 
   Scenario: Ändere das Ergebnis an einem Bewerber

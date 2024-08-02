@@ -1,4 +1,4 @@
-
+@klickTest
 Feature: Vorlagen Empfänger auswählen
 
   Scenario: Überprüfen, ob der Empfänger auswählbar ist

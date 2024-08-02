@@ -1,4 +1,4 @@
-
+@klickTest
 Feature:Öffnen der Statistik Dropdown-Menü von Lines
 
   Scenario:Dropdownmenü von Lines öffnen

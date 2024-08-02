@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = {"src/test/resources/features"},
         glue = {"stepDefinition"},
-        tags = "@klickTest",
+        tags = "@klickTest1",
         plugin = {
                 "json:test-output/cucumber-reports/cucumber.json",
                 "html:S:\\\\sabris_Dokumentationen\\\\TestAutomatisierung\\\\cucumberreport.html",

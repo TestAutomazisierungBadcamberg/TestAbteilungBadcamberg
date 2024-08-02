@@ -1,4 +1,4 @@
-
+@klickTest
 Feature: Kommenter ändern
 
   Scenario: Änderung eines Kommentar

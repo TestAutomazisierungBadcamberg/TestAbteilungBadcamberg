@@ -1,4 +1,4 @@
-
+@klickTest
 Feature:Bewerber Statistik öffnen
 
   Scenario:Statistik öffnen

@@ -1,4 +1,4 @@
-
+@klickTest
 Feature: Mitarbeiter Anlegen
 
   Scenario: neue Bewerber anlegen

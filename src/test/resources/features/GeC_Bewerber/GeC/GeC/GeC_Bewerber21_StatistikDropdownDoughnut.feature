@@ -1,4 +1,4 @@
-
+@klickTest
 Feature:Öffnen der Statistik Dropdown-Menü von Doughnut
 
   Scenario:Dropdownmenü von Doughnut öffnen

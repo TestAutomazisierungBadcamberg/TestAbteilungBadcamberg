@@ -18,7 +18,8 @@ public class Driver {
 
     public static WebDriver getDriver(){
         if (browsers.get()==null)
-            browsers.set(Browser.CHROME);
+            browsers.set(Browser.FIREFOX);
+
         return getDriver(browsers.get());
     }
 
@@ -31,26 +32,42 @@ public class Driver {
                     drivers.set(new EdgeDriver());
                     break;
                 case FIREFOX:
-                    FirefoxOptions optionFirefox = new FirefoxOptions();
-                    optionFirefox.addPreference("dom.webnotifications.enabled", false);
+                    FirefoxOptions optionFirefox = getFirefoxOptions();
                     drivers.set(new FirefoxDriver(optionFirefox));
                     break;
-                default:
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--remote-allow-origins=*");
-                    options.addArguments("--disable-notifications");
-                    if (DriverConfig.startMaximized)
-                        options.addArguments("--start-maximized");
-                    if (DriverConfig.headles)
-                        options.addArguments("--headless");
-
+                case CHROME:
+                    System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+                    ChromeOptions options = getChromeOptions();
                     drivers.set(new ChromeDriver(options));
-
                     break;
             }
         }
         waits.set(new WebDriverWait(drivers.get(), Duration.ofSeconds(20),Duration.ofMillis(100)));
         return drivers.get();
+    }
+
+
+    private static ChromeOptions getChromeOptions() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--disable-notifications");
+        options.addArguments("--no-default-browser-check");
+        options.addArguments("--no-first-run");
+
+        if (DriverConfig.startMaximized)
+            options.addArguments("--start-maximized");
+        if (DriverConfig.headles)
+            options.addArguments("--headless");
+        return options;
+    }
+    private static FirefoxOptions getFirefoxOptions() {
+        FirefoxOptions options = new FirefoxOptions();
+        options.addPreference("dom.webnotifications.enabled", false);
+
+        options.addArguments("--width=1920");
+        options.addArguments("--height=1080");
+
+        return options;
     }
 
     public static WebDriverWait getWait(){

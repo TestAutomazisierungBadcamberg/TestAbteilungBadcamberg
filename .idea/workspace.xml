@@ -5,11 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Umit 26.07.24 12:12 Uhr">
+    <list default="true" id="29303751-0461-47f7-9758-a4d9f0ecd957" name="Changes" comment="Umit 26.07.24 12:12 Uhr">
       <change afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/ ZiP/Dowloands.feature" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestNavigationsMenu.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/baseClass/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/baseClass/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/driver/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/driver/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjekts/TS2_GL/GeC_Bewerber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberAnlegen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberAnlegen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/SmokeZustellersicht.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/SmokeZustellersicht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/dataFile/SmokeZS.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/dataFile/SmokeZusteller.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber01_Anlegen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber01_Anlegen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber02_ErgebnisÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber02_ErgebnisÄndern.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber03_FiltereNachLiferunde.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber03_FiltereNachLiferunde.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber04_PersonÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber04_PersonÄndern.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber05_Sortierung.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber05_Sortierung.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber06_ReiterMitMaus.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber06_ReiterMitMaus.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber07_KommentarErfasse.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber07_KommentarErfasse.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber08_Kommentare.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber08_Kommentare.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber09_KommentarÄndern.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber09_KommentarÄndern.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber10_KommentarLöschen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber10_KommentarLöschen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber12_Zurückbutton.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber12_Zurückbutton.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber13Vorlagen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber13Vorlagen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber14_VorlageEmfängerAuswählen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber14_VorlageEmfängerAuswählen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber18_StatistikÖffnen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber18_StatistikÖffnen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber19_StatistikenDoughnutsmenu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber19_StatistikenDoughnutsmenu.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber20_StatistikDropdownLines.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber20_StatistikDropdownLines.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber21_StatistikDropdownDoughnut.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber21_StatistikDropdownDoughnut.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber24_StatistikZurückNavigieren.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber24_StatistikZurückNavigieren.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber27_MitarbeiterAnlegen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber27_MitarbeiterAnlegen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber29_Bezirkszuweisung.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber29_Bezirkszuweisung.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber30_Bezirkzuweisungöffnen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber30_Bezirkzuweisungöffnen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber32_Löschen.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber32_Löschen.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeZustellersicht.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeZustellersicht.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/baseClass/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/baseClass/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driver/Driver$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driver/Driver$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/driver/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/driver/Driver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeCBewerberÄndern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/GeC_BewerberKommentar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/GeC_BewerberKommentar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/Hooks.java" afterDir="false" />
@@ -95,16 +128,53 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber01_Anlegen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber02_ErgebnisÄndern.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber04_PersonÄndern.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber12_Zurückbutton.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber19_StatistikenDoughnutsmenu.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber1_Anlegen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber21_StatistikDropdownDoughnut.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber24_StatistikZurückNavigieren.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber2_ErgebnisÄndern.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber35_Bearbeiten.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber7_Kommentare.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Bewerber9_KommentarÄndern.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: GeC_Smoke_Navigationsmenü.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü auf Fehlermeldung überprüfen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Statistik öffnen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Statistiken Zurück-Button Uberprufen (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Statistiken Zurück-Button Uberprufen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Statistiken Zurück-Button überprüfen.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Ändere das Ergebnis an einem Bewerber.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Änderung der Daten bereits angelegten Bewerber.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Änderungen am Bewerber.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.de.sabris [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.Runner.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
+}</component>
+  <component name="RunManager" selected="TestNG.Runner">
+    <configuration name="Feature: GeC_Bewerber01_Anlegen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
 }]]></component>
   <component name="RunManager" selected="Cucumber Java.Feature: Dowloands">
     <configuration name="Feature: Dowloands" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber01_Anlegen.feature" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/ ZiP/Dowloands.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber01_Anlegen" />
       <option name="SUGGESTED_NAME" value="Feature: Dowloands" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
@@ -117,13 +187,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: GeC_Bewerber02_ErgebnisÄndern" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
     <configuration name="Feature: SmokeTestNavigationsMenu" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber02_ErgebnisÄndern.feature" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestNavigationsMenu.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber02_ErgebnisÄndern" />
       <option name="SUGGESTED_NAME" value="Feature: SmokeTestNavigationsMenu" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
@@ -137,11 +210,15 @@
       </method>
     </configuration>
     <configuration name="Feature: SmokeTestRunerNavigationMenu" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: GeC_Bewerber12_Zurückbutton" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestRunerNavigationMenu.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/GeC/GeC_Bewerber12_Zurückbutton.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: GeC_Bewerber12_Zurückbutton" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: SmokeTestRunerNavigationMenu" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
@@ -156,14 +233,18 @@
       </method>
     </configuration>
     <configuration name="Scenario: Die Seiten unter dem Navigationsmenü testen" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: GeC_Smoke_Navigationsmenü" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestNavigationsMenu.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GeC_Bewerber/GeC_Smoke_Navigationsmenü.feature" />
       <option name="GLUE" value="stepDefinition" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="de.sabris" />
       <option name="NAME_FILTER" value="^Die Seiten unter dem Navigationsmenü testen$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Die Seiten unter dem Navigationsmenü testen$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Die Seiten unter dem Navigationsmenü testen" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: GeC_Smoke_Navigationsmenü" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -197,6 +278,10 @@
         <item itemvalue="Cucumber Java.Feature: Dowloands" />
         <item itemvalue="Cucumber Java.Feature: SmokeTestNavigationsMenu" />
         <item itemvalue="TestNG.Runner" />
+        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber02_ErgebnisÄndern" />
+        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber01_Anlegen" />
+        <item itemvalue="Cucumber Java.Feature: GeC_Bewerber12_Zurückbutton" />
+        <item itemvalue="Cucumber Java.Feature: GeC_Smoke_Navigationsmenü" />
         <item itemvalue="Cucumber Java.Scenario: Die Seiten unter dem Navigationsmenü testen" />
         <item itemvalue="Cucumber Java.Feature: SmokeTestRunerNavigationMenu" />
       </list>
@@ -316,6 +401,15 @@
       <updated>1720525919620</updated>
     </task>
     <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00013" summary="Umit 26.07.24 12:12 Uhr">
+      <option name="closed" value="true" />
+      <created>1721998923711</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721998923711</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,5 +438,7 @@
     <MESSAGE value="Umit 05.07.24 12:12 Uhr" />
     <MESSAGE value="Umit 09.07.24 12:12 Uhr" />
     <option name="LAST_COMMIT_MESSAGE" value="Umit 09.07.24 12:12 Uhr" />
+    <MESSAGE value="Umit 26.07.24 12:12 Uhr" />
+    <option name="LAST_COMMIT_MESSAGE" value="Umit 26.07.24 12:12 Uhr" />
   </component>
 </project>

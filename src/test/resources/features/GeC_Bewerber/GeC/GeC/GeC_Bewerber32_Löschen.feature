@@ -1,5 +1,4 @@
-
-
+@klickTest
 Feature: Bewerber löschen
 
   Scenario: Löschen der Daten bereits angelegten Bewerber

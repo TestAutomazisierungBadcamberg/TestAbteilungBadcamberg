@@ -1,5 +1,4 @@
-
-
+@klickTest
 Feature: Bezirkzuweisung die Karte öffnen
 
   Scenario: Öffne die Karte auf der Bezirkzuweisungsseite

@@ -1,4 +1,4 @@
-
+@klickTest1
 Feature: Kommenter löschen
 
   Scenario: Löschen eines Kommentar

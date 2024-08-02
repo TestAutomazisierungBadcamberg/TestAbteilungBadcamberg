@@ -1,4 +1,4 @@
-
+@klickTest
 Feature: Öffne das Kommentarfenster
 
   Background:

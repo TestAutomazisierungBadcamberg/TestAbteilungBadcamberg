@@ -1,4 +1,4 @@
-
+@klickTest
 Feature: StatistikZurückNavigieren
 
   Scenario: Statistiken Zurück-Button Uberprufen

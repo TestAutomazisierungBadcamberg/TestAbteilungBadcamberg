@@ -21,7 +21,7 @@ public class BaseClass {
 
 
     public BaseClass() {
-        driver = Driver.getDriver();
+        driver = Driver.getDriver(Browser.CHROME);
         wait = Driver.getWait();
     }
 

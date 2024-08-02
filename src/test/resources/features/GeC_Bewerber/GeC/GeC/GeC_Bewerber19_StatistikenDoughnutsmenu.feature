@@ -1,4 +1,4 @@
-
+@klickTest
 Feature: StatistikDoughnutsmenu
 
   Scenario: Statistiken Doughnutsmenu wählen

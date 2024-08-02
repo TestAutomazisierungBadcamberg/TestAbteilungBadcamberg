@@ -1,4 +1,4 @@
-
+@klickTest
 Feature:Bewerber einem Bezirk zuweisen
 
   Scenario:Weise einen Bewerber einem Bezirk zu
