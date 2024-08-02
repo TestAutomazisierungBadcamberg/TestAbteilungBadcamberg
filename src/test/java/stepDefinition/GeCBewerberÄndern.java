@@ -36,9 +36,7 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @Then("Ich sehe auf der Seite unter der Button {string}")
     public void ichSeheAufDerSeiteUnterDerButton(String text) {
-
         waitForVisibilty(bewerber.fußLeisteButtons(text));
-
     }
 
     @And("Ich klicke auf der Seite der Button {string}")
@@ -51,7 +49,6 @@ public class GeCBewerberÄndern extends BaseClass {
                 .moveToElement(element,)
                 .click().perform();*/
     }
-
     @Then("Ich sehe die von mir geänderte Bewerber")
     public void ichSeheDieVonMirGeänderteBewerber() {
         sleep(1000);
