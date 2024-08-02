@@ -1,13 +1,11 @@
 package stepDefinition;
 
 import baseClass.BaseClass;
-import driver.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import pageObjekts.TS2_GL.GeC_Bewerber;
@@ -36,9 +34,7 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @Then("Ich sehe auf der Seite unter der Button {string}")
     public void ichSeheAufDerSeiteUnterDerButton(String text) {
-
         waitForVisibilty(bewerber.fußLeisteButtons(text));
-
     }
 
     @And("Ich klicke auf der Seite der Button {string}")
@@ -51,7 +47,6 @@ public class GeCBewerberÄndern extends BaseClass {
                 .moveToElement(element,)
                 .click().perform();*/
     }
-
     @Then("Ich sehe die von mir geänderte Bewerber")
     public void ichSeheDieVonMirGeänderteBewerber() {
         sleep(1000);
