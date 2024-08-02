@@ -4,8 +4,10 @@ import driver.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Hooks {
 
@@ -13,6 +15,8 @@ public class Hooks {
     public void setup() {
         Driver.getDriver();
         Driver.getWait();
+
+
     }
 
     @After(order = 0)

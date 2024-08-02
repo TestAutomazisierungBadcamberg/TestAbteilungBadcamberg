@@ -37,7 +37,6 @@ public class GeC_BewerberKommentar extends BaseClass {
         List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("ReiterKommentarInDemStehtKommentare")));
         waitForVisibilty(elements.get(0));
         click(elements.get(0));
-        sleep(3000);
         sendKeys(By.xpath(PropertyReaders.read("GeC_Bewerber").get("KommentarTextAreaAndern")),"Ich ändere die Kommentar");
         click(bewerber.fußLeisteButtons("Speichern"));
         sleep(1000);

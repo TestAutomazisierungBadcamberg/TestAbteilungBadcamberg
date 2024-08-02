@@ -22,7 +22,7 @@ public class SmokeNavigasyonMenu  extends BaseClass {
     public void ichSeheAufDerGeC_BesetzungskarteSeiteEinstellungen() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(bewerber.lEinstellungen));
         click(bewerber.fußLeisteButtons("Schließen"));
-        sleep(2000);
+
 
     }
 
@@ -30,12 +30,10 @@ public class SmokeNavigasyonMenu  extends BaseClass {
 
     @And("Ich klicke auf der Zurücknavigation Button")
     public void ichKlickeAufDerZurücknavigationButton() {
-        sleep(1000);
         click(bewerber.lBezirkbesetzungzuruckbutton);
     }
     @And("Ich klicke auf der Dokumente Zurücknavigation Button")
     public void ichKlickeAufDerDokumenteZurücknavigationButton() {
-        sleep(2000);
         click(bewerber.lDokumentezuruckbuton);
     }
 
@@ -91,6 +89,12 @@ public class SmokeNavigasyonMenu  extends BaseClass {
 
     @And("Ich klicke auf den Button Zurück auf der Seite {string}")
     public void ichKlickeAufDenButtonZurückAufDerSeite(String text) {
+        sleep(2000);
         click(bewerber.buttonZurück(text));
+    }
+
+    @Then("Ich sehe auf der Seite {string}")
+    public void ichSeheAufDerSeite(String text) {
+        waitForVisibilty(By.xpath(PropertyReaders.read("GeC_Bewerber").get("ButtonFilterungZipBezirke")));
     }
 }

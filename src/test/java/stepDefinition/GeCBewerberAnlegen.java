@@ -44,7 +44,6 @@ public class GeCBewerberAnlegen extends BaseClass {
     @Then("Ich sehe auf der Seite Dashboard")
     public void ichSeheAufDerSeiteDashboard() {
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan((bewerber.lDashboardKachels), 10));
-        sleep(1000);
     }
 
     @And("Ich klicke auf der linken Seite der MasterPage auf der Button {string}")
@@ -60,21 +59,18 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @And("Ich klicke auf die Drop-Down-Menüs der Schaltfläche {string}")
     public void ichKlickeAufDieDropDownMenüsDerSchaltfläche(String menu) {
-        sleep(4000);
+        sleep(2000);
         click(bewerber.navigationSubMenus(menu));
         }
 
     @Then("Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche {string}")
     public void ichSeheUntenAufDerSeiteInDerFußzeileDieSchaltfläche(String title) {
         wait.until(ExpectedConditions.elementToBeClickable(bewerber.bewerberFußLeisteButton(title)));
-        sleep(1000);
     }
 
     @And("Ich klicke die Schaltfläche {string}")
     public void ichKlickeDieSchaltfläche(String title) {
         click(bewerber.bewerberFußLeisteButton(title));
-
-
     }
 
     @And("Ich klicke auf die geöffnete Button Bewerber")
@@ -157,6 +153,15 @@ public class GeCBewerberAnlegen extends BaseClass {
        click(bewerber.lBezirkealleswählen);
 
     }
+
+    @And("Ich klicke Bezirkbesetzung zurück Button")
+    public void ichKlickeBezirkbesetzungZurückButton() {
+        click(bewerber.lZurückbezirkbesetzung);
+
+
+    }
+
+
 }
 
 
