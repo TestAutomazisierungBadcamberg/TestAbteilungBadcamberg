@@ -36,7 +36,7 @@ public class Driver {
                     drivers.set(new FirefoxDriver(optionFirefox));
                     break;
                 case CHROME:
-                   // System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+                    System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
                     ChromeOptions options = getChromeOptions();
                     drivers.set(new ChromeDriver(options));
                     break;
