@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
         features = {
                 "src/test/resources/features/GeC_Bewerber/GeC/GeC/01_GeC_Bewerber_Anlegen.feature",
                 "src/test/resources/features/GeC_Bewerber/GeC/GeC/02_GeC_Bewerber_ErgebnisÄndern.feature",
-                "src/test/resources/features/GeC_Bewerber/GeC/GeC/35_GeC_Bewerber_Bearbeiten.feature",
+                "src/test/resources/features/GeC_Bewerber/GeC/GeC/15_GeC_Bewerber_Bearbeiten.feature",
                 "src/test/resources/features/GeC_Bewerber/GeC/GeC/03_GeC_Bewerber_FiltereNachLiferunde.feature",
                 "src/test/resources/features/GeC_Bewerber/GeC/GeC/04_GeC_Bewerber_PersonÄndern.feature",
                 "src/test/resources/features/GeC_Bewerber/GeC/GeC/05_GeC_Bewerber_Sortierung.feature",
@@ -30,8 +30,6 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/resources/features/GeC_Bewerber/GeC/GeC/29_GeC_Bewerber_Bezirkszuweisung.feature",
                 "src/test/resources/features/GeC_Bewerber/GeC/GeC/30_GeC_Bewerber_Bezirkzuweisungöffnen.feature",
                 "src/test/resources/features/GeC_Bewerber/GeC/GeC/32_GeC_Bewerber_Löschen.feature",
-
-
         },
         glue = {"stepDefinition"},
         plugin = {
