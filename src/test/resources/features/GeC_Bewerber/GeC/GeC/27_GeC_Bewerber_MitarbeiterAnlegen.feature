@@ -1,4 +1,4 @@
-@klickTest
+@kli
 Feature: Mitarbeiter Anlegen
 
   Scenario: neue Bewerber anlegen
@@ -24,10 +24,12 @@ Feature: Mitarbeiter Anlegen
     And Ich wahle warteliste von Ergebnis Menu
     When Ich klicke auf der Seite der Button "Speichern"
     And Ich klicke auf der Seite der Button "OK"
-    And Ich klicke auf der linken Seite der MasterPage auf der Button "MeP"
     When Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Mitarbeiter"
     And Ich klicke auf den Reiter "MitarbeiterReiterInBearbeitung"
     Then Ich sehe die von mir angelegte Bewerber
+    And Ich klicke die Schaltfläche "Suchen"
+    And Ich schreibe in das Suchfeld den gewünschten Bewerber, den ich ändern möchte
+    And Ich klicke auf der Button OK, nachdem ich in das Feld Suche die gewünschten Bewerber eingegeben habe
     When Ich lösche die von mir angelegte Mitarbeiter
     And Ich klicke die Schaltfläche "löschen"
     And Ich klicke auf der Seite der Button "OK"

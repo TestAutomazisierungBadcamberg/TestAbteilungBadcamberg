@@ -26,11 +26,11 @@ public class GeCBewerberSortierung extends BaseClass {
         elements = driver.findElements(By.cssSelector(PropertyReaders.read("GeC_Bewerber").get("SortierungsFensterAllOptions")));
         waitForVisibilty(elements.get(1));
         sleep(1000);
-        String text = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberListeNamenAllListe"))).get(3).getText();
+        String text = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberListeNamenAllListe"))).get(2).getText();
         click(elements.get(3));
         click(bewerber.fußLeisteButtons("Ok"));
         sleep(1000);
-        String text2 = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberListeNamenAllListe"))).get(3).getText();
+        String text2 = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberListeNamenAllListe"))).get(2).getText();
         Assert.assertNotEquals(text, text2);
 
     }

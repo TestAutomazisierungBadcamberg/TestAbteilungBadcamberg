@@ -60,8 +60,8 @@ public class GeCBewerberFiltern extends BaseClass {
     public void ichKlickeAufDasCheckboxLWPMünsterlandGmbH() {
         List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("FilternCheckBoxAllListe")));
         waitForVisibilty(elements.get(1));
-        hoverOverByAction(elements.get(24));
-        click(elements.get(24));
+        //hoverOverByAction(elements.get(24));
+        click(elements.get(4));
         sleep(1000);
         click(bewerber.fußLeisteButtons("Ok"));
     }

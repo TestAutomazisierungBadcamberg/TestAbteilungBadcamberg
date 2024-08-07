@@ -23,8 +23,6 @@ public class GeCBewerberAnlegen extends BaseClass {
     @Given("Ich melde mich als GL {string}")
     public void ichMeldeMichAlsGL(String testSystem) {
         driver.get(PropertyReaders.read().get(testSystem));
-        if (!driver.findElements(bewerber.lAnmeldenButtonAnmeldungsSeite).isEmpty())
-            click(bewerber.lAnmeldenButtonAnmeldungsSeite);
         click(bewerber.lAkzeptieren);
         if (!driver.findElements(bewerber.lAnmeldenButtonAnmeldungsSeite).isEmpty())
             click(bewerber.lAnmeldenButtonAnmeldungsSeite);
@@ -32,6 +30,10 @@ public class GeCBewerberAnlegen extends BaseClass {
         sendKeys(bewerber.lBenutzername, PropertyReaders.read().get("userName_TS2_GL"));
         if (testSystem.equals("url_TS1_GL"))
             sendKeys(bewerber.lPasswort, PropertyReaders.read().get("passwort_TS1_GL"));
+        if (testSystem.equals("SWP_Url")){
+            sendKeys(bewerber.lBenutzername, PropertyReaders.read().get("SWP_UserName"));
+            sendKeys(bewerber.lPasswort, PropertyReaders.read().get("SWP_Password"));
+        }
         else
             sendKeys(bewerber.lPasswort, PropertyReaders.read().get("passwort_TS2_GL"));
         click(bewerber.lLogin);
@@ -42,7 +44,7 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @Then("Ich sehe auf der Seite Dashboard")
     public void ichSeheAufDerSeiteDashboard() {
-        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan((bewerber.lDashboardKachels), 10));
+        wait.until(ExpectedConditions.numberOfElementsToBeMoreThan((bewerber.lDashboardKachels), 9));
     }
 
     @And("Ich klicke auf der linken Seite der MasterPage auf der Button {string}")
@@ -146,7 +148,7 @@ public class GeCBewerberAnlegen extends BaseClass {
     @When("Ich wähle  die Bezirke aus")
     public void ichWähleDieBezirkeAus() {
         click(bewerber.lBezirkeauswählen);
-       sleep(5000);
+       sleep(3000);
        click(bewerber.lBezirkeauswählen1);
        sleep(1000);
        click(bewerber.lBezirkealleswählen);

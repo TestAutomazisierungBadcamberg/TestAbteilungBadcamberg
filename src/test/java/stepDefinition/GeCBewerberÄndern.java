@@ -94,8 +94,6 @@ public class GeCBewerberÄndern extends BaseClass {
     @And("Ich klicke auf der Zurück-navigieren Button")
     public void ichKlickeAufDerZurückNavigierenButton() {
         click(bewerber.lZurücknavigieren);
-
-
     }
 
     @And("Ich klicke auf der Button Doughnuts dropdown Button")

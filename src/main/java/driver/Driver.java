@@ -36,7 +36,6 @@ public class Driver {
                     drivers.set(new FirefoxDriver(optionFirefox));
                     break;
                 case CHROME:
-                    System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
                     ChromeOptions options = getChromeOptions();
                     drivers.set(new ChromeDriver(options));
                     break;
@@ -51,8 +50,6 @@ public class Driver {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--disable-notifications");
-        options.addArguments("--no-default-browser-check");
-        options.addArguments("--no-first-run");
 
         if (DriverConfig.startMaximized)
             options.addArguments("--start-maximized");

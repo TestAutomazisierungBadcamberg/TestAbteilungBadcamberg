@@ -22,10 +22,7 @@ public class SmokeNavigasyonMenu  extends BaseClass {
     public void ichSeheAufDerGeC_BesetzungskarteSeiteEinstellungen() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(bewerber.lEinstellungen));
         click(bewerber.fußLeisteButtons("Schließen"));
-
-
     }
-
 
 
     @And("Ich klicke auf der Zurücknavigation Button")
@@ -46,55 +43,51 @@ public class SmokeNavigasyonMenu  extends BaseClass {
 
     @Then("Ich sehe auf der Seite Mitarbeiter")
     public void ichSeheAufDerSeiteMitarbeiter() {
-        sleep(1000);
+        sleep(1500);
         Assert.assertTrue(driver.getPageSource().contains("Mitarbeiter"));
 
     }
 
     @Then("Ich sehe auf der Seite News")
     public void ichSeheAufDerSeiteNews() {
-        sleep(2000);
+        sleep(1500);
         Assert.assertTrue(driver.getPageSource().contains("News"));
     }
 
     @And("Ich klicke Bezirke zurück Button")
     public void ichKlickeBezirkeZurückButton() {
-     sleep(2000);
+     sleep(1500);
      click(bewerber.lZiPBezirkezuruckbutton);
 
     }
 
     @Then("Ich sehe auf der Seite Bezirke")
     public void ichSeheAufDerSeiteBezirke() {
-        sleep(2000);
+        sleep(1500);
         Assert.assertTrue(driver.getPageSource().contains("Bezirke"));
-
     }
 
     @When("Ich sehe auf der ZiP_Interakive Karte Seite Bestätigen")
     public void ichSeheAufDerZiP_InterakiveKarteSeiteBestätigen() {
-       sleep(3000);
+       sleep(2000);
         click(bewerber.fußLeisteButtons("Bestätigen"));
-
-
-
     }
 
 
     @Then("Ich sehe auf der Seite System")
     public void ichSeheAufDerSeiteSystem() {
-        sleep(3000);
+        sleep(1500);
         Assert.assertTrue(driver.getPageSource().contains("System"));
     }
 
     @And("Ich klicke auf den Button Zurück auf der Seite {string}")
     public void ichKlickeAufDenButtonZurückAufDerSeite(String text) {
-        sleep(2000);
+        sleep(1500);
         click(bewerber.buttonZurück(text));
     }
 
     @Then("Ich sehe auf der Seite {string}")
     public void ichSeheAufDerSeite(String text) {
-        waitForVisibilty(By.xpath(PropertyReaders.read("GeC_Bewerber").get("ButtonFilterungZipBezirke")));
+        waitForVisibilty(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
     }
 }

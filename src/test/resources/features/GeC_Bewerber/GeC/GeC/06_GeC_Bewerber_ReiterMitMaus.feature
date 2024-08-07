@@ -1,4 +1,4 @@
-@klickTest
+@klicktest
 Feature: Reiter mit Maus
 
   Scenario: Mit der Maus über die drei Reiter oben fahren

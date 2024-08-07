@@ -1,5 +1,5 @@
-
-  Feature: Änderungen und Speichern am Bewerber
+@klicktest
+Feature: Änderungen und Speichern am Bewerber
 
 Scenario: Änderungen am Bewerber
 

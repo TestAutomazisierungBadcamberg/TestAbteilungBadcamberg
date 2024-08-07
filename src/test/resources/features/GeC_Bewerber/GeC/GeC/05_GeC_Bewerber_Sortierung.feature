@@ -1,4 +1,4 @@
-@klickTest1
+@klickTest
 Feature: Sortierung nach diversen Kriterien auf- und absteigend
 
   Scenario: Sortierung Option überprüfen, ob sie funktioniert

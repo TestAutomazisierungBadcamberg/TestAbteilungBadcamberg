@@ -16,7 +16,8 @@ public class GeC_Bewerber extends BaseClass {
     public By lAnmeldenButtonAnmeldungsSeite = By.xpath("//bdi[text()='Anmelden']");
     public By lNeueBewerberAnlegenFensterBewerber = By.xpath("//div[text()='0']");
     public By lNeueBewerberAnlegenFensterMitarbeiter = By.xpath("//div[text()='1']");
-    public By lReiterPersonAnrede = By.xpath("//span[@id='__select4-arrow']");
+    public By lReiterPersonAnrede = By.xpath("(//span[contains(@class,'sapMSltArrow')])[1]");
+    public By lReiterPersonAnredeMitarbeiter = By.xpath("//span[@id='__select4-arrow']");
     public By lReiterPersonAnredeHerr = By.xpath("//li[@id='__item50-__select4-0']");
     public By lReiterPersonAnredeFrau = By.xpath("//li[@id='__item50-__select4-1']");
     public By lReiterPersonName = By.xpath("//input[@id='__input4-inner']");
@@ -26,6 +27,7 @@ public class GeC_Bewerber extends BaseClass {
     public By lReiterPersonHausnummer = By.xpath("//input[@id='__input9-inner']");
     public By lReiterPersonEMail = By.xpath("//input[@id='__input16-inner']");
     public By lReiterPersonSpeichern = By.xpath("//span[@id='__button75-inner']");
+    public By lReiterPersonSpeichernMitarbeiter = By.xpath("//span[@id='__button76-inner']");
     public By lBewerberMaskeAllBewerberListe = By.xpath("//tbody[@class='sapMListItems sapMTableTBody']/tr");
     public By lBewerberMaskeSuchbuttonTextFeld = By.xpath("//input[@type='search']");
     public By lBewerberMaskeSuchfeldOkButton = By.xpath("//span[@id='__button951-content']");
@@ -94,6 +96,8 @@ public class GeC_Bewerber extends BaseClass {
     }
 
     public void neueBewerberAnlegen() {
+        sleep(500);
+        hoverOverByAction(lReiterPersonAnrede);
         click(lReiterPersonAnrede);
         click(lReiterPersonAnredeHerr);
         sendKeys(lReiterPersonName, "Müller");
@@ -103,12 +107,14 @@ public class GeC_Bewerber extends BaseClass {
         sendKeys(lReiterPersonStraße, "Gerhart Hauptmann Str");
         sendKeys(lReiterPersonHausnummer, "21");
         sendKeys(lReiterPersonEMail, "engin@gmail.com");
-        click(lReiterPersonSpeichern);
+        click(fußLeisteButtons("Speichern"));
         click(fußLeisteButtons("OK"));
     }
 
     public void neueMitarbeiterAnlegen() {
-        click(lReiterPersonAnrede);
+        sleep(500);
+        hoverOverByAction(lReiterPersonAnredeMitarbeiter);
+        click(lReiterPersonAnredeMitarbeiter);
         click(lReiterPersonAnredeHerr);
         sendKeys(lReiterPersonName, "Müller");
         sendKeys(lReiterPersonVorname, "Ralf_Badcamber");
@@ -116,7 +122,7 @@ public class GeC_Bewerber extends BaseClass {
         sendKeys(lReiterPersonGeburtsdatum, "17.12.1985");
         sendKeys(lReiterPersonStraße, "Bahnhof Str");
         sendKeys(lReiterPersonHausnummer, "20");
-        click(lReiterPersonSpeichern);
+        click(fußLeisteButtons("Speichern"));
         click(fußLeisteButtons("OK"));
     }
 

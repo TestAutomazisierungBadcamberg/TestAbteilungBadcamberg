@@ -1,4 +1,4 @@
-@klickTest1
+@klickTest
 Feature: Filtere nach Liferunde und Geschellschaft
 
   Background:

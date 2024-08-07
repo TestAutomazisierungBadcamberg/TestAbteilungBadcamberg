@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 public class BaseClass {
 
@@ -21,7 +22,7 @@ public class BaseClass {
 
 
     public BaseClass() {
-        driver = Driver.getDriver(Browser.CHROME);
+        driver = Driver.getDriver(Browser.FIREFOX);
         wait = Driver.getWait();
     }
 
@@ -142,12 +143,24 @@ public class BaseClass {
     }
 
     public void scrollElement(WebElement element){
-        ((JavascriptExecutor)driver).executeAsyncScript("arguments[0].scrollIntoView()",element);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
     public void scrollElement(By locator){
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         scrollElement(element);
     }
+    public void scrollBy(int pixels) {
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0," + pixels + ");");
+    }
+    public void scrollTo(int x, int y){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(" + x + ", " + y + ")");
+    }
+    public void scrollToBottom() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
+
     public void waitForVisibilty(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
     }
@@ -163,6 +176,25 @@ public class BaseClass {
                 .build()
                 .perform();
     }
+    public String generateRandomString(String prefix, int maxWords) {
+        // Maksimum String
+        if (maxWords < 1 || maxWords > 10) {
+            throw new IllegalArgumentException("Bitte wählen Sie 1 bis 10 Wörter aus..");
+        }
 
+        String[] words = {"alpha", "engin","bravo", "charlie", "delta","test", "echo", "foxtrot", "golf", "hotel", "india", "juliett"};
+
+        Random random = new Random();
+        StringBuilder randomString = new StringBuilder(prefix);
+
+        for (int i = 0; i < maxWords; i++) {
+            randomString.append(words[random.nextInt(words.length)]);
+            if (i < maxWords - 1) {
+                randomString.append(" ");
+            }
+        }
+
+        return randomString.toString();
+    }
 
 }

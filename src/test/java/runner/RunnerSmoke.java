@@ -6,13 +6,16 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-        features = {"src/test/resources/features"},
+        features = {
+                "src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestNavigationsMenu.feature",
+                "src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeZustellersicht.feature",
+
+        },
         glue = {"stepDefinition"},
-        tags = "@gl",
         plugin = {
                 "json:test-output/cucumber-reports/cucumber.json",
                 "html:S:\\\\sabris_intern\\\\TestAutomatisierung\\\\cucumberreport.html",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
-public class Runner extends AbstractTestNGCucumberTests {
+public class RunnerSmoke extends AbstractTestNGCucumberTests {
 }

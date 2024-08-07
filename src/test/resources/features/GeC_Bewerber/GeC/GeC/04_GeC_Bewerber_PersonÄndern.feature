@@ -1,4 +1,4 @@
-@klickTest
+@klicktest
 Feature: Bewerber ändern
 
   Scenario: Änderung der Daten bereits angelegten Bewerber
