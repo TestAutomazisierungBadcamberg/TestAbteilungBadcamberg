@@ -11,7 +11,7 @@ Feature: Als GL eine Nachricht erstellen und prüfen, ob die Zustelleransicht an
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Nachrichten"
     Then Ich sehe auf der Seite unter der Button "Nachrichten"
     When Ich klicke die Schaltfläche "Neue Nachricht"
-    And Ich fülle alle Felder aus, um eine Nachricht zu erstellen
+    And Ich fülle alle Felder für den Zusteller aus, um eine Nachricht zu erstellen
 
 
   Scenario:Als Zusteller prüfen, ob die von GL angelegte Nachricht angezeigt wird
