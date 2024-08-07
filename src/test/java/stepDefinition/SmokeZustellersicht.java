@@ -4,6 +4,7 @@ import baseClass.BaseClass;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -51,13 +52,18 @@ public class SmokeZustellersicht extends BaseClass {
         }
         click(bewerber.lLogin);
         sleep(1000);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PropertyReaders.read("SmokeZusteller").get("NaviMenus"))));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PropertyReaders.read("SomekZS").get("NaviMenus"))));
     }
 
-    public By naviMenus(String text) {
-        return By.xpath("//div[@class='sapMSLITitleOnly' and text()='" + text + "']");
+    public By naviMenus(String text){
+        return By.xpath("//div[@class='sapMSLITitleOnly' and text()='"+text+"']");
     }
 
+    @Then("Ich klicke kunden akte")
+    public void ich_klicke_kunden_akte() {
+        click(bewerber.lKundenAkte);
+
+    }
 
     @When("Ich klicke auf jede der Buttons im Navigationsmenü")
     public void ichKlickeAufJedeDerButtonsImNavigationsmenü(DataTable table) {
@@ -101,6 +107,18 @@ public class SmokeZustellersicht extends BaseClass {
                 click(By.xpath(PropertyReaders.read("SmokeZusteller").get(map.get("Verifizierung"))));
             }
         }
+
     }
 
+
+
+    @And("Ich klicke auf die Download Dropdown")
+    public void ichKlickeAufDieDownloadDropdown() {
+
+        click(bewerber.lDownloadDropdown);
+        //waitForVisibilty(bewerber.lDropdownOption);
+        //click(bewerber.lDropdownOption);
+
+
+    }
 }

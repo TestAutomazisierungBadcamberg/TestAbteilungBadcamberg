@@ -39,7 +39,9 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @And("Ich klicke auf der Seite der Button {string}")
     public void ichKlickeAufDerSeiteUnterDerButton(String text) {
+
         click(bewerber.fußLeisteButtons(text));
+        sleep(1000);
        /* WebElement element = driver.findElement(By.xpath(""));
         int a = driver.findElement(By.xpath("")).getRect().height;
         int b = driver.findElement(By.xpath("")).getRect().width;

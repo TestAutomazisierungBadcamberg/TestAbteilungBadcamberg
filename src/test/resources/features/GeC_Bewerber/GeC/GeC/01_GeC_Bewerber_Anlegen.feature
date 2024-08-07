@@ -1,4 +1,4 @@
-@klicktest
+@klick
 Feature: Bewerber Anlegen
 
   Scenario: neue Bewerber anlegen

@@ -62,11 +62,18 @@ public class GeC_Bewerber extends BaseClass {
     public By lProjektauswahlen1 =By.xpath("//li[@id='__item134-MitarbeiterBezirkzuweisungViewId--projektselect-0']");
     public By lGesellschaftDropdown=By.xpath("//span[@id='__box26-arrow']");
     public By lGesellschaftExternwahlen =By.xpath("//div[@id='__item480-selectMulti']");
-   public  By lBezirkeauswählen= By.xpath("//span[@id='MitarbeiterBezirkzuweisungViewId--bzcombobox-vhi']");
-   public  By lBezirkeauswählen1=By.xpath("//button[@id='__button89-internalBtn']");
+    public  By lBezirkeauswählen= By.xpath("//span[@id='MitarbeiterBezirkzuweisungViewId--bzcombobox-vhi']");
+    public  By lBezirkeauswählen1=By.xpath("//button[@id='__button89-internalBtn']");
     public By lBezirkealleswählen=By.xpath("//div[@id='__dialog9-scrollCont']");
-
-
+    public By lDownloadDropdown=By.xpath("//span[@id='ZiP_Downloads_ViewId--verlagId-arrow']");
+    public By lKundenAkte = By.xpath("//div[@id='ZiP_Downloads_ViewId--sTreeId-ZiP_Downloads_ViewId--treeId-14-selectSingle']");
+    public By lAktuellTab=By.xpath("//span[text()='Aktuell']");
+    public By lArchivTab=By.xpath("//span[@id='GeC_ZiP_News_ViewId--archivNewsId-icon']");
+    public By lNewsdropdown=By.xpath("//span[@id='__box51-arrow']");
+    public By lNewsdropdownwahlen= By.xpath("//div[text()='Rumble Dortmund']");
+    public By lGesellschaftoption=By.xpath("//span[@id='__input59-vhi']");
+    public By lTitel=By.xpath("//input[@id='__input60-inner']");
+    public By lTextkorperfeld=By.xpath("//div[@id='cke_184_contents']");
 
 
     Properties properties = new Properties();
@@ -159,13 +166,16 @@ public class GeC_Bewerber extends BaseClass {
         return By.xpath("//bdi[text()='" + title + "']");
     }
 
+    public By footerSeiteAlleButton(String buttonName) {
+        return By.xpath("//div[@id='__shell0']//span[text()='" + buttonName + "']");
+    }
 
     public void vorlagenEmpfeangerDropdownMenuAussuchen() {
         click(lVorlagenDropDownMenu);
         click(lVorlagenDropDownSubMenu);
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownButton")));
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownAussuchendePerson")));
-        sleep(2000);
+        sleep(3000);
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerXiconFurPersonEntfern")));
 
     }
