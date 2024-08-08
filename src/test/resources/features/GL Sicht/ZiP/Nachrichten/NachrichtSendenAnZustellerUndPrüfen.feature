@@ -12,6 +12,8 @@ Feature: Als GL eine Nachricht erstellen und prüfen, ob die Zustelleransicht an
     Then Ich sehe auf der Seite unter der Button "Nachrichten"
     When Ich klicke die Schaltfläche "Neue Nachricht"
     And Ich fülle alle Felder für den Zusteller aus, um eine Nachricht zu erstellen
+    And Ich sende eine Nachricht
+    Then Ich sehe auf der ZiP Seite "NachrichtErfolgsmeldung"
 
 
   Scenario:Als Zusteller prüfen, ob die von GL angelegte Nachricht angezeigt wird
@@ -21,4 +23,7 @@ Feature: Als GL eine Nachricht erstellen und prüfen, ob die Zustelleransicht an
       | Nachrichten | nein          | NachrichtenButtonPosteingang | Nachrichten |
     And Ich klicke die Schaltfläche "Suchen"
     When Ich schreibe in das Suchfeld den von GL ausgegebenen Betreff
+    And Ich klicke auf der Seite der Button "Ok"
+    Then Ich prüfe, ob die Nachricht angezeigt wird
+
 

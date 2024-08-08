@@ -52,7 +52,7 @@ public class SmokeZustellersicht extends BaseClass {
         }
         click(bewerber.lLogin);
         sleep(1000);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PropertyReaders.read("SomekZS").get("NaviMenus"))));
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(PropertyReaders.read("SmokeZusteller").get("NaviMenus"))));
     }
 
     public By naviMenus(String text){

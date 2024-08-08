@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = {"src/test/resources/features"},
         glue = {"stepDefinition"},
-        tags = "@nach",
+        tags = "@abc",
         plugin = {
                 "json:test-output/cucumber-reports/cucumber.json",
                 "html:S:\\\\sabris_intern\\\\TestAutomatisierung\\\\cucumberreport.html",
