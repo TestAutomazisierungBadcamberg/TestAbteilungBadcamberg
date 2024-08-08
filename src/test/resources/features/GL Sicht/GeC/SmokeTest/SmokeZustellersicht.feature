@@ -25,7 +25,6 @@ Feature: Navigation-Menü Runter Überprüfen
       | Betriebsmittelverwaltung         | nein          | BetriebsmittelButtonBestellen    | Betriebsmittel            |
       | Stellen                          | ja            | ButtonZuruckStellen              | Bezirk                    |
       | Interaktive Karte - alle Bezirke | nein          | InteraktiveKarteButtonMenu       | Karte                     |
-      | Button                           | Neues Fenster | Verifizierung                    | Assertion                 |
       | Stammdaten ändern                | nein          | StammdatenEundernButtonSpeichern | Speichern                 |
       | Passwort ändern                  | nein          | PasswordEundernPasswordsfeld     | Passwort ändern           |
       | Impressum                        | nein          | ImpressumTitel                   | Impressum                 |

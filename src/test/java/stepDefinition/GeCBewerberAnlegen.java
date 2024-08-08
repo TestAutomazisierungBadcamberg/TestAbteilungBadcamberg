@@ -71,6 +71,7 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @And("Ich klicke die Schaltfläche {string}")
     public void ichKlickeDieSchaltfläche(String title) {
+        sleep(200);
         click(bewerber.bewerberFußLeisteButton(title));
     }
 
