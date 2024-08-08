@@ -7,6 +7,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import propertyReader.Property;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,6 +26,20 @@ public class BaseClass {
         driver = Driver.getDriver(Browser.FIREFOX);
         wait = Driver.getWait();
     }
+
+
+        Property GeC = Property.GeC_Bewerber;
+        Property Smoke = Property.SmokeGL;
+        Property SmokeZustel = Property.SmokeZusteller;
+        Property ZiP_Alle = Property.ZiP_Alle_Maske;
+
+        public String GeC_Bewerber = GeC.name();
+        public String SmokeGL = Smoke.name();
+        public String SmokeZusteller = SmokeZustel.name();
+        public String ZiP_Alle_Maske = ZiP_Alle.name();
+
+
+
 
 
     public void click(WebElement element) {
