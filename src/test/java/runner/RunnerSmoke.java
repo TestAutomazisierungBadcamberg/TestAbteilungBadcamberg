@@ -7,9 +7,8 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = {
-                "src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeTestNavigationsMenu.feature",
-                "src/test/resources/features/GeC_Bewerber/GeC/SmokeTest/SmokeZustellersicht.feature",
-
+                "src/test/resources/features/GL Sicht/SmokeTest/SmokeTestNavigationsMenu.feature",
+                "src/test/resources/features/GL Sicht/SmokeTest/SmokeZustellersicht.feature"
         },
         glue = {"stepDefinition"},
         plugin = {

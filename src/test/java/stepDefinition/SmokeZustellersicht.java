@@ -112,5 +112,6 @@ public class SmokeZustellersicht extends BaseClass {
     @And("Ich klicke auf die Download Dropdown")
     public void ichKlickeAufDieDownloadDropdown() {
         click(bewerber.lDownloadDropdown);
+
     }
 }

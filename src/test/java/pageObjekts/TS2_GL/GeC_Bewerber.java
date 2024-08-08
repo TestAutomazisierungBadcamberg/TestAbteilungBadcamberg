@@ -79,6 +79,7 @@ public class GeC_Bewerber extends BaseClass {
     }
 
 
+
     public By navigationSubMenus(String title) {
         return By.xpath("//ul[@role='group']/li[@title='" + title + "']");
     }
@@ -136,7 +137,6 @@ public class GeC_Bewerber extends BaseClass {
         click(lÄnderungDerBewerberOkButton);
 
     }
-
 
     public By fußLeisteButtons(String title) {
         return By.xpath("//bdi[text()='" + title + "']");
