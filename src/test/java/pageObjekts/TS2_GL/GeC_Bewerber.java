@@ -26,8 +26,6 @@ public class GeC_Bewerber extends BaseClass {
     public By lReiterPersonStraße = By.xpath("//input[@id='__input8-inner']");
     public By lReiterPersonHausnummer = By.xpath("//input[@id='__input9-inner']");
     public By lReiterPersonEMail = By.xpath("//input[@id='__input16-inner']");
-    public By lReiterPersonSpeichern = By.xpath("//span[@id='__button75-inner']");
-    public By lReiterPersonSpeichernMitarbeiter = By.xpath("//span[@id='__button76-inner']");
     public By lBewerberMaskeAllBewerberListe = By.xpath("//tbody[@class='sapMListItems sapMTableTBody']/tr");
     public By lBewerberMaskeSuchbuttonTextFeld = By.xpath("//input[@type='search']");
     public By lBewerberMaskeSuchfeldOkButton = By.xpath("//span[@id='__button951-content']");
@@ -40,43 +38,35 @@ public class GeC_Bewerber extends BaseClass {
     public By lErgebnisZusage = By.xpath("//li[@id='__item120-__select19-5']");
     public By lStatusInBearbeitung = By.xpath("//div[@id='__select21']");
     public By lErgebnisWarteliste = By.xpath("//li[@id='__item120-__select19-3']");
-    public By lPersonreiter = By.xpath("//span[text()='Person']");
     public By lVorlagenDropDownMenu = By.xpath("//input[@class='sapUiPseudoInvisibleText']");
     public By lVorlagenDropDownSubMenu = By.xpath("//ul[@id='__list34']/li[@aria-posinset='4']");
-    public By lVorlagenEmpfaengerFeld = By.xpath("//input[contains(@placeholder,'Empfänger')]");
     public By lZurücknavigieren = By.xpath("//span[@id='__button80-img']");
-    public By lZurücknavigierenBezirk = By.xpath("//span[@id='__button82-inner']");
-    public By lDoughnutsdropdown = By.xpath("//span[@id='menuButtonDoughnuts-internalBtn-inner']");
     public By lDoughnutsHerkunft = By.xpath("//li[@id='menuDoughnuts_1-unifiedmenu']");
     public By lDoughnutsWarteliste = By.xpath("//div[@id='menuDoughnuts_3-unifiedmenu-txt']");
     public By lEinstellungen = By.xpath("//span[text()='Einstellungen']");
-    public By lTextSchließen = By.xpath("//bdi[text()='Schließen']");
-    public By lBezirkbesetzung = By.xpath("//div[@id='GeC_master_Bezirksbesetzung_PageId-title']");
     public By lBezirkbesetzungzuruckbutton = By.xpath("//span[@id ='__button82-inner']");
     public By lDokumentezuruckbuton = By.xpath("//button[@id ='__button94']");
     public By lZurückbezirkbesetzung = By.xpath("//button[@id='GeC_master_Bezirksbesetzung_PageId-navButton']");
     public By lZiPBezirkezuruckbutton = By.xpath("//button[@id='GeC_master_ZiP_Bezirke_PageId-navButton']");
-    public By lLandDropdownbutton=By.xpath("//span[@id='__select7-arrow']");
-    public By lLandwählenDropdownbutton= By.xpath("(//li[text()='Belgien']) [1]");
-    public By lProjektDropdownbutton=By.xpath("//span[@id='MitarbeiterBezirkzuweisungViewId--projektselect-arrow']");
-    public By lProjektauswahlen1 =By.xpath("//li[@id='__item134-MitarbeiterBezirkzuweisungViewId--projektselect-0']");
-    public By lGesellschaftDropdown=By.xpath("//span[@id='__box26-arrow']");
-    public By lGesellschaftExternwahlen =By.xpath("//div[@id='__item480-selectMulti']");
-    public  By lBezirkeauswählen= By.xpath("//span[@id='MitarbeiterBezirkzuweisungViewId--bzcombobox-vhi']");
-    public  By lBezirkeauswählen1=By.xpath("//button[@id='__button89-internalBtn']");
-    public By lBezirkealleswählen=By.xpath("//div[@id='__dialog9-scrollCont']");
-    public By lDownloadDropdown=By.xpath("//span[@id='ZiP_Downloads_ViewId--verlagId-arrow']");
+    public By lLandDropdownbutton = By.xpath("//span[@id='__select7-arrow']");
+    public By lLandwählenDropdownbutton = By.xpath("(//li[text()='Belgien']) [1]");
+    public By lProjektDropdownbutton = By.xpath("//span[@id='MitarbeiterBezirkzuweisungViewId--projektselect-arrow']");
+    public By lProjektauswahlen1 = By.xpath("//li[@id='__item134-MitarbeiterBezirkzuweisungViewId--projektselect-0']");
+    public By lGesellschaftDropdown = By.xpath("//span[@id='__box26-arrow']");
+    public By lGesellschaftExternwahlen = By.xpath("//div[@id='__item480-selectMulti']");
+    public By lBezirkeauswählen = By.xpath("//span[@id='MitarbeiterBezirkzuweisungViewId--bzcombobox-vhi']");
+    public By lBezirkeauswählen1 = By.xpath("//button[@id='__button89-internalBtn']");
+    public By lBezirkealleswählen = By.xpath("//div[@id='__dialog9-scrollCont']");
+    public By lDownloadDropdown = By.xpath("//span[@id='ZiP_Downloads_ViewId--verlagId-arrow']");
     public By lKundenAkte = By.xpath("//div[@id='ZiP_Downloads_ViewId--sTreeId-ZiP_Downloads_ViewId--treeId-14-selectSingle']");
-    public By lAktuellTab=By.xpath("//span[text()='Aktuell']");
-    public By lArchivTab=By.xpath("//span[@id='GeC_ZiP_News_ViewId--archivNewsId-icon']");
-    public By lNewsdropdown=By.xpath("//span[@id='__box51-arrow']");
-    public By lNewsdropdownwahlen= By.xpath("//div[text()='Rumble Dortmund']");
-    public By lGesellschaftoption=By.xpath("//span[@id='__input59-vhi']");
-    public By lTitel=By.xpath("//input[@id='__input60-inner']");
-    public By lTextkorperfeld=By.xpath("//div[@id='cke_184_contents']");
+    public By lAktuellTab = By.xpath("//span[text()='Aktuell']");
+    public By lArchivTab = By.xpath("//span[@id='GeC_ZiP_News_ViewId--archivNewsId-icon']");
+    public By lNewsdropdown = By.xpath("//span[@id='__box51-arrow']");
+    public By lNewsdropdownwahlen = By.xpath("//div[text()='Rumble Dortmund']");
+    public By lGesellschaftoption = By.xpath("//span[@id='__input59-vhi']");
+    public By lTitel = By.xpath("//input[@id='__input60-inner']");
+    public By lSelectnewsloschen = By.xpath("//div[@id='__item294-GeC_ZiP_News_ViewId--tabelleNewsId-0-selectMulti-CbBg']");
 
-
-    Properties properties = new Properties();
 
 
     public By navigationMenus(String title) {
@@ -87,7 +77,6 @@ public class GeC_Bewerber extends BaseClass {
         return By.xpath("//li[@id='__item120-__select19-" + str + "']");
 
     }
-
 
 
     public By navigationSubMenus(String title) {
@@ -148,19 +137,6 @@ public class GeC_Bewerber extends BaseClass {
 
     }
 
-    public void angelegteMitarbeiterÄndern() {
-        click(lReiterPersonAnrede);
-        click(lReiterPersonAnredeFrau);
-        sendKeys(lReiterPersonVorname, "Maria_Automation");
-        click(lReiterPersonGeburtsdatum);
-        sendKeys(lReiterPersonGeburtsdatum, "01.01.1987");
-        sendKeys(lReiterPersonStraße, "Müllstraße");
-        sendKeys(lReiterPersonHausnummer, "50");
-        sendKeys(lReiterPersonEMail, "maria@gmail.com");
-        click(fußLeisteButtons("Speichern"));
-        click(lÄnderungDerBewerberOkButton);
-
-    }
 
     public By fußLeisteButtons(String title) {
         return By.xpath("//bdi[text()='" + title + "']");

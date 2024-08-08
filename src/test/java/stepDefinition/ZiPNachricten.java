@@ -9,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pageObjekts.TS2_GL.GeC_Bewerber;
 import propertyReader.PropertyReaders;
-
 import java.util.List;
 
 public class ZiPNachricten extends BaseClass {
