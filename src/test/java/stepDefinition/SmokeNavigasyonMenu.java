@@ -2,11 +2,9 @@ package stepDefinition;
 
 import baseClass.BaseClass;
 
-import com.github.dockerjava.api.model.Config;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;

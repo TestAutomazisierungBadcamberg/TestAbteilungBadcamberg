@@ -1,9 +1,11 @@
 package stepDefinition;
 
 import baseClass.BaseClass;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pageObjekts.TS2_GL.GeC_Bewerber;
 import propertyReader.PropertyReaders;
 
@@ -42,4 +44,7 @@ public class GeC_BewerberKommentar extends BaseClass {
         sleep(1000);
 
     }
+
+
 }
+

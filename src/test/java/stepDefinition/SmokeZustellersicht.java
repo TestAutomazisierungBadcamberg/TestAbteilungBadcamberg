@@ -13,7 +13,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pageObjekts.TS2_GL.GeC_Bewerber;
 import propertyReader.PropertyReaders;
-
 import java.time.Duration;
 import java.util.List;
 import java.util.Map;
@@ -110,15 +109,8 @@ public class SmokeZustellersicht extends BaseClass {
 
     }
 
-
-
     @And("Ich klicke auf die Download Dropdown")
     public void ichKlickeAufDieDownloadDropdown() {
-
         click(bewerber.lDownloadDropdown);
-        //waitForVisibilty(bewerber.lDropdownOption);
-        //click(bewerber.lDropdownOption);
-
-
     }
 }
