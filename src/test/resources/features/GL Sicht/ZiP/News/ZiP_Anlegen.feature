@@ -1,4 +1,4 @@
-@klickTest121
+@klickTest889
 Feature:ZiP News Seite Anlegen
 
   Scenario:Teste Anlegen auf der ZiP News Seite
@@ -17,4 +17,5 @@ Feature:ZiP News Seite Anlegen
     And Ich klicke auf die Geselschaften auswahlen Button
     And Ich klicke auf der Seite der Button "Ok"
     When Ich fülle das Titelfeld aus
+    When Ich fülle das Körpertext aus
     And Ich klicke auf der Seite der Button "Speichern"

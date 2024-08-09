@@ -1,4 +1,4 @@
-@klick
+@klick7
 Feature: Bewerber Anlegen
 
   Scenario: neue Bewerber anlegen

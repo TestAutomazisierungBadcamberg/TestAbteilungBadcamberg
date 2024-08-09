@@ -61,4 +61,36 @@ public class ZipNews extends BaseClass {
         click(bewerber.lTitel);
         sendKeys(bewerber.lTitel,"text1234");
     }
+
+    @When("Ich wähle einen Eintrag  dem Verlag aus")
+    public void ichWähleEinenEintragDemVerlagAus() {
+        click(bewerber.lBearbeitenSelect);
+    }
+
+    @And("Ich klicke auf Verlag Select Button")
+    public void ichKlickeAufVerlagSelectButton() {
+        click(bewerber.lVerlagselectbuttonmehr);
+    }
+
+    @When("Ich fülle das Körpertext aus")
+    public void ichFülleDasKörpertextAus() {
+
+        WebElement element = driver.findElement(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("Newsiframe")));
+        driver.switchTo().frame(element).findElement(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("Korpertextnews"))).sendKeys("sabris123");
+        sleep(2000);
+        driver.switchTo().parentFrame();
+
+
+    }
+
+    @When("Ich wähle mehr  Eintrags  dem Verlag aus")
+    public void ichWähleMehrEintragsDemVerlagAus() {
+        click(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("NewsVerlagauswahl")));
+    }
+
+
+    @When("Ich gebe den Text in dem Suchfeld ein")
+    public void ichGebeDenTextInDemSuchfeldEin() {
+        sendKeys(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("NewsSuchenfeld")),"text1234");
+    }
 }

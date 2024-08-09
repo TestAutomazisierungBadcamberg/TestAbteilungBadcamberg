@@ -4,7 +4,6 @@ import baseClass.BaseClass;
 import org.openqa.selenium.By;
 import propertyReader.PropertyReaders;
 
-import java.util.Properties;
 
 public class GeC_Bewerber extends BaseClass {
 
@@ -66,7 +65,8 @@ public class GeC_Bewerber extends BaseClass {
     public By lGesellschaftoption = By.xpath("//span[@id='__input59-vhi']");
     public By lTitel = By.xpath("//input[@id='__input60-inner']");
     public By lSelectnewsloschen = By.xpath("//div[@id='__item294-GeC_ZiP_News_ViewId--tabelleNewsId-0-selectMulti-CbBg']");
-
+    public By lBearbeitenSelect = By.xpath("//div[@id='__item294-GeC_ZiP_News_ViewId--tabelleNewsId-0-selectMulti-CbBg']");
+    public By lVerlagselectbuttonmehr=By.xpath("//div[@id='__item294-GeC_ZiP_News_ViewId--tabelleNewsId-1-selectMulti-CbBg']");
 
 
     public By navigationMenus(String title) {

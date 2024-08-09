@@ -1,6 +1,6 @@
-Feature: Automation ZiP News testen
-
-  Scenario:Teste Aktuell Loschen der ZiP-News Seite
+@klickTest12
+Feature:der ZiP-News Seite Actuell Suchen
+  Scenario:Teste Aktuell Suchen der ZiP-News Seite
 
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
@@ -8,8 +8,6 @@ Feature: Automation ZiP News testen
     Then Ich sehe auf der Seite unter der Button "sabris GeC"
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "News"
     Then Ich sehe auf der Seite unter der Button "News"
-    And Ich klicke die Schaltfläche "Anlegen"
-    And Ich klicke auf der News-dropdown menu
-    When Ich fülle das Titelfeld aus
-    Then  Ich sehe auf der Seite unter der Button "Textkörper"
-    And Ich klicke auf der Seite der Button "Speichern"
+    And Ich klicke die Schaltfläche "Suchen"
+    When Ich gebe den Text in dem Suchfeld ein
+    And Ich klicke auf der Seite der Button "Ok"
