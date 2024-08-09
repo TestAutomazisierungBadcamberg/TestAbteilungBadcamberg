@@ -30,6 +30,14 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/resources/features/GL Sicht/GeC/Bewerber/29_GeC_Bewerber_Bezirkszuweisung.feature",
                 "src/test/resources/features/GL Sicht/GeC/Bewerber/30_GeC_Bewerber_Bezirkzuweisungöffnen.feature",
                 "src/test/resources/features/GL Sicht/GeC/Bewerber/32_GeC_Bewerber_Löschen.feature",
+                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/NachrichtLöschen.feature",
+                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/NachrichtSenden.feature",
+                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/NachrichtSendenAnZustellerUndPrüfen.feature",
+                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/Scrollen.feature",
+                "src/test/resources/features/GL Sicht/ZiP/News/ZiP_Anlegen.feature",
+                "src/test/resources/features/GL Sicht/ZiP/News/Zip_News.feature",
+                "src/test/resources/features/GL Sicht/ZiP/News/ZiP_Reiterzahl.feature"
+
         },
         glue = {"stepDefinition"},
         plugin = {

@@ -1,7 +1,7 @@
-@abc
-Feature: Als GL eine Nachricht löschen
+@emp
+Feature: Empfangsbestätigung vorhanden
 
-  Scenario:Als GL eine Nachricht anlegen und löschen
+  Scenario:prüfen, ob der Button Empfangsbestätigung vorhanden ist
 
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
@@ -18,6 +18,11 @@ Feature: Als GL eine Nachricht löschen
     When Ich schreibe in das Suchfeld den von GL ausgegebenen Betreff
     And Ich klicke auf der Seite der Button "Ok"
     Then Ich prüfe, ob die Nachricht angezeigt wird
+    When Ich klicke auf die Nachrichten
+    Then Ich sehe unten auf der Seite in der Fußzeile die Schaltfläche "Empfangs- und Lesebestätigung"
+    And Ich klicke die Schaltfläche "Empfangs- und Lesebestätigung"
+    And Ich klicke auf der Seite der Button "Schließen"
+    When Ich klicke auf der ZiP Seite "NachrichtenButtonZuruck"
     When Ich klicke auf die Checkbox auf der ZiP-Seite
     And Ich klicke die Schaltfläche "Löschen"
     And Ich klicke auf der Seite der Button "OK"

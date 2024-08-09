@@ -76,6 +76,7 @@ public class ZiPNachricten extends BaseClass {
 
     @When("Ich klicke auf der ZiP Seite {string}")
     public void ichKlickeAufDerZiPSeite(String text) {
+        sleep(200);
         click(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get(text)));
     }
 
@@ -105,5 +106,10 @@ public class ZiPNachricten extends BaseClass {
     @When("Ich klicke auf die Checkbox auf der ZiP-Seite")
     public void ichKlickeAufDieCheckboxAufDerZiPSeite() {
         click(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("NachrichtenCheckbox")));
+    }
+
+    @When("Ich klicke auf die Nachrichten")
+    public void ichKlickeAufDieNachrichten() {
+        click(bewerber.fußLeisteButtons(System.getProperty("betriff")));
     }
 }
