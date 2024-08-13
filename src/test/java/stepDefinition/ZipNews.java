@@ -57,7 +57,7 @@ public class ZipNews extends BaseClass {
     @When("Ich fülle das Titelfeld aus")
     public void ichFülleDasTitelfeldAus() {
         click(bewerber.lTitel);
-        String news_titel = generateRandomString("text",1)
+        String news_titel = generateRandomString("text",1);
         sendKeys(bewerber.lTitel,news_titel);
         System.setProperty("news_titel",news_titel);
     }
