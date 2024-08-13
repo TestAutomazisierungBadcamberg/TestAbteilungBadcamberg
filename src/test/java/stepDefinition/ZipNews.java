@@ -37,8 +37,6 @@ public class ZipNews extends BaseClass {
     public void ichKlickeAufDerNewsDropdownMenu() {
         click(bewerber.lNewsdropdown);
         click(bewerber.lNewsdropdownwahlen);
-        click(bewerber.lNewsdropdown);
-        click(bewerber.lNewsdropdownwahlen);
     }
 
     @And("Ich klicke  auf der Gesellschaftenoption Button")
@@ -59,7 +57,9 @@ public class ZipNews extends BaseClass {
     @When("Ich fülle das Titelfeld aus")
     public void ichFülleDasTitelfeldAus() {
         click(bewerber.lTitel);
-        sendKeys(bewerber.lTitel,"text1234");
+        String news_titel = generateRandomString("text",1)
+        sendKeys(bewerber.lTitel,news_titel);
+        System.setProperty("news_titel",news_titel);
     }
 
     @When("Ich wähle einen Eintrag  dem Verlag aus")
@@ -74,13 +74,13 @@ public class ZipNews extends BaseClass {
 
     @When("Ich fülle das Körpertext aus")
     public void ichFülleDasKörpertextAus() {
-
-        WebElement element = driver.findElement(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("Newsiframe")));
-        driver.switchTo().frame(element).findElement(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("Korpertextnews"))).sendKeys("sabris123");
+        WebElement iframeElement = driver.findElement(By.cssSelector(PropertyReaders.read(ZiP_Alle_Maske).get("Newsiframe")));
+        driver.switchTo().frame(iframeElement);
+        WebElement bodyElement = driver.findElement(By.tagName("body"));
+        bodyElement.click();
+        bodyElement.sendKeys(generateRandomString("umit",2));
         sleep(2000);
-        driver.switchTo().parentFrame();
-
-
+        driver.switchTo().defaultContent();
     }
 
     @When("Ich wähle mehr  Eintrags  dem Verlag aus")
@@ -91,6 +91,6 @@ public class ZipNews extends BaseClass {
 
     @When("Ich gebe den Text in dem Suchfeld ein")
     public void ichGebeDenTextInDemSuchfeldEin() {
-        sendKeys(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("NewsSuchenfeld")),"text1234");
+        sendKeys(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("NewsSuchenfeld")),System.getProperty("news_titel"));
     }
 }

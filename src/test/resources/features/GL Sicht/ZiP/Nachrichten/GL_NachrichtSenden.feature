@@ -1,7 +1,7 @@
-@suchen
-Feature: Nachrichten-Suche
+@nach
+Feature: Als GL eine Nachricht erstellen und senden
 
-  Scenario:prüfen, ob der Button Empfangsbestätigung vorhanden ist
+  Scenario:Als GL eine Nachricht für alle Gesellschaften anlegen
 
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
@@ -10,7 +10,7 @@ Feature: Nachrichten-Suche
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Nachrichten"
     Then Ich sehe auf der Seite unter der Button "Nachrichten"
     When Ich klicke die Schaltfläche "Neue Nachricht"
-    And Ich fülle alle Felder für den Zusteller aus, um eine Nachricht zu erstellen
+    And Ich fülle alle Felder für alle Gesellschaften aus, um eine Nachricht zu erstellen
     And Ich sende eine Nachricht
     Then Ich sehe auf der ZiP Seite "NachrichtErfolgsmeldung"
     When Ich klicke auf der ZiP Seite "NachrichtenReiterGesendet"

@@ -1,4 +1,4 @@
-@nachricht
+@nachric
 Feature: Als GL Alle Nachrichten Scrollen
   Scenario: ich scrolle nach unten und oben
     Given Ich melde mich als GL "url_TS2_GL"

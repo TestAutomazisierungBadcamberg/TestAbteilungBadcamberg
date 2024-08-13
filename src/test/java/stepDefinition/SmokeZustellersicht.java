@@ -97,6 +97,8 @@ public class SmokeZustellersicht extends BaseClass {
                 } else if (map.get("Button").equals("Abmelden")) {
                     click(naviMenus(map.get("Button")));
                     wait.until(ExpectedConditions.elementToBeClickable(bewerber.fußLeisteButtons("Login")));
+                } else if (map.get("Button").equals("Interaktive Karte - alle Bezirke")) {
+                    click(naviMenus(map.get("Button")));
                 } else {
                     click(naviMenus(map.get("Button")));
                     waitForVisibilty(bewerber.fußLeisteButtons(map.get("Assertion")));

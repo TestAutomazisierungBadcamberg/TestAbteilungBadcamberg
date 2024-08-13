@@ -83,12 +83,16 @@ public class ZiPNachricten extends BaseClass {
     @When("Ich scrolle nach unten und nach oben")
     public void ichScrolleNachUntenUndNachOben() {
         List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("NachrichtenPosteingangAlleEintrage")));
-        int size = elements.size();
-        scrollElement(elements.get(size-5));
-        sleep(1000);
-        elements = driver.findElements(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("NachrichtenPosteingangAlleEintrage")));
-        scrollElement(elements.get(0));
-        sleep(1000);
+        if (!elements.isEmpty()) {
+            scrollElement(elements.get(elements.size() - 1));
+            sleep(1000);
+            elements = driver.findElements(By.xpath(PropertyReaders.read(ZiP_Alle_Maske).get("NachrichtenPosteingangAlleEintrage")));
+
+            scrollElement(elements.get(0));
+            sleep(1000);
+        } else {
+            System.out.println("keinen Element gefunden");
+        }
     }
 
     @And("Ich sende eine Nachricht")
@@ -111,5 +115,35 @@ public class ZiPNachricten extends BaseClass {
     @When("Ich klicke auf die Nachrichten")
     public void ichKlickeAufDieNachrichten() {
         click(bewerber.fußLeisteButtons(System.getProperty("betriff")));
+    }
+
+    @And("Ich fülle alle Felder für  einen der ausgewählten Gebietsleiter aus, um eine Nachricht zu erstellen")
+    public void ichFülleAlleFelderFürEinenDerAusgewähltenGebietsleiterAusUmEineNachrichtZuErstellen() {
+        List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read(GeC_Bewerber).get("NachrichtenCheckBoxes")));
+        for (WebElement element : elements) {
+            click(element);
+            sleep(200);
+        }
+
+        betriff = generateRandomString("Nahricht",6);
+        sendKeys(By.xpath(PropertyReaders.read(GeC_Bewerber).get("NachrichtenInputBetreff")),betriff);
+        nachricht = generateRandomString("Nahricht",8);
+        sendKeys(By.xpath(PropertyReaders.read(GeC_Bewerber).get("NachrichtInputText")),nachricht);
+        click(By.xpath(PropertyReaders.read(GeC_Bewerber).get("NachrichtButtonEmpfeunger")));
+        click(By.xpath(PropertyReaders.read(GeC_Bewerber).get("NachrichtButtonEmpfeungerGebietsleiter")));
+        sleep(200);
+        click(By.xpath(PropertyReaders.read(GeC_Bewerber).get("ZustellersichtNachrichtButtonEmpfeungerZustellerWeuhlen")));
+        sendKeys(By.xpath(PropertyReaders.read(GeC_Bewerber).get("NachrichtButtonEmpfeungerZustellerSuchfeld")),"Hereser, Engin");
+        click(By.xpath(PropertyReaders.read(GeC_Bewerber).get("NachrichtSuchbutton")));
+        click(By.xpath(PropertyReaders.read(GeC_Bewerber).get("ZustellerNachrichtButtonEmpfeungerAusgeweuhlteZusteller")));
+        click(bewerber.fußLeisteButtons("Auswählen"));
+        System.setProperty("betriff",betriff);
+    }
+
+    @When("Ich schreibe in das Suchfeld den von Zusteller ausgegebenen Betreff")
+    public void ichSchreibeInDasSuchfeldDenVonZustellerAusgegebenenBetreff() {
+        String nachricht = System.getProperty("betriff");
+        sendKeys(bewerber.lBewerberMaskeSuchbuttonTextFeldUnten, nachricht);
+        sleep(300);
     }
 }

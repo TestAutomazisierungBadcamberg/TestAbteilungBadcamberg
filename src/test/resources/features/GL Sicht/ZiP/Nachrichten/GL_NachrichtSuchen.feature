@@ -1,7 +1,7 @@
-@nach
-Feature: Als GL eine Nachricht erstellen und senden
+@suchen
+Feature: Nachrichten-Suche
 
-  Scenario:Als GL eine Nachricht für alle Gesellschaften anlegen
+  Scenario:prüfen, ob die gesendete Nachricht gesucht wird
 
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
@@ -10,10 +10,11 @@ Feature: Als GL eine Nachricht erstellen und senden
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Nachrichten"
     Then Ich sehe auf der Seite unter der Button "Nachrichten"
     When Ich klicke die Schaltfläche "Neue Nachricht"
-    And Ich fülle alle Felder für alle Gesellschaften aus, um eine Nachricht zu erstellen
+    And Ich fülle alle Felder für den Zusteller aus, um eine Nachricht zu erstellen
     And Ich sende eine Nachricht
     Then Ich sehe auf der ZiP Seite "NachrichtErfolgsmeldung"
     When Ich klicke auf der ZiP Seite "NachrichtenReiterGesendet"
     And Ich klicke die Schaltfläche "Suchen"
     When Ich schreibe in das Suchfeld den von GL ausgegebenen Betreff
+    And Ich klicke auf der Seite der Button "Ok"
     Then Ich prüfe, ob die Nachricht angezeigt wird

@@ -193,7 +193,7 @@ public class BaseClass {
             throw new IllegalArgumentException("Bitte wählen Sie 1 bis 10 Wörter aus..");
         }
 
-        String[] words = {"alpha", "engin","bravo", "charlie", "delta","test", "echo", "foxtrot", "golf", "hotel", "india", "juliett"};
+        String[] words = {"alpha", "engin","table","erfolg", "badcamberg", "frankfurt","test","umit", "sabris", "auto", "golf", "hotel", "deutschland", "computer"};
 
         Random random = new Random();
         StringBuilder randomString = new StringBuilder(prefix);
@@ -206,6 +206,40 @@ public class BaseClass {
         }
 
         return randomString.toString();
+    }
+
+
+        public String generateRandomName(int maxNames, boolean generateFirstName, boolean generateLastName) {
+            if (maxNames < 1 || maxNames > 10) {
+                throw new IllegalArgumentException("Bitte wählen Sie 1 bis 10 Namen aus.");
+            }
+
+            String[] firstNames = {"Hans", "Peter", "Friedrich", "Karl", "Lukas", "Johann", "Matthias", "Franz", "Stefan", "Wolfgang"};
+            String[] lastNames = {"Müller", "Schmidt", "Schneider", "Fischer", "Weber", "Meyer", "Wagner", "Becker", "Hoffmann", "Schulz"};
+
+            Random random = new Random();
+            StringBuilder randomName = new StringBuilder();
+
+            for (int i = 0; i < maxNames; i++) {
+                if (generateFirstName) {
+                    randomName.append(firstNames[random.nextInt(firstNames.length)]);
+                }
+                if (generateFirstName && generateLastName) {
+                    randomName.append(" ");
+                }
+                if (generateLastName) {
+                    randomName.append(lastNames[random.nextInt(lastNames.length)]);
+                }
+                if (i < maxNames - 1) {
+                    randomName.append(", ");
+                }
+            }
+
+            return randomName.toString();
+        }
+
+    public By algemeinerLocatorFurInputFeld (String text){
+        return By.xpath("//*[@id=//label[.//bdi[text()='"+text+"']]/@for]");
     }
 
 }

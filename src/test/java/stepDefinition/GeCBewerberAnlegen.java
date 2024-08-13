@@ -68,7 +68,7 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @And("Ich klicke die Schaltfläche {string}")
     public void ichKlickeDieSchaltfläche(String title) {
-        sleep(200);
+        sleep(400);
         click(bewerber.bewerberFußLeisteButton(title));
     }
 
@@ -86,7 +86,7 @@ public class GeCBewerberAnlegen extends BaseClass {
     @Then("Ich sehe die von mir angelegte Bewerber")
     public void ichSeheDieVonMirAngelegteBewerber() {
         sleep(2000);
-        Assert.assertTrue(driver.getPageSource().contains("Müller"));
+        Assert.assertTrue(driver.getPageSource().contains(System.getProperty("name")));
     }
 
     @And("Ich klicke auf die geöffnete Button Mitarbeiter")

@@ -27,6 +27,7 @@ public class GeC_Bewerber extends BaseClass {
     public By lReiterPersonEMail = By.xpath("//input[@id='__input16-inner']");
     public By lBewerberMaskeAllBewerberListe = By.xpath("//tbody[@class='sapMListItems sapMTableTBody']/tr");
     public By lBewerberMaskeSuchbuttonTextFeld = By.xpath("//input[@type='search']");
+    public By lBewerberMaskeSuchbuttonTextFeldUnten = By.xpath("(//input[@type='search'])[1]");
     public By lBewerberMaskeSuchfeldOkButton = By.xpath("//span[@id='__button951-content']");
     public By lÄnderungDerBewerberOkButton = By.xpath("//bdi[contains(@id,'__mbox-btn')]");
     public By lSuchFeldZürecksetzenButton = By.xpath("//div[contains(@title,'Zurücksetzen')]");
@@ -69,6 +70,8 @@ public class GeC_Bewerber extends BaseClass {
     public By lVerlagselectbuttonmehr=By.xpath("//div[@id='__item294-GeC_ZiP_News_ViewId--tabelleNewsId-1-selectMulti-CbBg']");
 
 
+    String name;
+    String vorname;
     public By navigationMenus(String title) {
         return By.xpath("//div[@title='" + title + "']//span[@role='presentation']");
     }
@@ -93,19 +96,23 @@ public class GeC_Bewerber extends BaseClass {
     }
 
     public void neueBewerberAnlegen() {
+        name =generateRandomName(1,false,true);
+        vorname = generateRandomName(1,true,false);
         sleep(500);
         hoverOverByAction(lReiterPersonAnrede);
         click(lReiterPersonAnrede);
         click(lReiterPersonAnredeHerr);
-        sendKeys(lReiterPersonName, "Müller");
-        sendKeys(lReiterPersonVorname, "Maximillian_Automation");
+        sendKeys(lReiterPersonName, name);
+        sendKeys(lReiterPersonVorname, vorname);
         click(lReiterPersonGeburtsdatum);
         sendKeys(lReiterPersonGeburtsdatum, "17.12.1985");
         sendKeys(lReiterPersonStraße, "Gerhart Hauptmann Str");
         sendKeys(lReiterPersonHausnummer, "21");
-        sendKeys(lReiterPersonEMail, "engin@gmail.com");
+        sendKeys(lReiterPersonEMail, vorname+"@gmail.com");
         click(fußLeisteButtons("Speichern"));
         click(fußLeisteButtons("OK"));
+        System.setProperty("name",name);
+        System.setProperty("vorname",vorname);
     }
 
     public void neueMitarbeiterAnlegen() {
@@ -113,7 +120,7 @@ public class GeC_Bewerber extends BaseClass {
         hoverOverByAction(lReiterPersonAnredeMitarbeiter);
         click(lReiterPersonAnredeMitarbeiter);
         click(lReiterPersonAnredeHerr);
-        sendKeys(lReiterPersonName, "Müller");
+        sendKeys(lReiterPersonName, System.getProperty("name"));
         sendKeys(lReiterPersonVorname, "Ralf_Badcamber");
         click(lReiterPersonGeburtsdatum);
         sendKeys(lReiterPersonGeburtsdatum, "17.12.1985");
@@ -125,9 +132,10 @@ public class GeC_Bewerber extends BaseClass {
 
 
     public void angelegteBewerberÄndern() {
+        vorname = generateRandomName(1,true,false);
         click(lReiterPersonAnrede);
         click(lReiterPersonAnredeFrau);
-        sendKeys(lReiterPersonVorname, "Sophia_Automation");
+        sendKeys(lReiterPersonVorname, vorname);
         click(lReiterPersonGeburtsdatum);
         sendKeys(lReiterPersonGeburtsdatum, "01.01.1986");
         sendKeys(lReiterPersonStraße, "Müllstraße");
@@ -135,7 +143,7 @@ public class GeC_Bewerber extends BaseClass {
         sendKeys(lReiterPersonEMail, "sophia@gmail.com");
         click(fußLeisteButtons("Speichern"));
         click(lÄnderungDerBewerberOkButton);
-
+        System.setProperty("vorname",vorname);
     }
 
     public By fußLeisteButtons(String title) {

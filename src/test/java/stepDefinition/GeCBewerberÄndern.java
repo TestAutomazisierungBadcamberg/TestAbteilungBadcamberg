@@ -19,7 +19,7 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @And("Ich schreibe in das Suchfeld den gewünschten Bewerber, den ich ändern möchte")
     public void ichSchreibeInDasSuchfeldDenGewünschtenBewerberDenIchÄndernMöchte() {
-        sendKeys(bewerber.lBewerberMaskeSuchbuttonTextFeld, "Müller");
+        sendKeys(bewerber.lBewerberMaskeSuchbuttonTextFeld, System.getProperty("name"));
     }
 
     @And("Ich klicke auf der Button OK, nachdem ich in das Feld Suche die gewünschten Bewerber eingegeben habe")
@@ -55,7 +55,7 @@ public class GeCBewerberÄndern extends BaseClass {
         click(bewerber.bewerberFußLeisteButton("Suchen"));
         click(bewerber.lSuchFeldZürecksetzenButton);
         click(bewerber.lBewerberMaskeSuchfeldOkButton);
-        Assert.assertTrue(driver.getPageSource().contains("Müller"));
+        Assert.assertTrue(driver.getPageSource().contains(System.getProperty("name")));
         sleep(1000);
     }
 

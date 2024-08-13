@@ -24,10 +24,10 @@ Feature: Navigation-Menü Runter Überprüfen
       | Fahrtenbuch                      | nein          | FahrtenbuchButtonHinzufugen      | Fahrtenbuch               |
       | Betriebsmittelverwaltung         | nein          | BetriebsmittelButtonBestellen    | Betriebsmittel            |
       | Stellen                          | ja            | ButtonZuruckStellen              | Bezirk                    |
-      | Interaktive Karte - alle Bezirke | nein          | InteraktiveKarteButtonMenu       | Karte                     |
+      | Interaktive Karte - alle Bezirke | ja            | InteraktiveKarteButtonAbbrechen  | Karte                     |
       | Stammdaten ändern                | nein          | StammdatenEundernButtonSpeichern | Speichern                 |
       | Passwort ändern                  | nein          | PasswordEundernPasswordsfeld     | Passwort ändern           |
       | Impressum                        | nein          | ImpressumTitel                   | Impressum                 |
       | Kontakt                          | nein          | KontaktTitel                     | Kontakt                   |
       | Datenschutz                      | nein          | DatenschutzTitel                 | Datenschutz               |
-      | Abmelden                         | nein          | InteraktiveKarteButtonMenu       | ZiP                       |
+      | Abmelden                         | nein          | ButtonLogin                      | ZiP                       |
