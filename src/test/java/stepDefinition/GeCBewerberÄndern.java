@@ -39,16 +39,10 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @And("Ich klicke auf der Seite der Button {string}")
     public void ichKlickeAufDerSeiteUnterDerButton(String text) {
-
         click(bewerber.fußLeisteButtons(text));
         sleep(1000);
-       /* WebElement element = driver.findElement(By.xpath(""));
-        int a = driver.findElement(By.xpath("")).getRect().height;
-        int b = driver.findElement(By.xpath("")).getRect().width;
-        new Actions(driver)
-                .moveToElement(element,)
-                .click().perform();*/
     }
+
     @Then("Ich sehe die von mir geänderte Bewerber")
     public void ichSeheDieVonMirGeänderteBewerber() {
         sleep(1000);
@@ -64,11 +58,6 @@ public class GeCBewerberÄndern extends BaseClass {
         bewerber.angelegteBewerberÄndern();
     }
 
-
-    @And("Ich klicke  Reiter auf der Button {string}")
-    public void ichKlickeReiterAufDerButton(String text) {
-        click(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
-    }
 
 
     @When("Ich wahle Zusage von Ergebnis Menu")

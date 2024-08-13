@@ -14,7 +14,7 @@ Feature:ZiP News Seite Anlegen
     Then  Ich sehe auf der Seite unter der Button "Speichern"
     And Ich klicke auf der News-dropdown menu
     And Ich klicke  auf der Gesellschaftenoption Button
-    And Ich klicke auf die Geselschaften auswahlen Button
+    And Ich klicke auf die Gesellschaften auswahlen Button
     And Ich klicke auf der Seite der Button "Ok"
     When Ich fülle das Titelfeld aus
     When Ich fülle das Körpertext aus

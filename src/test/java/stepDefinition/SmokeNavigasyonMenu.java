@@ -85,6 +85,6 @@ public class SmokeNavigasyonMenu  extends BaseClass {
 
     @Then("Ich sehe auf der Seite {string}")
     public void ichSeheAufDerSeite(String text) {
-        waitForVisibilty(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
+        waitForVisibilty(By.xpath(PropertyReaders.read(GeC_Bewerber).get(text)));
     }
 }

@@ -21,28 +21,29 @@ public class GeCBewerberFiltern extends BaseClass {
     @Then("Ich sehe auf der GeC_Bewerber Seite {string}")
     public void ichSeheAufDerSeite(String text) {
         sleep(1000);
-        WebElement liste = driver.findElement(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeAllBewerberListe")));
+        WebElement liste = driver.findElement(By.xpath(PropertyReaders.read(GeC_Bewerber).get("BewerberMaskeAllBewerberListe")));
         if (liste.isDisplayed())
             waitForVisibilty(liste);
 
-        List<WebElement> kommentar = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("ReiterKommentarInDemStehtKommentare")));
+        List<WebElement> kommentar = driver.findElements(By.xpath(PropertyReaders.read(GeC_Bewerber).get("ReiterKommentarInDemStehtKommentare")));
         if (!kommentar.isEmpty())
             waitForVisibilty(kommentar.get(0));
         sleep(1000);
-        vorBewerberListe = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeAllBewerberListe")));
-        WebElement element = driver.findElement(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
+        vorBewerberListe = driver.findElements(By.xpath(PropertyReaders.read(GeC_Bewerber).get("BewerberMaskeAllBewerberListe")));
+        WebElement element = driver.findElement(By.xpath(PropertyReaders.read(GeC_Bewerber).get(text)));
         waitForVisibilty(element);
     }
 
     @When("Ich klicke auf der Seite GeC_Bewerber auf den Button {string}")
     public void ichKlickeAufDerSeiteGeC_BewerberAufDenButton(String text) {
-        WebElement element = driver.findElement(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
+        WebElement element = driver.findElement(By.xpath(PropertyReaders.read(GeC_Bewerber).get(text)));
+        sleep(300);
         click(element);
     }
 
     @And("Ich klicke auf das Checkbox TZU")
     public void ichKlickeAufDasCheckboxTZ() {
-        List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("FilternCheckBoxAllListe")));
+        List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read(GeC_Bewerber).get("FilternCheckBoxAllListe")));
         waitForVisibilty(elements.get(1));
         click(elements.get(2));
         sleep(1000);
@@ -52,13 +53,13 @@ public class GeCBewerberFiltern extends BaseClass {
     @Then("Ich überprüfe ob sich in der Bewerberliste etwas ändert")
     public void ichÜberprüfeObSichInDerBewerberlisteEtwasÄndert() {
         sleep(1000);
-        List<WebElement> nachBewerberliste = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeAllBewerberListe")));
+        List<WebElement> nachBewerberliste = driver.findElements(By.xpath(PropertyReaders.read(GeC_Bewerber).get("BewerberMaskeAllBewerberListe")));
         Assert.assertNotEquals(vorBewerberListe,nachBewerberliste);
     }
 
     @And("Ich klicke auf das Checkbox LWP Münsterland GmbH")
     public void ichKlickeAufDasCheckboxLWPMünsterlandGmbH() {
-        List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("FilternCheckBoxAllListe")));
+        List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read(GeC_Bewerber).get("FilternCheckBoxAllListe")));
         waitForVisibilty(elements.get(1));
         click(elements.get(4));
         sleep(1000);
@@ -67,7 +68,7 @@ public class GeCBewerberFiltern extends BaseClass {
 
     @When("Ich fahre auf der Seite drei Reiter")
     public void ichFahreAufDerSeiteDreiReiter() {
-        List<WebElement> reiters = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeObenDreiReiter")));
+        List<WebElement> reiters = driver.findElements(By.xpath(PropertyReaders.read(GeC_Bewerber).get("BewerberMaskeObenDreiReiter")));
         for (WebElement reiter : reiters) {
             wait.until(ExpectedConditions.elementToBeClickable(reiter));
             hoverOverByAction(reiter);

@@ -18,9 +18,9 @@ Feature: Mitarbeiter Anlegen
     Then Ich sehe auf der Seite unter der Button "Ändern"
     And Ich klicke auf der Seite der Button "Ändern"
     Then Ich sehe auf der GeC_Bewerber Seite "ReiterHR"
-    And Ich klicke  Reiter auf der Button "ReiterHR"
+    And Ich klicke auf der Seite GeC_Bewerber auf den Button "ReiterHR"
     Then Ich sehe auf der GeC_Bewerber Seite "ReiterOrganisatorisches"
-    And Ich klicke  Reiter auf der Button "ReiterOrganisatorisches"
+    And Ich klicke auf der Seite GeC_Bewerber auf den Button "ReiterOrganisatorisches"
     And Ich wahle warteliste von Ergebnis Menu
     When Ich klicke auf der Seite der Button "Speichern"
     And Ich klicke auf der Seite der Button "OK"

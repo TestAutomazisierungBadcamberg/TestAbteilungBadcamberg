@@ -15,7 +15,7 @@ Feature: Bezirkzuweisung die Karte öffnen
     Then Ich sehe die von mir angelegte Bewerber
     And Ich klicke auf den Bewerber
     Then Ich sehe auf der GeC_Bewerber Seite "ReiterBezirkszuweisung"
-    And Ich klicke  Reiter auf der Button "ReiterBezirkszuweisung"
+    And Ich klicke auf der Seite GeC_Bewerber auf den Button "ReiterBezirkszuweisung"
     And Ich klicke auf die Dropdown-Menüs der Projektfelder
     When Ich wähle auf die Dropdown-Menüs der Projektfelder
     And Ich klicke auf die Dropdown-Menüs der Gesellschaft

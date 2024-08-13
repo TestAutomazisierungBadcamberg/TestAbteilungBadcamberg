@@ -45,7 +45,7 @@ public class ZipNews extends BaseClass {
         waitForVisibilty(bewerber.lGesellschaftoption);
     }
 
-    @And("Ich klicke auf die Geselschaften auswahlen Button")
+    @And("Ich klicke auf die Gesellschaften auswahlen Button")
     public void ichKlickeAufDieGeselschaftenAuswahlenButton() {
         List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("NewsGeselschaftAllListe")));
         for (WebElement element : elements) {

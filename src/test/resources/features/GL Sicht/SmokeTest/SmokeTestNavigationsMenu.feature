@@ -14,7 +14,7 @@ Feature: Navigation-Menü Runter Überprüfen
     Then Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske GeC
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Besetzung (Ad-Hoc)"
     Then Ich sehe auf der GeC_Bewerber Seite "ZurukButton"
-    When Ich klicke  Reiter auf der Button "ZurukButton"
+    When Ich klicke auf der Seite GeC_Bewerber auf den Button "ZurukButton"
     Then Ich sehe auf der linken Seite die Dropdown-Menüs unter der Maske GeC
     And Ich klicke auf die Drop-Down-Menüs der Schaltfläche "Reklamationen"
     Then Ich sehe auf der GeC_Bewerber Seite "GeC_ReklamationTabelle"
