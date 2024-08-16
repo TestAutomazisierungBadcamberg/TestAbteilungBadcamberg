@@ -1,6 +1,5 @@
-@aaa
+@saa
 Feature: Die Daten, wann die Nachricht empfangen und gelesen wurde, werden korrekt zur Verfügung gestellt
-
 
   Scenario:Auf der GL-Seite eine Nachricht erstellen
 
@@ -30,6 +29,7 @@ Feature: Die Daten, wann die Nachricht empfangen und gelesen wurde, werden korre
     Then Ich sehe auf der ZiP Seite "NachrichtBesteutigungsMeldung"
     And Ich klicke auf der Seite der Button "OK"
     And Ich klicke auf der Seite der Button "OK"
+
 
 
 

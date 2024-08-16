@@ -1,4 +1,4 @@
-@emp
+@nachrich
 Feature: Empfangsbestätigung vorhanden
 
   Scenario:prüfen, ob der Button Empfangsbestätigung vorhanden ist

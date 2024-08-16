@@ -33,6 +33,8 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/resources/features/GL Sicht/ZiP/Nachrichten/NachrichtSendenAnZustellerUndPrüfen.feature",
                 "src/test/resources/features/GL Sicht/ZiP/Nachrichten/GL_NachrichtSuchen.feature",
                 "src/test/resources/features/GL Sicht/ZiP/Nachrichten/GL_ButtonEmpfangsUndLesebesteutigung.feature",
+                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/Zustellersicht_NachrichtSenden.feature",
+                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/Zustellersicht_ButtonEmpfangsUndLesebesteutigung.feature",
                 "src/test/resources/features/GL Sicht/ZiP/Nachrichten/Zustellersicht_NachrichtLöschen.feature",
                 "src/test/resources/features/GL Sicht/ZiP/News/ZiP_Anlegen.feature",
                 "src/test/resources/features/GL Sicht/ZiP/News/Zip_News.feature",
@@ -46,4 +48,5 @@ import io.cucumber.testng.CucumberOptions;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class RunnerTäglich extends AbstractTestNGCucumberTests {
+
 }

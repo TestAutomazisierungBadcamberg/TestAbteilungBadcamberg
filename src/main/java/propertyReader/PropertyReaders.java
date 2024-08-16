@@ -35,6 +35,4 @@ public class PropertyReaders {
         properties.setProperty(key,value);
     }
 
-
-
 }
