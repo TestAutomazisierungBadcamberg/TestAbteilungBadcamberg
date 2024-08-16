@@ -2,7 +2,7 @@
 Feature: Die Daten, wann die Nachricht empfangen und gelesen wurde, werden korrekt zur Verfügung gestellt
 
 
-  Scenario:Als GL eine Nachricht erstellen
+  Scenario:Auf der GL-Seite eine Nachricht erstellen
 
     Given Ich melde mich als GL "url_TS2_GL"
     Then Ich sehe auf der Seite Dashboard
@@ -16,7 +16,8 @@ Feature: Die Daten, wann die Nachricht empfangen und gelesen wurde, werden korre
     Then Ich sehe auf der ZiP Seite "NachrichtErfolgsmeldung"
 
 
-  Scenario:Auf der Zustellerseite klicke ich auf die Nachricht, um zu prüfen, ob die Meldung auf der Seite angezeigt wird
+  Scenario:Auf der Zusteller-Seite klicke ich auf die Nachricht, um zu prüfen, ob die Meldung auf der Seite angezeigt wird
+
     Given Ich melde mich als Zusteller "url_TS2_Dortmund_Zusteller"
     When Ich klicke auf jede der Buttons im Navigationsmenü
       | Button      | Neues Fenster | Verifizierung                | Assertion   |
@@ -29,6 +30,7 @@ Feature: Die Daten, wann die Nachricht empfangen und gelesen wurde, werden korre
     Then Ich sehe auf der ZiP Seite "NachrichtBesteutigungsMeldung"
     And Ich klicke auf der Seite der Button "OK"
     And Ich klicke auf der Seite der Button "OK"
+
 
 
 
