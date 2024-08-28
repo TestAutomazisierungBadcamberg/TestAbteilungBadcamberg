@@ -1,4 +1,4 @@
-@kli
+@kliki
 Feature: Mitarbeiter Anlegen
 
   Scenario: neue Bewerber anlegen

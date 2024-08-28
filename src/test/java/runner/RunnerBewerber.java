@@ -27,18 +27,6 @@ import io.cucumber.testng.CucumberOptions;
                 "src/test/resources/features/GL Sicht/GeC/Bewerber/29_GeC_Bewerber_Bezirkszuweisung.feature",
                 "src/test/resources/features/GL Sicht/GeC/Bewerber/30_GeC_Bewerber_Bezirkzuweisungöffnen.feature",
                 "src/test/resources/features/GL Sicht/GeC/Bewerber/32_GeC_Bewerber_Löschen.feature",
-                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/GL_NachrichtSenden.feature",
-                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/GL_NachrichtLöschen.feature",
-                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/GL_Scrollen.feature",
-                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/NachrichtSendenAnZustellerUndPrüfen.feature",
-                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/GL_NachrichtSuchen.feature",
-                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/GL_ButtonEmpfangsUndLesebesteutigung.feature",
-                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/Zustellersicht_NachrichtSenden.feature",
-                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/Zustellersicht_ButtonEmpfangsUndLesebesteutigung.feature",
-                "src/test/resources/features/GL Sicht/ZiP/Nachrichten/Zustellersicht_NachrichtLöschen.feature",
-                "src/test/resources/features/GL Sicht/ZiP/News/ZiP_Anlegen.feature",
-                "src/test/resources/features/GL Sicht/ZiP/News/Zip_News.feature",
-                "src/test/resources/features/GL Sicht/ZiP/News/ZiP_Reiterzahl.feature"
 
         },
         glue = {"stepDefinition"},
@@ -47,6 +35,6 @@ import io.cucumber.testng.CucumberOptions;
                 "html:S:\\\\sabris_intern\\\\TestAutomatisierung\\\\cucumberreport.html",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
-public class RunnerTäglich extends AbstractTestNGCucumberTests {
+public class RunnerBewerber extends AbstractTestNGCucumberTests {
 
 }

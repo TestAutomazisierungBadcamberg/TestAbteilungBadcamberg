@@ -18,6 +18,7 @@ public class GeCBewerberLöschen extends BaseClass {
 
     @And("Ich klicke das Häkchen neben dem Bewerber an, um ihn auszuwählen")
     public void ichKlickeDasHäkchenNebenDemBewerberAnUmIhnAuszuwählen() {
+        sleep(400);
         click(bewerber.lCheckboxButtonFürBewerberAuswählen);
     }
 
@@ -29,6 +30,7 @@ public class GeCBewerberLöschen extends BaseClass {
 
     @When("Ich lösche die von mir angelegte Mitarbeiter")
     public void ichLöscheDieVonMirAngelegteMitarbeiter() {
+        sleep(1000);
         List<WebElement> elements = driver.findElements(By.xpath(PropertyReaders.read("GeC_Bewerber").get("BewerberMaskeAllBewerberCheckbox")));
         click(elements.get(0));
 

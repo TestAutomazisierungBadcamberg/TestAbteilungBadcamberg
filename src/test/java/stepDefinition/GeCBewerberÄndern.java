@@ -39,8 +39,9 @@ public class GeCBewerberÄndern extends BaseClass {
 
     @And("Ich klicke auf der Seite der Button {string}")
     public void ichKlickeAufDerSeiteUnterDerButton(String text) {
-        click(bewerber.fußLeisteButtons(text));
         sleep(1000);
+        click(bewerber.fußLeisteButtons(text));
+        sleep(500);
     }
 
     @Then("Ich sehe die von mir geänderte Bewerber")

@@ -6,14 +6,18 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-        features = {"src/test/resources/features"},
+        features = {
+                "src/test/resources/features/GL Sicht/ZiP/News/ZiP_Anlegen.feature",
+                "src/test/resources/features/GL Sicht/ZiP/News/Zip_News.feature",
+                "src/test/resources/features/GL Sicht/ZiP/News/ZiP_Reiterzahl.feature"
+
+        },
         glue = {"stepDefinition"},
-        tags = "@kliki",
         plugin = {
                 "json:test-output/cucumber-reports/cucumber.json",
                 "html:S:\\\\sabris_intern\\\\TestAutomatisierung\\\\cucumberreport.html",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
-public class Runner extends AbstractTestNGCucumberTests {
+public class RunnerNews extends AbstractTestNGCucumberTests {
 
 }

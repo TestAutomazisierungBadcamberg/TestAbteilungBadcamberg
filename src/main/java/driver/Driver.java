@@ -12,22 +12,22 @@ import java.time.Duration;
 
 public class Driver {
 
-    private static ThreadLocal<WebDriver> drivers= new ThreadLocal<>();
+    private static ThreadLocal<WebDriver> drivers = new ThreadLocal<>();
     private static ThreadLocal<WebDriverWait> waits = new ThreadLocal<>();
-    private static ThreadLocal<Browser> browsers= new ThreadLocal<>();
+    private static ThreadLocal<Browser> browsers = new ThreadLocal<>();
 
-    public static WebDriver getDriver(){
-        if (browsers.get()==null)
+    public static WebDriver getDriver() {
+        if (browsers.get() == null)
             browsers.set(Browser.FIREFOX);
 
         return getDriver(browsers.get());
     }
 
-    public static WebDriver getDriver(Browser browser){
+    public static WebDriver getDriver(Browser browser) {
         browsers.set(browser);
 
-        if (drivers.get()==null){
-            switch (browser){
+        if (drivers.get() == null) {
+            switch (browser) {
                 case EDGE:
                     drivers.set(new EdgeDriver());
                     break;
@@ -41,7 +41,7 @@ public class Driver {
                     break;
             }
         }
-        waits.set(new WebDriverWait(drivers.get(), Duration.ofSeconds(20),Duration.ofMillis(100)));
+        waits.set(new WebDriverWait(drivers.get(), Duration.ofSeconds(20), Duration.ofMillis(100)));
         return drivers.get();
     }
 
@@ -57,6 +57,7 @@ public class Driver {
             options.addArguments("--headless");
         return options;
     }
+
     private static FirefoxOptions getFirefoxOptions() {
         FirefoxOptions options = new FirefoxOptions();
         options.addPreference("dom.webnotifications.enabled", false);
@@ -67,21 +68,17 @@ public class Driver {
         return options;
     }
 
-    public static WebDriverWait getWait(){
+    public static WebDriverWait getWait() {
         return waits.get();
     }
 
-    public static void closeDriver(){
-        if (drivers.get() !=null){
+    public static void closeDriver() {
+        if (drivers.get() != null) {
             drivers.get().quit();
             drivers.set(null);
             waits.set(null);
         }
     }
-
-
-
-
 
 
 }

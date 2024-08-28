@@ -68,7 +68,7 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @And("Ich klicke die Schaltfläche {string}")
     public void ichKlickeDieSchaltfläche(String title) {
-        sleep(400);
+        sleep(1000);
         click(bewerber.bewerberFußLeisteButton(title));
     }
 
@@ -80,6 +80,7 @@ public class GeCBewerberAnlegen extends BaseClass {
 
     @And("Ich fülle den Reiter Person aus")
     public void ichFülleDenReiterPersonAus() {
+
         bewerber.neueBewerberAnlegen();
     }
 

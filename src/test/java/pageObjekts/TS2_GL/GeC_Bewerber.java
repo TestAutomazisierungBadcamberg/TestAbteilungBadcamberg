@@ -165,7 +165,7 @@ public class GeC_Bewerber extends BaseClass {
     }
 
     public void vorlagenEmpfeangerFreieEingabeAussuchen() {
-        hoverOverSendkeys("Müller");
+        hoverOverSendkeys(System.getProperty("name"));
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get("VorlagenEmpfeangerDropdownAussuchendePerson")));
         sleep(1000);
 

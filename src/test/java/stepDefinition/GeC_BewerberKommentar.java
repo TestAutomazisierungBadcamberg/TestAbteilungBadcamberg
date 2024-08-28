@@ -32,6 +32,7 @@ public class GeC_BewerberKommentar extends BaseClass {
     @When("Ich klicke auf den Reiter {string}")
     public void ichKlickeAufDenReiter(String text) {
         click(By.xpath(PropertyReaders.read("GeC_Bewerber").get(text)));
+
     }
 
     @When("Ich ändere einen Kommentar")
